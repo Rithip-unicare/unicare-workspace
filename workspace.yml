@@ -1,0 +1,12 @@
+opencollection: 1.0.0
+info:
+  name: "Appointments workspace"
+  type: workspace
+
+collections:
+  - name: "Untitled Collection"
+    path: "collections/Untitled Collection"
+
+specs:
+
+docs: ''
