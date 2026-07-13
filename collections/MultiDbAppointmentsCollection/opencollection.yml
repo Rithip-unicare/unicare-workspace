@@ -2,15 +2,26 @@ opencollection: 1.0.0
 
 info:
   name: MultiDbAppointmentsCollection
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
 
 request:
   variables:
     - name: baseUrl
-      value: ""
+      value: http://localhost:9012/api
     - name: token
       value: ""
     - name: accessToken
-      value: ""
+      value: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzaXZhIiwidXNlcklkIjo4LCJuYW1lIjoiU2l2YSIsImlhdCI6MTc4Mzk0MDI4OSwiZXhwIjoxNzg0MDI2Njg5fQ.yGdIppNASgbeQYeBrFASvjPNZqQvgQEr-Kt1_NgBdgAHvYZOswg6-TYXmBJK0x4ncTZYR28P1HFcn2UmrfubbQ
 bundled: false
 extensions:
   bruno:
