@@ -1,0 +1,27 @@
+info:
+  name: get Appointments in range
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{baseUrl}}/appointments/view-range"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |-
+      {
+          "location":"ALB1",
+          "doctorId":1,
+          "fromDate":"2026-07-01",
+          "toDate":"2026-07-25"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

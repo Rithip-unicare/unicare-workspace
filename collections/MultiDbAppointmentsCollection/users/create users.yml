@@ -1,0 +1,29 @@
+info:
+  name: create users
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/users"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |-
+      {
+        "name": "rithip",
+        "email": "ashokacharya7e@gmail.com",
+        "phone": "+9716369103643",
+      "username": "ashok",
+        "password": "ashok@123",
+        "createdBy": "VariantComputers"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

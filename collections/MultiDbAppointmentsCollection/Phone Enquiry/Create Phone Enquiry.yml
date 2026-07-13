@@ -1,0 +1,48 @@
+info:
+  name: Create Phone Enquiry
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/phone-enquiry"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |-
+      {
+        "location": "ALB4",
+        "enqDate": "2026-07-26",
+        "patientName": "Ahmed Mohammed",
+        "primaryMobile": "+971501234567",
+        "secondaryMobile": "+971509876543",
+        "fromTime": "09:00:00",
+        "toTime": "09:30:00",
+        "doctorId": 1,
+        "deptId": 2,
+        "status": "Pending",
+        "enterBy": "reception_001",
+        "enteredDate": "2024-07-04",
+        "duration": 30,
+        "appReasonId": 5,
+        "appServiceId": 3,
+        "centerId": 1,
+        "apptTypeId": 2,
+        "PHC_status": "Active",
+        "DidUKnow": "Google Search",
+        "hasEmiratesId": true,
+        "whatsappFlag": "P",
+        "isTelephonyEnq":true,
+        "comments": "Patient interested in general health checkup appointment",
+        "lastEdited": "2024-07-04",
+        "lastEditedBy": "admin"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

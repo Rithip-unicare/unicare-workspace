@@ -1,0 +1,32 @@
+info:
+  name: Phone Enquiry transfer
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{baseUrl}}/phone-enquiry/transfer"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |-
+      {
+        "fromLocation": "ALB3",
+        "enqId": 25874,
+        "toLocation": "ALB2",
+        "date": "2026-07-25",
+        "doctorId": 1,
+        "deptId": 4,
+        "fromTime": "12:30:00",
+        "transferBy": "Variant",
+        "toTime": "13:00:00"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

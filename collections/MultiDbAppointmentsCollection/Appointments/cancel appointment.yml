@@ -1,0 +1,27 @@
+info:
+  name: cancel appointment
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/appointments/cancel"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |
+      {
+        "apptId": 116590,
+        "Location": "abu_dhabi",
+        "cancelReason": "Patient requested cancellation",
+        "enterBy": "ADMIN"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

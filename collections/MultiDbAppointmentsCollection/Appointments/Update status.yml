@@ -1,0 +1,27 @@
+info:
+  name: Update status
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: "{{baseUrl}}/appointments/status"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |
+      {
+        "apptId": 116590,
+        "Location": "abu_dhabi",
+        "status": "Confirmed",
+        "enterBy": "ADMIN"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

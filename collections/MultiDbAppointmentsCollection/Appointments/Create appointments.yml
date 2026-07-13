@@ -1,0 +1,51 @@
+info:
+  name: Create appointments
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/appointments"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |
+      {
+        "location": "ALB2",
+        "appointmentDate": "2026-07-15",
+        "patientId": 41910,
+        "startTime": "12:00",
+        "toTime": "12:30",
+        "doctorId": 1,
+        "deptId": 14,
+        "apptReason": "Routine Checkup",
+        "status": "Booked",
+        "enterBy": "ADMIN",
+        "enteredDate": "2026-06-26",
+        "duration": 30,
+        "patientType": "old",
+        "clinicType": "Clinical",
+        "paymentMode": "Cash",
+        "posident": 0,
+        "patpolid": null,
+        "centerId": 1,
+        "apptRemainder": "N",
+        "noansRemainder": "N",
+        "visitType": "NEW",
+        "appReasonId": 1,
+        "appServiceId": 1,
+        "apptTypeId": 1,
+        "isWalkIn": false,
+        "PHC_status": "ACTIVE",
+        "DidUKnow": "Website",
+        "appNo": 0
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

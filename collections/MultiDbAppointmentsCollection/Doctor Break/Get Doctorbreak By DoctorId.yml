@@ -1,0 +1,26 @@
+info:
+  name: Get Doctorbreak By DoctorId
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{baseUrl}}/doctor-break/by-doctor"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |-
+      {
+          "location":"dubai",
+          "doctorId":24,
+          "appointmentDate":"2025-11-30"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

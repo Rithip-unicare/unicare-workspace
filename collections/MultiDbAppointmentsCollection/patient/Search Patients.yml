@@ -1,0 +1,27 @@
+info:
+  name: Search Patients
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/patient/search"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |-
+      {
+          "location":"ALB3",
+          "searchTerm":"BADAL",
+          "searchType":"firstName",
+          "all":false
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
