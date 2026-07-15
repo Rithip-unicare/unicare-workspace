@@ -5,13 +5,13 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/appointments/past/ALB3/1?page=0&size=20"
+  url: "{{baseUrl}}/appointments/past/ALB3/1?page=2&size=20"
   headers:
     - name: Authorization
       value: Bearer {{accessToken}}
   params:
     - name: page
-      value: "0"
+      value: "2"
       type: query
     - name: size
       value: "20"

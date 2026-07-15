@@ -1,0 +1,15 @@
+info:
+  name: sahatna
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://213.42.216.91:9014
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
