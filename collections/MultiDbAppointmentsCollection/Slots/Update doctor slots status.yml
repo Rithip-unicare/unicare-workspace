@@ -1,0 +1,64 @@
+info:
+  name: "Update doctor slots status "
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{baseUrl}}/doctors/availability"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |-
+      // {
+      //   "doctorId": 56,
+      //   "doctorLocation": "ALB5",
+      //   "fromDate": "2026-07-16T00:00:00.000Z",
+      //     "toDate": "2026-07-17T00:00:00.000Z",
+      //   "timings": [
+      //     {
+      //       "fromTime": "09:00",
+      //       "toTime": "13:00",
+      //       "toLocation": "ALB5",
+      //       "comments": "Morning consultation"
+      //     },
+      //     {
+      //       "fromTime": "14:00",
+      //       "toTime": "15:00",
+      //       "toLocation": "ALB3", 
+      //       "comments": "Afternoon checkup"
+      //     }
+      //   ],
+      //   "isMultiLocation": true
+      // }
+
+      {
+          "doctorId": 1,
+          "doctorLocation": "ALB3",
+          "fromDate": "2026-07-16",
+          "toDate": "2026-07-17",
+          "timings": [
+              {
+                  "fromTime": "09:00:00",
+                  "toTime": "10:00:00",
+                  "toLocation": "ALB5",
+                  "comments": "Scheduled slot (2026-07-16 to 2026-07-17)"
+              },
+              {
+                  "fromTime": "14:00:00",
+                  "toTime": "16:00:00",
+                  "toLocation": "ALB7",
+                  "comments": "Scheduled slot (2026-07-16 to 2026-07-17)"
+              }
+          ],
+          "isMultiLocation": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
