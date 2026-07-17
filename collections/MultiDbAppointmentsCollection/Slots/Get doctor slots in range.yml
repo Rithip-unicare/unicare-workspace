@@ -1,11 +1,11 @@
 info:
-  name: add doctor slots
+  name: Get doctor slots in range
   type: http
-  seq: 3
+  seq: 5
 
 http:
   method: POST
-  url: "{{baseUrl}}/doctors/slots/add"
+  url: "{{baseUrl}}/doctors/slots"
   headers:
     - name: Authorization
       value: Bearer {{accessToken}}
@@ -13,11 +13,10 @@ http:
     type: json
     data: |-
       {
-          "location":"ALB1",
-          "starDate":"2026-07-07",
-          "endDate":"2026-07-30"
-          // "centerId":"1",
-          // "doctorId":"1"
+        "doctorId": 56,
+        "doctorLocation": "ALB3",
+        "fromDate": "2026-07-15",
+        "toDate": "2026-07-17"
       }
   auth: inherit
 
