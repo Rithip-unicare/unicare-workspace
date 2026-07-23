@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/doctors/slots/ALB3/1?date=2026-07-16"
+  url: "{{baseUrl}}/doctors/slots/ALB5/1?date=2026-07-16"
   headers:
     - name: Authorization
       value: Bearer {{accessToken}}

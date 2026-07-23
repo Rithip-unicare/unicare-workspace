@@ -1,0 +1,22 @@
+info:
+  name: Doctor schedule
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{baseUrl}}/doctors/schedule?doctorId=20&location=ALB7"
+  params:
+    - name: doctorId
+      value: "20"
+      type: query
+    - name: location
+      value: ALB7
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

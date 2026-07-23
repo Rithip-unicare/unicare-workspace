@@ -13,10 +13,10 @@ http:
     type: json
     data: |-
       {
-        "doctorId": 56,
-        "doctorLocation": "ALB3",
-        "fromDate": "2026-07-15",
-        "toDate": "2026-07-17"
+        "doctorId": 1,
+        "doctorLocation": "ALB5",
+        "fromDate": "2026-07-16",
+        "toDate": "2026-07-19"
       }
   auth: inherit
 

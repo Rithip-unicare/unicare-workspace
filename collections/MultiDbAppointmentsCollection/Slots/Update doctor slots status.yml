@@ -37,8 +37,8 @@ http:
       {
           "doctorId": 1,
           "doctorLocation": "ALB3",
-          "fromDate": "2026-07-16",
-          "toDate": "2026-07-17",
+          "fromDate": "2026-07-01",
+          "toDate": "2026-07-24",
           "timings": [
               {
                   "fromTime": "09:00:00",
