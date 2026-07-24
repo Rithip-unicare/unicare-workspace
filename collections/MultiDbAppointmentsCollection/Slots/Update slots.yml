@@ -1,0 +1,31 @@
+info:
+  name: Update slots
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{baseUrl}}/doctors/slots/update"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |-
+      {
+          "fromDate": "2026-07-01",
+          "toDate": "2026-07-13",
+          "doctorId": 10,
+          "location": "ALB7",
+          "fromTime": "07:30:00",
+          "toTime": "11:30:00",
+          "status": "busy",
+          "toLocation": "ALB7"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

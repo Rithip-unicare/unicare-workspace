@@ -13,8 +13,8 @@ http:
     type: json
     data: |-
       {
-          "location":"ALB2",
-          "starDate":"2026-07-07",
+          "location":"ALB7",
+          "starDate":"2026-07-01",
           "endDate":"2026-07-30"
           // "centerId":"1",
           // "doctorId":"1"

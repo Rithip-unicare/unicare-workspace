@@ -1,0 +1,31 @@
+info:
+  name: Update Slots Timing
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{baseUrl}}/doctors/slots/update-timing"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |-
+      {
+          "doctorId": 10,
+          "centerId": 90,
+          "fromLocation": "ALB7",
+          "fromdate": "2026-07-01",
+          "todate": "2026-07-31",
+          "newfromTime": "07:30:00",
+          "newtoTime": "08:30:00",
+          "toLocation": "ALB7"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
