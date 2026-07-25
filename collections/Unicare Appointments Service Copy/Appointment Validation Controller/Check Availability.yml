@@ -1,0 +1,25 @@
+info:
+  name: Check Availability
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/core/appointments/validation/availability"
+  body:
+    type: json
+    data: |-
+      {
+          "doctorId": 1,
+          "hospitalDetailId": 1,
+          "appointmentDate": "2026-05-15",
+          "startTime": "10:00:00",
+          "endTime": "10:15:00"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

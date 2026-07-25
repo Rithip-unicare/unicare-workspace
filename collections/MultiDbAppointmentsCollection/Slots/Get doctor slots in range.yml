@@ -13,8 +13,8 @@ http:
     type: json
     data: |-
       {
-        "doctorId": 10,
-        "doctorLocation": "ALB7",
+        "doctorId": 1,
+        "doctorLocation": "ALB5",
         "fromDate": "2026-07-11",
         "toDate": "2026-07-13"
       }

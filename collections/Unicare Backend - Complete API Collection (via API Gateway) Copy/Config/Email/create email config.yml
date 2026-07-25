@@ -1,0 +1,29 @@
+info:
+  name: create email config
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/organization/email-config"
+  body:
+    type: json
+    data: |-
+      {
+        "organizationId": 1,
+        "host": "localhost",
+        "port": 587,
+        "userName": "string",
+        "password": "string",
+        "useAuth": true,
+        "protocol": "string"
+      }
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

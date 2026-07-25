@@ -1,0 +1,17 @@
+info:
+  name: get network and plan by company
+  type: http
+  seq: 49
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/master/insurance-networks/companywise/10831b59-d0bc-42a6-97ac-cf40e2e1a429"
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

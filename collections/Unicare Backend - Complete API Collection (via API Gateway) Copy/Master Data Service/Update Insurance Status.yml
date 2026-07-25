@@ -1,0 +1,26 @@
+info:
+  name: Update Insurance Status
+  type: http
+  seq: 56
+
+http:
+  method: PATCH
+  url: "{{baseUrl}}/api/master/insurance-companies/status"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |-
+      {
+        "companyID": "00587294-1b42-4adf-9ced-33b6959e0b1d",
+          "fieldValue": true,
+          "fieldName": "pharmacyToken"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

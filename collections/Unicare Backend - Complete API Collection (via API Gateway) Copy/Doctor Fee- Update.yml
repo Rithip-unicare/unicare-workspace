@@ -1,0 +1,27 @@
+info:
+  name: "Doctor Fee: Update"
+  type: http
+  seq: 10
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/doctors/fee/:id"
+  headers:
+    - name: Content-Type
+      value: application/json
+  params:
+    - name: id
+      value: ""
+      type: path
+  body:
+    type: json
+    data: '{"consultation": "Follow-up Consultation", "charges": 75.00, "isActive": true}'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: "Generated from cURL: curl -X PUT \"{{baseUrl}}/api/doctors/fee/:id\" -H \"Content-Type: application/json\" -d '{\"consultation\": \"Follow-up Consultation\", \"charges\": 75.00, \"isActive\": true}'"

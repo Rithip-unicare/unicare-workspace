@@ -1,0 +1,30 @@
+info:
+  name: "User Info: Update"
+  type: http
+  seq: 43
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/organization/user-info/1"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "userId": 1,
+        "organizationId": 1,
+        "ipAddress": "10.0.0.10",
+        "fontName": "Roboto",
+        "fontSize": 14
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

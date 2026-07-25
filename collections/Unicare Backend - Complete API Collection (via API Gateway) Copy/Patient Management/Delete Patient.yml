@@ -1,0 +1,24 @@
+info:
+  name: Delete Patient
+  type: http
+  seq: 7
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/api/core/patients/:patientId?hospitalId=1"
+  params:
+    - name: hospitalId
+      value: "1"
+      type: query
+    - name: patientId
+      value: "202"
+      type: path
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

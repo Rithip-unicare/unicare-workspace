@@ -1,0 +1,28 @@
+info:
+  name: Create User Theme Setting for  User
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/organization/user-theme-settings"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |-
+      {
+        "userId": 1,
+        "organizationId": 1,
+        "theme": "dark",
+        "languagePreference": "en",
+        "isActive": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

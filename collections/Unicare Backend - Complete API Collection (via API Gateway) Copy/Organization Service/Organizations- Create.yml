@@ -1,0 +1,105 @@
+info:
+  name: "Organizations: Create"
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/organization/organizations"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: multipart-form
+    data:
+      - name: englishName
+        type: text
+        value: MaxCare Hospital
+        disabled: true
+      - name: arabicName
+        type: text
+        value: مستشفى يونيكير العام
+        disabled: true
+      - name: shortName
+        type: text
+        value: CGH
+      - name: addressLine1
+        type: text
+        value: 123 Health Ave
+      - name: addressLine2
+        type: text
+        value: Downtown
+      - name: cityId
+        type: text
+        value: d3458712-fcf1-4e3e-9953-017fe3a11dc2
+      - name: regionId
+        type: text
+        value: d3458712-fcf1-4e3e-9953-017fe3a11dc2
+      - name: countryId
+        type: text
+        value: 6a20ee12-bb25-476a-9285-0064615b5c6e
+      - name: email
+        type: text
+        value: contact@citygeneral.com
+      - name: phoneNumber
+        type: text
+        value: "+1234567890"
+      - name: faxNumber
+        type: text
+        value: "+1234567891"
+      - name: websiteUrl
+        type: text
+        value: www.citygeneral.com
+      - name: locationUrl
+        type: text
+        value: maps.google.com/xyz
+      - name: facilityLicenseNo
+        type: text
+        value: LIC-12345
+      - name: authorityRegionId
+        type: text
+        value: d3458712-fcf1-4e3e-9953-017fe3a11dc2
+      - name: username
+        type: text
+        value: UnicareAdmin
+      - name: password
+        type: text
+        value: Password@123
+      - name: webServiceUrl
+        type: text
+        value: api.citygeneral.com
+      - name: headerLogoFile
+        type: file
+        value:
+          - /Users/apple/Downloads/blue-abstract-5120x2880-25023.jpg
+      - name: smallLogoFile
+        type: file
+        value:
+          - /Users/apple/Downloads/one-piece-character-5120x2880-15328.jpeg
+      - name: permAddressLine
+        type: text
+        value: 123 Health Ave
+        disabled: true
+      - name: permAddressPostbox
+        type: text
+        value: "635653"
+        disabled: true
+      - name: permCountryId
+        type: text
+        value: 6a20ee12-bb25-476a-9285-0064615b5c6e
+        disabled: true
+      - name: permCityId
+        type: text
+        value: d3458712-fcf1-4e3e-9953-017fe3a11dc2
+        disabled: true
+      - name: permRegionId
+        type: text
+        value: d3458712-fcf1-4e3e-9953-017fe3a11dc2
+        disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

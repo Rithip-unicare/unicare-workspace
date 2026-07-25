@@ -1,0 +1,22 @@
+info:
+  name: GetDepartmentsByCategory
+  type: http
+  seq: 50
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/master/category-department?ids=dcf2ca3c-b46f-4d6b-8474-2c6d4443772a,bd9f6f61-defd-40a0-b11a-927ee56cf352"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  params:
+    - name: ids
+      value: dcf2ca3c-b46f-4d6b-8474-2c6d4443772a,bd9f6f61-defd-40a0-b11a-927ee56cf352
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

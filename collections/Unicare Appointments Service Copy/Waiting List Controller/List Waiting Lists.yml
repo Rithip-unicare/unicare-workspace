@@ -1,0 +1,24 @@
+info:
+  name: List Waiting Lists
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/core/waiting-list?doctorId=1&hospitalId=1"
+  params:
+    - name: doctorId
+      value: "1"
+      type: query
+    - name: hospitalId
+      value: "1"
+      type: query
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

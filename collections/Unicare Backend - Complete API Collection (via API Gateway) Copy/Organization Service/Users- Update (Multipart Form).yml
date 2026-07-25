@@ -1,0 +1,164 @@
+info:
+  name: "Users: Update (Multipart Form)"
+  type: http
+  seq: 12
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/organization/users"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: multipart-form
+    data:
+      - name: organizationId
+        type: text
+        value: "1"
+      - name: authUserId
+        type: text
+        value: "0"
+      - name: username
+        type: text
+        value: dr_smith
+        disabled: true
+      - name: firstName
+        type: text
+        value: John
+      - name: middleName
+        type: text
+        value: A
+      - name: lastName
+        type: text
+        value: Smith
+      - name: fullName
+        type: text
+        value: Dr. John A Smith
+      - name: shortName
+        type: text
+        value: JSmith
+      - name: userCode
+        type: text
+        value: DOC-001
+      - name: dob
+        type: text
+        value: 1980-01-01
+      - name: empDoj
+        type: text
+        value: 2020-01-01
+      - name: empCode
+        type: text
+        value: EMP123
+      - name: titleId
+        type: text
+        value: 123e4567-e89b-12d3-a456-426614174000
+      - name: genderId
+        type: text
+        value: 123e4567-e89b-12d3-a456-426614174000
+      - name: nationalityId
+        type: text
+        value: 123e4567-e89b-12d3-a456-426614174000
+      - name: maritalStatusId
+        type: text
+        value: 123e4567-e89b-12d3-a456-426614174000
+      - name: religionId
+        type: text
+        value: 123e4567-e89b-12d3-a456-426614174000
+      - name: departmentId
+        type: text
+        value: a9befd65-d7fc-48c5-8681-04618434734d
+      - name: departmentCategoryId
+        type: text
+        value: 6c61b77f-8f5d-4bbb-8c00-605be1efb965
+      - name: jobTitleId
+        type: text
+        value: 123e4567-e89b-12d3-a456-426614174000
+      - name: qualificationId
+        type: text
+        value: 123e4567-e89b-12d3-a456-426614174000
+      - name: locationId
+        type: text
+        value: "1"
+      - name: visaTypeId
+        type: text
+        value: 123e4567-e89b-12d3-a456-426614174987
+      - name: currentMobile
+        type: text
+        value: "+1987654321"
+      - name: currentPhone
+        type: text
+        value: "+1987654321"
+      - name: currentEmail
+        type: text
+        value: drsmith@citygeneral.com
+      - name: currentAddressLine
+        type: text
+        value: Apt 4B, Med District
+      - name: currentCountryId
+        type: text
+        value: 123e4567-e89b-12d3-a456-426614174000
+      - name: currentCityId
+        type: text
+        value: 123e4567-e89b-12d3-a456-426614174000
+      - name: currentRegionId
+        type: text
+        value: 123e4567-e89b-12d3-a456-426614174000
+      - name: apptInterval
+        type: text
+        value: "15"
+      - name: slotInterval
+        type: text
+        value: "15"
+      - name: licenseNo
+        type: text
+        value: MED-Lic-9988
+      - name: roleId
+        type: text
+        value: "2"
+      - name: profileImgFile
+        type: file
+        value: []
+      - name: signature1File
+        type: file
+        value: []
+      - name: signature2File
+        type: file
+        value: []
+      - name: signature3File
+        type: file
+        value: []
+      - name: signatureFile
+        type: file
+        value: []
+      - name: id
+        type: text
+        value: "6"
+      - name: isActive
+        type: text
+        value: "false"
+      - name: userStatus
+        type: text
+        value: "false"
+        disabled: true
+      - name: accountStatus
+        type: text
+        value: "true"
+      - name: userStatus
+        type: text
+        value: "true"
+      - name: username
+        type: text
+        value: RithipUnicare
+      - name: password
+        type: text
+        value: "123456"
+      - name: isMinimal
+        type: text
+        value: "true"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,54 @@
+info:
+  name: Doctor Master
+  type: http
+  seq: 47
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/organization/doctors/master"
+  body:
+    type: json
+    data: |-
+      {
+          "userId": 42,
+          "arabicName": "أجيت كومار",
+          "clinicianType": "Activity Clinician",
+          "emGuidelines": "1995 Guidelines",
+          "emValidator": false,
+          "lockEncounterDays": 0,
+          "followUpRequiredEmr": false,
+          "copyPrescription": false,
+          "maternityChart": false,
+          "childMentalHealth": false,
+          "disableSmsDoctor": false,
+          "disableExamNormal": false,
+          "unsignedCharts": false,
+          "refreshTimeUnsignedCharts": 0,
+          "notifyExpiryDays": 60,
+          "shifts": [
+              {
+                  "shiftType": "MORNING",
+                  "active": false,
+                  "blocked": false
+              },
+              {
+                  "shiftType": "EVENING",
+                  "active": false,
+                  "blocked": false
+              },
+              {
+                  "shiftType": "FULL",
+                  "active": false,
+                  "blocked": false
+              }
+          ]
+      }
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

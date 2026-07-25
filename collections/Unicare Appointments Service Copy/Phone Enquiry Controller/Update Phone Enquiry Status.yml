@@ -1,0 +1,28 @@
+info:
+  name: Update Phone Enquiry Status
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/core/phone-enquiries/status"
+  body:
+    type: json
+    data: |-
+      {
+          "phoneEnquiryId": 6,
+          "statusId": "7b2db4db-edba-4c58-a67b-ae2d1d237bba",
+          "colorCode": "#0678ff",
+          "notes": "string",
+          "checkOut": "10:30:00",
+          "updatedBy":2
+      }
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

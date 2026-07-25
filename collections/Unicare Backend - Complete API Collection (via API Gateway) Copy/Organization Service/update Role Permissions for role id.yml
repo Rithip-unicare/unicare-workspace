@@ -1,0 +1,265 @@
+info:
+  name: update Role Permissions for role id
+  type: http
+  seq: 49
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/organization/role-module-permissions/bulk/1"
+  body:
+    type: json
+    data: |-
+      // [
+      //   {
+      //     "moduleId": "e1aeb876-0cc4-43fa-ae6b-50c6d4e8897f",
+      //     "subModuleId": "249e9c8d-c6c6-45a9-82fc-8235848446b0",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "e1aeb876-0cc4-43fa-ae6b-50c6d4e8897f",
+      //     "subModuleId": "51990cae-7ffe-4126-bb8f-3cdfa8aaa37c",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "e1aeb876-0cc4-43fa-ae6b-50c6d4e8897f",
+      //     "subModuleId": "5c2d82a3-83cc-42de-a6a7-2291b0615d99",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "e1aeb876-0cc4-43fa-ae6b-50c6d4e8897f",
+      //     "subModuleId": "62478a16-cf18-42a7-b768-f16561cfe6ae",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "e1aeb876-0cc4-43fa-ae6b-50c6d4e8897f",
+      //     "subModuleId": "95bb9db9-71c4-42a7-b14d-9c5f80a1bf11",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "e1aeb876-0cc4-43fa-ae6b-50c6d4e8897f",
+      //     "subModuleId": "9e7e2b58-2b42-43b6-bb53-9a2be84bb1f3",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "e1aeb876-0cc4-43fa-ae6b-50c6d4e8897f",
+      //     "subModuleId": "b214a853-07bc-4292-afdc-83f51181089c",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "e1aeb876-0cc4-43fa-ae6b-50c6d4e8897f",
+      //     "subModuleId": "bdf6f5e9-5ec0-44ce-b571-0782d9fa770d",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "e1aeb876-0cc4-43fa-ae6b-50c6d4e8897f",
+      //     "subModuleId": "c332de82-9850-4392-927a-561224d40991",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "e1aeb876-0cc4-43fa-ae6b-50c6d4e8897f",
+      //     "subModuleId": "c8041269-1f2d-4910-b860-0a778cfd4686",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "e1aeb876-0cc4-43fa-ae6b-50c6d4e8897f",
+      //     "subModuleId": "ca279b93-ccbf-4cb9-9379-1da136a99ae5",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "e1aeb876-0cc4-43fa-ae6b-50c6d4e8897f",
+      //     "subModuleId": "d55dad09-246a-4669-94be-22c823ac79e0",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "e1aeb876-0cc4-43fa-ae6b-50c6d4e8897f",
+      //     "subModuleId": "dc31a8ad-3a59-40e0-8a4e-ddce2a9fa7cc",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "e1aeb876-0cc4-43fa-ae6b-50c6d4e8897f",
+      //     "subModuleId": "f9c03dff-3bc6-4264-a898-7c13615502e4",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "5947700c-f5c4-43ea-8704-72d4464162ac",
+      //     "subModuleId": "03658565-48d4-4385-8123-405600ee2628",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "5947700c-f5c4-43ea-8704-72d4464162ac",
+      //     "subModuleId": "12fe44c7-02ad-48a9-85ef-b349ce3fb799",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "5947700c-f5c4-43ea-8704-72d4464162ac",
+      //     "subModuleId": "33bb1a7f-2e21-47fb-8152-4ccb37237a22",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "5947700c-f5c4-43ea-8704-72d4464162ac",
+      //     "subModuleId": "352b8b5f-d004-4a16-96ca-3b8f5554253d",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "5947700c-f5c4-43ea-8704-72d4464162ac",
+      //     "subModuleId": "39366de7-3273-4422-a068-c2fc2015d076",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "5947700c-f5c4-43ea-8704-72d4464162ac",
+      //     "subModuleId": "49779f62-b188-4c0f-9b04-6eff9a5ad2ef",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "5947700c-f5c4-43ea-8704-72d4464162ac",
+      //     "subModuleId": "55e971fc-82bb-4452-b6c3-426322c6112f",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "5947700c-f5c4-43ea-8704-72d4464162ac",
+      //     "subModuleId": "7dc736fa-1bb8-4e0e-8c24-496579e8426e",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "5947700c-f5c4-43ea-8704-72d4464162ac",
+      //     "subModuleId": "82a4e9c5-9505-461d-81ed-571ebacef9f7",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "5947700c-f5c4-43ea-8704-72d4464162ac",
+      //     "subModuleId": "83337c23-1870-4878-8250-14d93309f499",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "5947700c-f5c4-43ea-8704-72d4464162ac",
+      //     "subModuleId": "8c583d13-55d0-4e23-8b6f-ce93ba578ce0",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "5947700c-f5c4-43ea-8704-72d4464162ac",
+      //     "subModuleId": "903185c2-d5f8-429e-9319-44b7d919e47d",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "5947700c-f5c4-43ea-8704-72d4464162ac",
+      //     "subModuleId": "a30d7494-cee2-4092-a0dd-ca5ef95870fb",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "5947700c-f5c4-43ea-8704-72d4464162ac",
+      //     "subModuleId": "aaed6c80-f781-402b-9135-9eaf7f73d56b",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "5947700c-f5c4-43ea-8704-72d4464162ac",
+      //     "subModuleId": "aafeb8a4-903d-46de-9e45-62565caa1097",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "5947700c-f5c4-43ea-8704-72d4464162ac",
+      //     "subModuleId": "b4f622e2-21f0-480e-9d48-51aa2cd4c952",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "5947700c-f5c4-43ea-8704-72d4464162ac",
+      //     "subModuleId": "badbe7f3-4a97-4c0e-b38c-0612ca24286b",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "5947700c-f5c4-43ea-8704-72d4464162ac",
+      //     "subModuleId": "bd4e7988-d119-47d1-9dfa-d8591a6ac547",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "5947700c-f5c4-43ea-8704-72d4464162ac",
+      //     "subModuleId": "c325a70c-6f4d-4bbc-99ff-eeddbc3c5578",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "5947700c-f5c4-43ea-8704-72d4464162ac",
+      //     "subModuleId": "c7f2d4ce-bf42-40c8-9998-a6ed218947ca",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "5947700c-f5c4-43ea-8704-72d4464162ac",
+      //     "subModuleId": "db91e3d9-a37a-4fa4-a501-b9c4624f5d79",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "5947700c-f5c4-43ea-8704-72d4464162ac",
+      //     "subModuleId": "e44e18c6-edea-4ee4-b92c-81cdf5d16620",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "5947700c-f5c4-43ea-8704-72d4464162ac",
+      //     "subModuleId": "e504a30b-8052-4e7b-ab64-eb90063eb8a7",
+      //     "isPermission": true,
+      //     "isView": true
+      //   },
+      //   {
+      //     "moduleId": "5947700c-f5c4-43ea-8704-72d4464162ac",
+      //     "subModuleId": "e50a4e4d-0793-4db2-9c3e-e04440eeef16",
+      //     "isPermission": true,
+      //     "isView": true
+      //   }
+      // ]
+      [
+         {
+        "roleId": 1,
+        "moduleId": "5947700c-f5c4-43ea-8704-72d4464162ac",
+        "subModuleId": "f5e5c835-e8fa-4467-ad7e-1f511a3a7428",
+        "isPermission": true,
+        "isAdd": true,
+        "isEdit": true,
+        "isDelete": false,
+        "isView": true,
+        "isActive": true,
+        "createdBy": 1,
+        "updatedBy": 1
+      }
+      ]
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

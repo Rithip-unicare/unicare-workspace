@@ -1,0 +1,17 @@
+info:
+  name: GetInsurancePlanwithDescription
+  type: http
+  seq: 51
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/master/insurance-plan-details/with-description/129e1df5-690d-4db9-8fb8-dc4de6895729"
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

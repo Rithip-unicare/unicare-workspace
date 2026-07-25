@@ -1,0 +1,28 @@
+info:
+  name: "Organization Settings: Update"
+  type: http
+  seq: 37
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/organization/organization-settings/1"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "organizationId": 1,
+        "locationShortName": "HQ-Updated",
+        "centerName": "Updated Center"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,7 @@
+info:
+  name: Appointment Audit Log
+  type: folder
+  seq: 11
+
+request:
+  auth: inherit

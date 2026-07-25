@@ -1,0 +1,7 @@
+info:
+  name: Patient Enquiry Controller
+  type: folder
+  seq: 7
+
+request:
+  auth: inherit

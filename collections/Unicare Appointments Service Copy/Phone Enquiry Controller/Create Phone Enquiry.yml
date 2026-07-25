@@ -1,0 +1,98 @@
+info:
+  name: Create Phone Enquiry
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/core/phone-enquiries"
+  headers:
+    - name: X-User-Id
+      value: "{{userId}}"
+  body:
+    type: json
+    data: |-
+      // {
+      //     "hospitalDetailId": 1,
+      //     "doctorId": 3,
+      //     "staffId": 1,
+      //     "firstName":"Rithip",
+      //     "middleName":"R",
+      //     "lastName":"Rajavel",
+      //     "fullName":"Rithip Rajavel",
+      //     "patientDetailId": null,
+      //     "primaryNumber": "string",
+      //     "secondaryNumber": "string",
+      //     "whatsappNumber": "string",
+      //     "haveEmiratesIds": false,
+      //     "isAppointment": true,
+      //     "appointmentDate": "2026-05-28",
+      //     "fromTime": "12:00:00",
+      //     "toTime": "12:15:00",
+      //     "timeInterval": 15,
+      //     "comments": "string",
+      //     "statusId": "1a981438-5b00-4815-a48a-ac012644aea6",
+      //     "colorCode": "string",
+      //     "groupId": "string",
+      //     "isDoubleBooking": false,
+      //     "idDoubleBookingExist": false,
+      //     "isBetweenSlot": false,
+      //     "checkIn": "09:50:00",
+      //     "checkOut": "10:30:00",
+      //     "services": [
+      //         {
+      //             "serviceTypeId": 1,
+      //             "levelInterest": "string",
+      //             "staffId": 1
+      //         }
+      //     ],
+      //     "enquiryServiceId": "e265e55f-a192-42e0-80bc-a0b67bcaf607",
+      //     "enquiryReasonId": "2c580ae2-f8c2-45da-9847-74a3c573fe41",
+      //     "departmentId": "e5294723-3f42-4991-ae86-1fcf367029dd"
+      // }
+
+      {
+          "hospitalDetailId": 1,
+          "doctorId": 3,
+          "doctorName": "SACHINRAJ KUMAR",
+          "staffId": null,
+          "staffName": "",
+          "firstName": "6tg7yhujik",
+          "middleName": "",
+          "lastName": "e5rf6t7yu8ji9ol",
+          "fullName": "6tg7yhujik e5rf6t7yu8ji9ol",
+          "patientDetailId": null,
+          "primaryNumber": "+97178943289",
+          "secondaryNumber": "+971",
+          "whatsappNumber": "Primary",
+          "haveEmiratesIds": false,
+          "isAppointment": false,
+          "appointmentDate": "2026-05-13",
+          "fromTime": "19:00:00",
+          "toTime": "19:30:00",
+          "timeInterval": 30,
+          "comments": "buybububyuu",
+          "statusId": null,
+          "statusName": "",
+          "colorCode": "#a1e76b",
+          "groupId": null,
+          "isDoubleBooking": false,
+          "idDoubleBookingExist": false,
+          "isBetweenSlot": false,
+          "checkIn": null,
+          "checkOut": null,
+          "enquiryServiceId": "171a2cee-70ac-4e37-a2ac-91e3554b59c2",
+          "enquiryReasonId": "649cf8bc-1571-4db5-aa3f-4e5a06e4a7ed",
+          "departmentId": "b5244e59-86c5-426e-8f84-1e29b2bc984b",
+          "BookedBy": "94",
+          "services": []
+      }
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

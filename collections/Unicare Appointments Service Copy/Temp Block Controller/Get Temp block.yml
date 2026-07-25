@@ -1,0 +1,29 @@
+info:
+  name: Get Temp block
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/core/temp-blocks"
+  headers:
+    - name: X-User-Id
+      value: "{{userId}}"
+  body:
+    type: json
+    data: |-
+      {
+          "hospitalId": 1,
+          "doctorId": 134,
+          "startDate": "2026-06-15",
+          "endDate": "2026-06-30"
+      }
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

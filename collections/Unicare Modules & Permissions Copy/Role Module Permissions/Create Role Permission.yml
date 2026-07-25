@@ -1,0 +1,36 @@
+info:
+  name: Create Role Permission
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/organization/role-module-permissions"
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |-
+      {
+        "roleId": 1,
+        "moduleId": "5947700c-f5c4-43ea-8704-72d4464162ac",
+        "subModuleId": "bd4e7988-d119-47d1-9dfa-d8591a6ac547",
+        "isPermission": true,
+        "isAdd": true,
+        "isEdit": true,
+        "isDelete": true,
+        "isView": true,
+        "isActive": true,
+        "createdBy": 1,
+        "updatedBy": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

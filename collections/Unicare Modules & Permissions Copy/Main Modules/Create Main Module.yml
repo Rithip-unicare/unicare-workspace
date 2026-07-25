@@ -1,0 +1,32 @@
+info:
+  name: Create Main Module
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/organization/main-modules"
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Sample Main Module",
+        "order": 1,
+        "menuLink": "/sample-link",
+        "icon": "sample-icon",
+        "isActive": true,
+        "createdBy": 1,
+        "updatedBy": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

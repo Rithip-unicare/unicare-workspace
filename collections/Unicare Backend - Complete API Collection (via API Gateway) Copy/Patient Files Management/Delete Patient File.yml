@@ -1,0 +1,25 @@
+info:
+  name: Delete Patient File
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/api/core/patients/:patientId/files/:category"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  params:
+    - name: patientId
+      value: "2"
+      type: path
+    - name: category
+      value: profile
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,25 @@
+info:
+  name: Upload Profile Image
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/core/patients/:patientId/files/profile"
+  params:
+    - name: patientId
+      value: "1"
+      type: path
+  body:
+    type: multipart-form
+    data:
+      - name: file
+        type: file
+        value: []
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

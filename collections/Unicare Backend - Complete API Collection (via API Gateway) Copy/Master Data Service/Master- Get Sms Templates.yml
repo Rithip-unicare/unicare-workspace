@@ -1,0 +1,18 @@
+info:
+  name: "Master: Get Sms Templates"
+  type: http
+  seq: 47
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/master/sms-templates"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,60 @@
+info:
+  name: Update Phone Enquiry
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/core/phone-enquiries"
+  headers:
+    - name: X-User-Id
+      value: "{{userId}}"
+  body:
+    type: json
+    data: |-
+      {
+          "id":13,
+          "hospitalDetailId": 1,
+          "doctorId": 28,
+          "doctorName": "SACHINRAJ KUMAR",
+          "staffId": null,
+          "staffName": "",
+          "firstName": "6tg7yhujik",
+          "middleName": "",
+          "lastName": "e5rf6t7yu8ji9olvoehoghrohoethoe",
+          "fullName": "6tg7yhujik e5rf6t7yu8ji9ol",
+          "patientDetailId": null,
+          "primaryNumber": "+97188888888",
+          "secondaryNumber": "+97154545423",
+          "whatsappNumber": "Primary",
+          "haveEmiratesIds": false,
+          "isAppointment": false,
+          "appointmentDate": "2026-05-13",
+          "fromTime": "14:00:00",
+          "toTime": "14:30:00",
+          "timeInterval": 30,
+          "comments": "buybububyuu",
+          "statusId": null,
+          "statusName": "",
+          "colorCode": "#a1e76b",
+          "groupId": null,
+          "isDoubleBooking": false,
+          "idDoubleBookingExist": false,
+          "isBetweenSlot": false,
+          "checkIn": null,
+          "checkOut": null,
+          "enquiryServiceId": "171a2cee-70ac-4e37-a2ac-91e3554b59c2",
+          "enquiryReasonId": "649cf8bc-1571-4db5-aa3f-4e5a06e4a7ed",
+          "departmentId": "b5244e59-86c5-426e-8f84-1e29b2bc984b",
+          "BookedBy": "94",
+          "services": []
+      }
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

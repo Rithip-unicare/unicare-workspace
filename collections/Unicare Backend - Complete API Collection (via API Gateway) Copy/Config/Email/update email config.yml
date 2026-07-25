@@ -1,0 +1,30 @@
+info:
+  name: update email config
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/organization/email-config"
+  body:
+    type: json
+    data: |-
+      {
+          "id":1,
+        "organizationId": 1,
+        "host": "smtp",
+        "port": 587,
+        "userName": "string",
+        "password": "string",
+        "useAuth": true,
+        "protocol": "stms"
+      }
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

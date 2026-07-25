@@ -1,0 +1,39 @@
+info:
+  name: Update sms config
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/organization/sms-config"
+  body:
+    type: json
+    data: |-
+      {
+          "id":1,
+        "organizationId": 1,
+        "smsUsername": "Rithip",
+        "smsPassword": "string",
+        "smsStartDate": "string",
+        "smsExpireDate": "string",
+        "provider": "string",
+        "smsMaxValue": 100,
+        "smsContact": "string",
+        "shortName": "test",
+        "apptBooked": true,
+        "apptConfirm": true,
+        "apptRemainder": true,
+        "apptRemDays": 30,
+        "hoursBefore11": "string",
+        "hoursAfter11": "string",
+        "smsBaseUrl": "string"
+      }
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

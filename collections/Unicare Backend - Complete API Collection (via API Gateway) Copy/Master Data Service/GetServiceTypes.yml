@@ -1,0 +1,25 @@
+info:
+  name: GetServiceTypes
+  type: http
+  seq: 52
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/master/insurance/get-service-category"
+  body:
+    type: json
+    data: |-
+      {
+          "insuranceCompanyDetailId": "9ae33734-c5a5-496c-a03c-bbcf29300503",
+          "insuranceNetworkId": "d310f8de-3cd3-466d-b07b-1091d1da54c8",
+          "insurancePlanId": "9ab4593e-05fb-4fc2-98e8-09fdb352a945"
+      }
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

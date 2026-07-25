@@ -1,0 +1,33 @@
+info:
+  name: Create Temp Block
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/core/temp-blocks"
+  headers:
+    - name: X-User-Id
+      value: "{{userId}}"
+  body:
+    type: json
+    data: |-
+      {
+          "doctorId": 134,
+          "hospitalDetailId": 1,
+          "startDate": "2026-06-15",
+          "endDate": "2026-06-30",
+          "startTime": "10:00:00",
+          "endTime": "11:00:00",
+          "isRecursive": true,
+          "remarks": "string"
+      }
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

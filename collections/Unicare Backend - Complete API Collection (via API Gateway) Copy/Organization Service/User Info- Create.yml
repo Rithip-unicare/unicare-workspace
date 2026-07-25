@@ -1,0 +1,30 @@
+info:
+  name: "User Info: Create"
+  type: http
+  seq: 42
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/organization/user-info"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "userId": 1,
+        "organizationId": 1,
+        "ipAddress": "192.168.1.1",
+        "fontName": "Arial",
+        "fontSize": 12
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

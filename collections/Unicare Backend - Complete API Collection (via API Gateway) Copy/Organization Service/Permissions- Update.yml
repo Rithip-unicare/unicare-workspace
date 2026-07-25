@@ -1,0 +1,30 @@
+info:
+  name: "Permissions: Update"
+  type: http
+  seq: 24
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/organization/permissions"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "id": 1,
+        "module": "PATIENT",
+        "action": "UPDATE",
+        "permissionKey": "PATIENT_UPDATE",
+        "description": "Update"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

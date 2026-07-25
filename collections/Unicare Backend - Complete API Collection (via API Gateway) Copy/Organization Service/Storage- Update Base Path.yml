@@ -1,0 +1,27 @@
+info:
+  name: "Storage: Update Base Path"
+  type: http
+  seq: 33
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/organization/storage-config/base-path"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "newPath": "/Users/apple/Pictures/OrganizationImages"
+        //"newPath": "/home/priority/Pictures/unicare"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

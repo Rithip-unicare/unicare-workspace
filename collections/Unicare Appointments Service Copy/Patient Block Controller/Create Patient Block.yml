@@ -1,0 +1,35 @@
+info:
+  name: Create Patient Block
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/core/patient-blocks"
+  headers:
+    - name: X-User-Id
+      value: "{{userId}}"
+  body:
+    type: json
+    data: |-
+      {
+          "doctorIds": [
+              23,
+              26
+          ],
+          "hospitalDetailId": 1,
+          "patientDetailId":5,
+          "blockReason": "string",
+          "blockStatus": "true",
+          "patientNotes": "string",
+          "blockStatusColor": "string"
+      }
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

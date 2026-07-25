@@ -1,0 +1,17 @@
+info:
+  name: Get Doctor master
+  type: http
+  seq: 48
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/organization/doctors/master/42"
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

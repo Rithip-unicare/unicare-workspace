@@ -1,0 +1,86 @@
+info:
+  name: "Organizations: Update"
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/organization/organizations"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: multipart-form
+    data:
+      - name: englishName
+        type: text
+        value: City General Hospital
+      - name: arabicName
+        type: text
+        value: مستشفى المدينة العام
+      - name: shortName
+        type: text
+        value: CGHY
+      - name: addressLine1
+        type: text
+        value: 123 Health Ave
+      - name: addressLine2
+        type: text
+        value: Downtown
+      - name: cityId
+        type: text
+        value: 123e4567-e89b-12d3-a456-426614174000
+      - name: regionId
+        type: text
+        value: 123e4567-e89b-12d3-a456-426614174000
+      - name: countryId
+        type: text
+        value: 123e4567-e89b-12d3-a456-426614174000
+      - name: email
+        type: text
+        value: contact@citygeneral.com
+      - name: phoneNumber
+        type: text
+        value: "+1234567890"
+      - name: faxNumber
+        type: text
+        value: "+1234567891"
+      - name: websiteUrl
+        type: text
+        value: www.citygeneral.com
+      - name: locationUrl
+        type: text
+        value: maps.google.com/xyz
+      - name: facilityLicenseNo
+        type: text
+        value: LIC-12345
+      - name: authorityRegionId
+        type: text
+        value: 124e4567-e89b-12d3-a456-426614174000
+      - name: username
+        type: text
+        value: cgh_admin
+      - name: password
+        type: text
+        value: Password@123
+      - name: webServiceUrl
+        type: text
+        value: api.citygeneral.com
+      - name: headerLogoFile
+        type: file
+        value:
+          - /Users/apple/Downloads/yuji-itadori-x-yuta-5120x2880-25001.jpg
+      - name: smallLogoFile
+        type: file
+        value:
+          - /Users/apple/Downloads/IMG_20260213_095834189_HDR.jpg
+      - name: id
+        type: text
+        value: "1"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

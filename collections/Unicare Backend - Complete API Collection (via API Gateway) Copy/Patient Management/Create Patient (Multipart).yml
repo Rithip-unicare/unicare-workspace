@@ -1,0 +1,169 @@
+info:
+  name: Create Patient (Multipart)
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/core/patients"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: multipart-form
+    data:
+      - name: data
+        type: text
+        value: |-
+          {
+            "userId": 1,
+            "hospitalId": 1,
+            "isMigration": false,
+            "mrNumber": "MR-001002004",
+            "patientPaymentMode":"1",
+            "registerDetails": {
+              "registerNo": "REG-12345",
+              "registerDate": "2024-03-27",
+              "registerTime": "10:30:00",
+              "userCreated": "admin"
+            },
+            "basicDetails": {
+              "titleId": "ceba0c45-80de-452f-b835-738a783a9f1a",
+              "firstName": "Hellow",
+              "middleName": "William",
+              "lastName": "Doe",
+              "genderId": "9e656848-07c4-4479-9b3d-e5ee49f10e8f",
+              "maritalStatusId": "ad742561-f1dc-427f-b383-1822c2d724cf",
+              "nationalityId": "c9cf45bc-de96-49fa-9a34-6113651236c3",
+              "passportNo": "P12345678",
+              "dateOfBirth": "1990-01-01",
+              "patientAge": 34,
+              "religionId": "8fd710b0-ea7c-4f87-863a-6d16288da1e7",
+              "ethnicId": "d7bb138c-8c26-467c-b35c-1c9b4f57540d",
+              "languageIds": ["97d633ac-cfe1-45fd-a3ff-0f3d61ec4889","97d633ac-cfe1-45fd-a3ff-0f3d61ec4899"]
+            },
+            "professionalDetails": {
+              "occupationId": "4d3fee6c-45cb-4904-a535-273ac3676d6f",
+              "educationId": "5cd570fc-6b26-43eb-81e7-24f009fed68d",
+              "industryId": "555a9049-c248-4bc3-86af-8943896c074d",
+              "incomeRangeId": "283b1035-cb70-4e1c-9b9d-6fe831c15526"
+            },
+            "classification": {
+              "patientClassId": "4f57eaf8-de01-4627-979d-40fddd2003a7",
+              "memberType": "Standard",
+              "patientStatus": "Active",
+              "deceasedDate": null
+            },
+            "contact": {
+              "primaryContact": "+971501234567",
+              "secondaryContact": "+971509876543",
+              "email": "john.doe@example.com"
+            },
+            "address": {
+              "address": "123 Main Street, Downtown",
+              "countryId": "0e4db6de-ef91-4179-8f33-3109854b9ccf",
+              "regionId": "deff28fe-d1f8-4e6c-8ce2-e00b6e1e0e02",
+              "cityId": "923bc451-620a-4134-9006-81533f3536d1",
+              "postBoxNo": "PO1234",
+              "homeTelephone": "+97141234567",
+              "workTelephone": "+97148765432",
+              "primaryContactCode": "+971",
+              "secondaryContactCode": "+971",
+              "noEmailAvailable": false,
+              "whatsappNumber": true
+            },
+            "emirates": {
+              "emirateId": "784-1990-1234567-1",
+              "expiryDate": "2026-03-27"
+            },
+            "guardians": [
+              {
+                "firstName": "Jane",
+                "middleName": "",
+                "lastName": "Doe",
+                "fullName": "Jane Doe",
+                "relationshipId": "ce0ada22-9e7b-4e29-a701-a5e1f6253ffb",
+                "relationshipName": "Mother",
+                "mobileNo": "+971505556666",
+                "email": "jane.doe@example.com",
+                "address": "123 Main Street",
+                "countryId": "0e4db6de-ef91-4179-8f33-3109854b9ccf",
+                "regionId": "deff28fe-d1f8-4e6c-8ce2-e00b6e1e0e02",
+                "cityId": "923bc451-620a-4134-9006-81533f3536d1"
+              }
+            ],
+            "kin": [
+              {
+                "firstName": "Jack",
+                "middleName": "",
+                "lastName": "Doe",
+                "fullName": "Jack Doe",
+                "relationshipId": "78698f63-1a9d-4c1e-b3f7-62f114b5d92a",
+                "relationshipName": "Brother",
+                "mobileNo": "+971509998888",
+                "email": "jack.doe@example.com",
+                "address": "123 Main Street",
+                "countryId": "0e4db6de-ef91-4179-8f33-3109854b9ccf",
+                "regionId": "deff28fe-d1f8-4e6c-8ce2-e00b6e1e0e02",
+                "cityId": "923bc451-620a-4134-9006-81533f3536d1"
+              }
+            ],
+            "other": {
+              "unifiedNo": "U-123456",
+              "mothersEid": "784-1965-7654321-2",
+              "multipleBirth": false,
+              "birthOrder": 1,
+              "birthPlace": "Dubai"
+            },
+            "referral": {
+              "doctorName": "Dr. Smith",
+              "clinicName": "City Clinic",
+              "licenseNo": "L-98765",
+              "referralChannelId": null
+            },
+            "insurance": {
+              "insuranceCompanyDetailId": "3990234d-43e8-438a-98d9-b56477161631",
+              "subCompanyDetailId": "",
+              "insurancePackageId": "4f43f546-7615-4996-8017-bc12eb4199d0",
+              "insuranceNetworkId": "8da49f0c-a776-4217-9682-166af8d9cd23",
+              "insurancePlanId": "8c7d84cf-11a6-43a7-b4cf-ba0ccb87a87f",
+              "companyTypeId": "c87077e2-93a0-44e5-8383-9ebf3e3ce998",
+              "cardNumber": "INS-123456789",
+              "policyHolder": "John Doe",
+              "expiryDate": "2025-12-31",
+              "maxCeiling": 100000,
+              "deductAmount": 50,
+              "coPayAmount": 20,
+              "coPayAllService": true,
+              "isStatus": true,
+              "withConsultation": true,
+              "details": [
+                {
+                  "departmentId": "e6b7fd98-0fc8-4190-b013-3b9deca2e14c",
+                  "coPayPercentage": 10,
+                  "deductibleAmount": 50,
+                  "perInvoice": 20,
+                  "maxCeiling": 5000
+                }
+              ]
+            }
+          }
+      - name: profileImage
+        type: file
+        value:
+          - /Users/apple/Pictures/brave_screenshot_unicaredev.online (1).png
+      - name: emirateFront
+        type: file
+        value:
+          - /Users/apple/Downloads/blue-abstract-5120x2880-25023.jpg
+      - name: emirateBack
+        type: file
+        value:
+          - /Users/apple/Downloads/yuji-itadori-x-yuta-5120x2880-25001.jpg
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,43 @@
+info:
+  name: Get Permission by roleId
+  type: http
+  seq: 6
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/organization/role-module-permissions/role/:id"
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer {{accessToken}}
+    - name: Authorization
+      value: B
+      disabled: true
+  params:
+    - name: id
+      value: "17"
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+        "roleId": 1,
+        "moduleId": "module_uuid_here",
+        "subModuleId": "sub_module_uuid_here",
+        "isPermission": true,
+        "isAdd": true,
+        "isEdit": true,
+        "isDelete": true,
+        "isView": true,
+        "isActive": true,
+        "createdBy": 1,
+        "updatedBy": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

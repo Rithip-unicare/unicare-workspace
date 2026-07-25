@@ -13,10 +13,10 @@ http:
     type: json
     data: |-
       {
-          "location":"ALB7",
+          "location":"ALB5",
           "starDate":"2026-07-01",
-          "endDate":"2026-07-30"
-          // "centerId":"1",
+          "endDate":"2026-07-30",
+          "centerId":"1"
           // "doctorId":"1"
       }
   auth: inherit

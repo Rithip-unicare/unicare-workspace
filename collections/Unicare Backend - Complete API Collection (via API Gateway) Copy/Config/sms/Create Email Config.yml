@@ -1,0 +1,38 @@
+info:
+  name: Create Email Config
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/organization/sms-config"
+  body:
+    type: json
+    data: |-
+      {
+        "organizationId": 1,
+        "smsUsername": "string",
+        "smsPassword": "string",
+        "smsStartDate": "string",
+        "smsExpireDate": "string",
+        "provider": "string",
+        "smsMaxValue": 100,
+        "smsContact": "string",
+        "shortName": "string",
+        "apptBooked": true,
+        "apptConfirm": true,
+        "apptRemainder": true,
+        "apptRemDays": 30,
+        "hoursBefore11": "string",
+        "hoursAfter11": "string",
+        "smsBaseUrl": "string"
+      }
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,7 @@
+info:
+  name: Waiting List Controller
+  type: folder
+  seq: 10
+
+request:
+  auth: inherit

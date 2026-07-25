@@ -1,0 +1,167 @@
+info:
+  name: Import Patient (Internal)
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/core/internal/patient-import"
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "userId": 3,
+        "hospitalId": 1,
+        "isMigration": false,
+        "mrNumber": "MR-NEW-999",
+
+        "registerDetails": {
+          "registerNo": "REG-NEW-999",
+          "registerDate": "2026-03-28",
+          "registerTime": "14:45:00",
+          "userCreated": "superadmin@unicarerdev.online"
+        },
+
+        "basicDetails": {
+          "titleId": "ceba0c45-80de-452f-b835-738a783a9f1a",
+          "firstName": "Michael",
+          "middleName": "Andrew",
+          "lastName": "Jordan",
+          "genderId": "9e656848-07c4-4479-9b3d-e5ee49f10e8f",
+          "maritalStatusId": "ad742561-f1dc-427f-b383-1822c2d724cf",
+          "nationalityId": "c9cf45bc-de96-49fa-9a34-6113651236c3",
+          "passportNo": "P98765432",
+          "dateOfBirth": "1985-05-15",
+          "patientAge": 39,
+          "religionId": "8fd710b0-ea7c-4f87-863a-6d16288da1e7",
+          "ethnicId": "d7bb138c-8c26-467c-b35c-1c9b4f57540d",
+          "languageId": "97d633ac-cfe1-45fd-a3ff-0f3d61ec4889"
+        },
+
+        "professionalDetails": {
+          "occupationId": "4d3fee6c-45cb-4904-a535-273ac3676d6f",
+          "educationId": "5cd570fc-6b26-43eb-81e7-24f009fed68d",
+          "industryId": "555a9049-c248-4bc3-86af-8943896c074d",
+          "incomeRangeId": "283b1035-cb70-4e1c-9b9d-6fe831c15526"
+        },
+
+        "classification": {
+          "patientClassId": "4f57eaf8-de01-4627-979d-40fddd2003a7",
+          "memberType": "Premium",
+          "patientStatus": "Active",
+          "deceasedDate": null
+        },
+
+        "contact": {
+          "primaryContact": "+919876543210",
+          "secondaryContact": "+919812345678",
+          "email": "michael.jordan@example.com"
+        },
+
+        "address": {
+          "address": "45 MG Road, Bangalore",
+          "countryId": "0e4db6de-ef91-4179-8f33-3109854b9ccf",
+          "regionId": "deff28fe-d1f8-4e6c-8ce2-e00b6e1e0e02",
+          "cityId": "923bc451-620a-4134-9006-81533f3536d1",
+          "postBoxNo": "560001",
+          "homeTelephone": "+918012345678",
+          "workTelephone": "+918076543210",
+          "primaryContactCode": "+91",
+          "secondaryContactCode": "+91",
+          "noEmailAvailable": false,
+          "whatsappNumber": true
+        },
+
+        "emirates": {
+          "emirateId": "784-1990-1234567-1",
+          "expiryDate": "2027-01-01"
+        },
+
+        "guardians": [
+          {
+            "firstName": "Sarah",
+            "middleName": "",
+            "lastName": "Jordan",
+            "fullName": "Sarah Jordan",
+            "relationshipId": "ce0ada22-9e7b-4e29-a701-a5e1f6253ffb",
+            "relationshipName": "Mother",
+            "mobileNo": "+919900112233",
+            "email": "sarah.jordan@example.com",
+            "address": "Bangalore",
+            "countryId": "0e4db6de-ef91-4179-8f33-3109854b9ccf",
+            "regionId": "deff28fe-d1f8-4e6c-8ce2-e00b6e1e0e02",
+            "cityId": "923bc451-620a-4134-9006-81533f3536d1"
+          }
+        ],
+
+        "kin": [
+          {
+            "firstName": "David",
+            "middleName": "",
+            "lastName": "Jordan",
+            "fullName": "David Jordan",
+            "relationshipId": "78698f63-1a9d-4c1e-b3f7-62f114b5d92a",
+            "relationshipName": "Brother",
+            "mobileNo": "+919955667788",
+            "email": "david.jordan@example.com",
+            "address": "Bangalore",
+            "countryId": "0e4db6de-ef91-4179-8f33-3109854b9ccf",
+            "regionId": "deff28fe-d1f8-4e6c-8ce2-e00b6e1e0e02",
+            "cityId": "923bc451-620a-4134-9006-81533f3536d1"
+          }
+        ],
+
+        "other": {
+          "unifiedNo": "U-999999",
+          "mothersEid": "784-1965-7654321-2",
+          "multipleBirth": false,
+          "birthOrder": 1,
+          "birthPlace": "Bangalore"
+        },
+
+        "referral": {
+          "doctorName": "Dr. Rajesh Kumar",
+          "clinicName": "Apollo Clinic",
+          "licenseNo": "LIC-2026-999",
+          "referralChannelId": null
+        },
+
+        "insurance": {
+          "insuranceCompanyDetailId": "3990234d-43e8-438a-98d9-b56477161631",
+          "subCompanyDetailId": "",
+          "insurancePackageId": "4f43f546-7615-4996-8017-bc12eb4199d0",
+          "insuranceNetworkId": "8da49f0c-a776-4217-9682-166af8d9cd23",
+          "insurancePlanId": "8c7d84cf-11a6-43a7-b4cf-ba0ccb87a87f",
+          "companyTypeId": "c87077e2-93a0-44e5-8383-9ebf3e3ce998",
+          "cardNumber": "INS-NEW-999999",
+          "policyHolder": "Michael Jordan",
+          "expiryDate": "2026-12-31",
+          "maxCeiling": 200000,
+          "deductAmount": 100,
+          "coPayAmount": 30,
+          "coPayAllService": true,
+          "isStatus": true,
+          "withConsultation": true,
+          "details": [
+            {
+              "departmentId": "e6b7fd98-0fc8-4190-b013-3b9deca2e14c",
+              "coPayPercentage": 15,
+              "deductibleAmount": 75,
+              "perInvoice": 25,
+              "maxCeiling": 10000
+            }
+          ]
+        }
+      }
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

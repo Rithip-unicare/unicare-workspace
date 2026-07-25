@@ -1,0 +1,28 @@
+info:
+  name: Create Patient Enquiry
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/core/patient-enquiries"
+  headers:
+    - name: X-User-Id
+      value: "{{userId}}"
+  body:
+    type: json
+    data: |-
+      {
+          "hospitalDetailId": 1,
+          "patientDetailId": 1,
+          "comments": "string",
+          "statusId": 1,
+          "colorCode": "string"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

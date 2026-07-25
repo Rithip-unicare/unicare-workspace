@@ -1,0 +1,50 @@
+info:
+  name: Add Insurance to Patient
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/core/patients/1/insurances?userId=1"
+  params:
+    - name: userId
+      value: "1"
+      type: query
+  body:
+    type: json
+    data: |
+      {
+        "insuranceCompanyDetailId": "550e8400-e29b-41d4-a716-446655440000",
+        "subCompanyDetailId": "550e8400-e29b-41d4-a716-446655440001",
+        "insurancePackageId": "550e8400-e29b-41d4-a716-446655440002",
+        "insuranceNetworkId": "550e8400-e29b-41d4-a716-446655440002",
+        "insurancePlanId": "550e8400-e29b-41d4-a716-446655440002",
+        "companyTypeId": "550e8400-e29b-41d4-a716-446655440005",
+        "cardNumber": "INS-99887766",
+        "policyHolder": "John Doe",
+        "expiryDate": "2027-12-31",
+        "maxCeiling": 50000.00,
+        "deductAmount": 100.00,
+        "coPayAmount": 50.00,
+        "coPayAllService": true,
+        "isStatus": true,
+        "withConsultation": false,
+        "details": [
+          {
+            "departmentId": "550e8400-e29b-41d4-a716-446655440010",
+            "coPayPercentage": 10.0,
+            "deductibleAmount": 50.00,
+            "perInvoice": 100.00,
+            "maxCeiling": 500.00
+          }
+        ]
+      }
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

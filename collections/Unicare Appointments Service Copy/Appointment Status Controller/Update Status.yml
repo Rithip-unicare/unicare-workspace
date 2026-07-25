@@ -1,0 +1,30 @@
+info:
+  name: Update Status
+  type: http
+  seq: 1
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/core/appointments/status"
+  headers:
+    - name: X-User-Id
+      value: "{{userId}}"
+  body:
+    type: json
+    data: |-
+      {
+          "appointmentId": 2,
+          "appointmentStatusId": "7b2db4db-edba-4c58-a67b-ae2d1d237bba",
+          "colorCode": "#0678ff",
+          "notes": "string",
+          "checkOut": "10:30:00"
+      }
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

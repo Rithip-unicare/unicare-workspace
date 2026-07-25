@@ -1,0 +1,27 @@
+info:
+  name: update Audit Log
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/core/audit-logs/appointment/update"
+  body:
+    type: json
+    data: |-
+      {
+        "auditLogId": 9,
+        "description": "Updated timestamp for audit entry",
+        "clinicType": "OUTPATIENT",
+        "eventTime": "2026-06-02T14:45:00",
+        "metaData": "{\"changes\":{\"updatedAt\":{\"new\":\"2026-05-30T15:11:12.966071\",\"old\":\"2026-05-30T15:07:55.494276\"}}}"
+      }
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

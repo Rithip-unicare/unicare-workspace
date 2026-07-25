@@ -1,0 +1,30 @@
+info:
+  name: Reschedule phone Enquiry
+  type: http
+  seq: 8
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/core/phone-enquiries/reschedule"
+  body:
+    type: json
+    data: |-
+      {
+        "phoneEnquiryId": 12,                     // ID of the phone enquiry to move
+        "doctorId": 3,                             // Doctor who will handle the enquiry
+        "hospitalDetailId": 1,                      // Hospital / clinic location
+        "appointmentStatusId": "c0a1b2d3-4e5f-6789-abcd-ef0123456789", // New status (e.g., “RESCHEDULED”) 
+        "appointmentDate": "2026-06-20",             // Desired new date
+        "notes": "Caller requested a later time after work.",
+        "appointmentTime": "16:00:00",               // Desired new start time
+        "timeInterval": 15                           // Length of the phone slot in minutes
+      }
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

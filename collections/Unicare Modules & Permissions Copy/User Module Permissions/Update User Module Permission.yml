@@ -1,0 +1,40 @@
+info:
+  name: Update User Module Permission
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/organization/user-module-permissions/:id"
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  params:
+    - name: id
+      value: "1"
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+        "userId": 1,
+        "moduleId": "module_uuid_here",
+        "subModuleId": "sub_module_uuid_here",
+        "isPermission": true,
+        "isAdd": true,
+        "isEdit": true,
+        "isDelete": true,
+        "isView": true,
+        "isActive": true,
+        "createdBy": 1,
+        "updatedBy": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

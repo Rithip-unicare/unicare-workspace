@@ -1,0 +1,28 @@
+info:
+  name: "Roles: Create"
+  type: http
+  seq: 16
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/organization/roles"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "organizationId": 1,
+        "roleName": "SUPER_ADMIN",
+        "description": "General role for who handing the software support"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

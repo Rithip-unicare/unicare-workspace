@@ -1,0 +1,21 @@
+info:
+  name: DELETE THE USER THEME
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/api/organization/user-theme-settings/1/1"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: text
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

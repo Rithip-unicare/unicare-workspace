@@ -1,0 +1,24 @@
+info:
+  name: Block Patient
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/core/patients/:patientId/block?reason=Suspicious"
+  params:
+    - name: reason
+      value: Suspicious
+      type: query
+    - name: patientId
+      value: "7"
+      type: path
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

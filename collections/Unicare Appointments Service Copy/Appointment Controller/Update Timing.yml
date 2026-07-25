@@ -1,0 +1,29 @@
+info:
+  name: Update Timing
+  type: http
+  seq: 11
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/core/appointments/update-timing"
+  body:
+    type: json
+    data: |-
+      {
+        "id": 1,
+        "doctorId": 3,
+        "hospitalDetailId": 1,
+        "appointmentDate": "2026-05-10",
+        "timeStart":"11:00:00",
+        "timeEnd":"11:30:00",
+        "slotInterval": 30
+      }
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

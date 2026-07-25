@@ -1,0 +1,36 @@
+info:
+  name: Update Main Module
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/organization/main-modules/:id"
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  params:
+    - name: id
+      value: 39d57875-74cb-4358-bd7a-15d2e919d263
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Updated Main Module",
+        "order": 1,
+        "menuLink": "/updated-link",
+        "icon": "updated-icon",
+        "isActive": true,
+        "createdBy": 1,
+        "updatedBy": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

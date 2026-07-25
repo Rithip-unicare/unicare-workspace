@@ -1,0 +1,23 @@
+info:
+  name: "Doctor Fee: Create"
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/doctors/fee"
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: '{"doctorId": 1, "consultation": "General Consultation", "charges": 150.00, "isActive": true}'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: "Generated from cURL: curl -X POST \"{{baseUrl}}/api/doctors/fee\" -H \"Content-Type: application/json\" -d '{\"doctorId\": 1, \"consultation\": \"General Consultation\", \"charges\": 150.00, \"isActive\": true}'"

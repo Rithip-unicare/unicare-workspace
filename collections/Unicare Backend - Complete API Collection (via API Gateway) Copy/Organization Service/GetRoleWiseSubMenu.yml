@@ -1,0 +1,17 @@
+info:
+  name: GetRoleWiseSubMenu
+  type: http
+  seq: 52
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/organization/role-module-permissions/GetRoleWiseSubMenu/4/5947700c-f5c4-43ea-8704-72d4464162ac"
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

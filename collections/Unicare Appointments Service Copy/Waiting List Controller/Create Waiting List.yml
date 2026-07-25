@@ -1,0 +1,39 @@
+info:
+  name: Create Waiting List
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/core/waiting-list"
+  headers:
+    - name: X-User-Id
+      value: "{{userId}}"
+  body:
+    type: json
+    data: |-
+      {
+        "hospitalDetailId":1,
+        "doctorId": 1,
+        "patientDetailId": null,
+        "priority": "string",
+        "comments": "string",
+        "waitingDate": "2026-05-13",
+        "firstName": "string",
+        "lastName": "string",
+        "middleName": "string",
+        "contactNumber": "string",
+        "others": "string",
+        "waitingTime": "10:00:00",
+        "waitingListRating": "VIP",
+        "patientType": 0
+      }
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

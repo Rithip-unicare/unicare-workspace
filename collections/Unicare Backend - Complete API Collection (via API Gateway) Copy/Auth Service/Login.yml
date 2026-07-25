@@ -1,0 +1,35 @@
+info:
+  name: Login
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/auth/login"
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "username": "RithipValt",
+        "password": "Rithip@123",
+        "hospitalId": 1,
+        "rememberMe": true
+      }
+  auth: inherit
+
+runtime:
+  scripts:
+    - type: after-response
+      code: |-
+        var jsonData = res.getBody();
+        if(jsonData.data && jsonData.data.accessToken) { pm.collectionVariables.set('accessToken', jsonData.data.accessToken); }
+        if(jsonData.data && jsonData.data.sessionId) { pm.collectionVariables.set('sessionId', jsonData.data.sessionId); }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

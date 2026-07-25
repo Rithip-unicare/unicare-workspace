@@ -1,0 +1,32 @@
+info:
+  name: Create Sub Module
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/organization/sub-modules"
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |-
+      {
+        "moduleId": "1915e039-338a-4c09-bcf9-ff1b16228aa3",
+        "name": "Sample Sub Module",
+        "menuLink": "/sub-link",
+        "icon": "sub-icon",
+        "isActive": true,
+        "createdBy": 1,
+        "updatedBy": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

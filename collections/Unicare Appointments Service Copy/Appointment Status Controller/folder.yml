@@ -1,0 +1,7 @@
+info:
+  name: Appointment Status Controller
+  type: folder
+  seq: 2
+
+request:
+  auth: inherit

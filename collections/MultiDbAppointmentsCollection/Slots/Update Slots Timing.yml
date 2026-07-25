@@ -13,13 +13,13 @@ http:
     type: json
     data: |-
       {
-          "doctorId": 10,
-          "centerId": 90,
-          "fromLocation": "ALB7",
+          "doctorId": 1,
+          "centerId": 1,
+          "fromLocation": "ALB5",
           "fromdate": "2026-07-01",
-          "todate": "2026-07-31",
-          "newfromTime": "07:30:00",
-          "newtoTime": "08:30:00",
+          "todate": "2026-07-13",
+          "newfromTime": "08:30:00",
+          "newtoTime": "10:30:00",
           "toLocation": "ALB7"
       }
   auth: inherit

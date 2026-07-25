@@ -1,0 +1,32 @@
+info:
+  name: Reschedule Appointment
+  type: http
+  seq: 10
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/core/appointments/reschedule"
+  body:
+    type: json
+    data: |-
+      {
+        "appointementId": 1,                     // ID of the appointment to be moved
+        "doctorId": 134,                             // Doctor who will handle the appointment
+        "hospitalDetailId": 1,                      // Hospital / clinic location
+        "appointmentStatusId": "c0a1b2d3-4e5f-6789-abcd-ef0123456789", // New status (e.g., “RESCHEDULED”)
+        "appointmentDate": "2026-06-15",             // Desired new date (ISO‑8601)
+        "notes": "Patient requested a later slot due to travel plans.",
+        "appointmentTime": "14:30:00",               // Desired new start time (24‑h format)
+        "timeInterval": 30,                          // Length of the slot in minutes
+        "paymentMode": "CASH",                       // Payment method (optional, based on enum)
+        "insuranceId": null // Insurance reference (optional)
+      }
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

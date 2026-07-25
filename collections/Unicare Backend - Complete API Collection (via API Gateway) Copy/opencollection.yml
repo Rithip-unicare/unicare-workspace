@@ -1,0 +1,25 @@
+opencollection: 1.0.0
+
+info:
+  name: Unicare Backend - Complete API Collection (via API Gateway) Copy
+
+request:
+  variables:
+    - name: baseUrl
+      value: http://localhost:8080
+    - name: accessToken
+      value: ""
+    - name: sessionId
+      value: ""
+    - name: imageurl
+      value: ""
+
+docs:
+  content: Auto-generated collection including all endpoints with highly accurate payloads mapped directly from Java DTOs.
+  type: text/markdown
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git

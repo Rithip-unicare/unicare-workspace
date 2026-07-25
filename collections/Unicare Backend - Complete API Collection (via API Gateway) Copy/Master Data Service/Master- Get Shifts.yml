@@ -1,0 +1,18 @@
+info:
+  name: "Master: Get Shifts"
+  type: http
+  seq: 31
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/master/shifts"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

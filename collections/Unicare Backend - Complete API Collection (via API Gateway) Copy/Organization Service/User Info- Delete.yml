@@ -1,0 +1,18 @@
+info:
+  name: "User Info: Delete"
+  type: http
+  seq: 44
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/api/organization/user-info/1"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

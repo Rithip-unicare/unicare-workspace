@@ -1,0 +1,36 @@
+info:
+  name: Update Sub Module
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/organization/sub-modules/:id"
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  params:
+    - name: id
+      value: uuid_here
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+        "moduleId": "main_module_uuid_here",
+        "name": "Updated Sub Module",
+        "menuLink": "/sub-link",
+        "icon": "sub-icon",
+        "isActive": true,
+        "createdBy": 1,
+        "updatedBy": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

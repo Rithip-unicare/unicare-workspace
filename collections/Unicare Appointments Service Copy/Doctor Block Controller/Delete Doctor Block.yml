@@ -1,0 +1,20 @@
+info:
+  name: Delete Doctor Block
+  type: http
+  seq: 2
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/api/core/doctor-blocks/1"
+  headers:
+    - name: X-User-Id
+      value: "{{userId}}"
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

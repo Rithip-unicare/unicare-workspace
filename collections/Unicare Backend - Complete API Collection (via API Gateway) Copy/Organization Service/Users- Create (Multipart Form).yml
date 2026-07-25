@@ -1,0 +1,209 @@
+info:
+  name: "Users: Create (Multipart Form)"
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/organization/users"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: multipart-form
+    data:
+      - name: organizationId
+        type: text
+        value: "1"
+      - name: authUserId
+        type: text
+        value: "105"
+      - name: username
+        type: text
+        value: rithip124789
+      - name: firstName
+        type: text
+        value: RIthip
+      - name: middleName
+        type: text
+        value: A
+      - name: lastName
+        type: text
+        value: valt
+      - name: fullName
+        type: text
+        value: RIthip Valt
+      - name: shortName
+        type: text
+        value: UMA
+      - name: userCode
+        type: text
+        value: "76543"
+      - name: dob
+        type: text
+        value: 1994-04-07
+      - name: empDoj
+        type: text
+        value: 2026-04-16
+      - name: empCode
+        type: text
+        value: "76543"
+      - name: expiryDate
+        type: text
+        value: 2099-12-31
+      - name: password
+        type: text
+        value: "123456"
+      - name: titleId
+        type: text
+        value: 57259cee-3fa4-4e95-b4e2-239fc399c63d
+      - name: genderId
+        type: text
+        value: ed84a553-e11e-4175-a3c4-dc056e9696c6
+      - name: nationalityId
+        type: text
+        value: 3353af4d-e3d7-4339-a8ad-99d1515b4137
+      - name: maritalStatusId
+        type: text
+        value: 2a4f5068-0758-4914-a9c9-04f9510fb970
+      - name: religionId
+        type: text
+        value: 5ae32c89-2572-405b-9812-457966e6435a
+      - name: departmentId
+        type: text
+        value: 9a6265c5-43e3-4538-b373-37eade57aa50
+      - name: departmentCategoryId
+        type: text
+        value: 412f99e2-33d4-4a80-9b70-e091b7bf77ef
+      - name: jobTitleId
+        type: text
+        value: 41c91e11-6afa-475b-ac18-d6ca437fce66
+      - name: qualificationId
+        type: text
+        value: ec4afb28-f1df-480e-910b-86c612cdf81a
+      - name: locationId
+        type: text
+        value: "1"
+      - name: currentMobile
+        type: text
+        value: "+971987654321"
+      - name: currentPhone
+        type: text
+        value: "+971987654321"
+      - name: currentEmail
+        type: text
+        value: rirhip184@gmail.com
+      - name: currentAddressLine
+        type: text
+        value: THIRUPATHUR
+      - name: currentCountryId
+        type: text
+        value: 8d5ed7e4-658d-4b29-a6f9-dcabe85ff1a7
+      - name: currentCityId
+        type: text
+        value: e51a76cd-aa24-4e6f-ac2c-6879019a188e
+      - name: currentRegionId
+        type: text
+        value: 6b92f242-13c9-4632-905c-24be4a7b09d8
+      - name: apptInterval
+        type: text
+        value: "20"
+      - name: slotInterval
+        type: text
+        value: "15"
+      - name: licenseNo
+        type: text
+        value: t576g8tg87
+      - name: selectedColor
+        type: text
+        value: "#721616"
+      - name: viewOtherDoctorAppt
+        type: text
+        value: "true"
+      - name: viewInAppt
+        type: text
+        value: "true"
+      - name: contractNo
+        type: text
+        value: "987"
+      - name: offerNo
+        type: text
+        value: "98765"
+      - name: ledgerNo
+        type: text
+        value: "9876543"
+      - name: grade
+        type: text
+        value: Grade3
+      - name: sponsor
+        type: text
+        value: Sponsor3
+      - name: accessCardNo
+        type: text
+        value: "98765432"
+      - name: schedulerAccess
+        type: text
+        value: "true"
+      - name: insuranceCard
+        type: text
+        value: "true"
+      - name: accomodation
+        type: text
+        value: "true"
+      - name: motherName
+        type: text
+        value: UYTRE
+      - name: fatherOrHusband
+        type: text
+        value: UYTRE
+      - name: userStatus
+        type: text
+        value: "0"
+      - name: accountStatus
+        type: text
+        value: "0"
+      - name: roleId
+        type: text
+        value: "1"
+      - name: profileImgFile
+        type: file
+        value:
+          - /Users/apple/Downloads/one-piece-character-5120x2880-15328.jpeg
+      - name: signature1File
+        type: file
+        value:
+          - /Users/apple/Downloads/usman-yousaf-pTrhfmj2jDA-unsplash.jpg
+      - name: signature2File
+        type: file
+        value: []
+      - name: signature3File
+        type: file
+        value: []
+      - name: permAddressLine
+        type: text
+        value: 123 Health Ave
+      - name: permAddressPostbox
+        type: text
+        value: "635653"
+      - name: permCountryId
+        type: text
+        value: 6a20ee12-bb25-476a-9285-0064615b5c6e
+      - name: permCityId
+        type: text
+        value: d3458712-fcf1-4e3e-9953-017fe3a11dc2
+      - name: permRegionId
+        type: text
+        value: d3458712-fcf1-4e3e-9953-017fe3a11dc2
+      - name: qualifications
+        type: text
+        value: MBBS,MDS
+      - name: arabicName
+        type: text
+        value: fgirwwfgkrferfser
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

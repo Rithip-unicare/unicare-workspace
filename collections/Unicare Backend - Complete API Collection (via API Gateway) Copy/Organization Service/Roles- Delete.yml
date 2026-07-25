@@ -1,0 +1,18 @@
+info:
+  name: "Roles: Delete"
+  type: http
+  seq: 18
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/api/organization/roles/1"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

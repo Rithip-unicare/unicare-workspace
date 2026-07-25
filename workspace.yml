@@ -8,6 +8,12 @@ collections:
     path: "collections/Untitled Collection"
   - name: "MultiDbAppointmentsCollection"
     path: "collections/MultiDbAppointmentsCollection"
+  - name: "Unicare Appointments Service Copy"
+    path: "collections/Unicare Appointments Service Copy"
+  - name: "Unicare Backend - Complete API Collection (via API Gateway) Copy"
+    path: "collections/Unicare Backend - Complete API Collection (via API Gateway) Copy"
+  - name: "Unicare Modules & Permissions Copy"
+    path: "collections/Unicare Modules & Permissions Copy"
 
 specs:
 

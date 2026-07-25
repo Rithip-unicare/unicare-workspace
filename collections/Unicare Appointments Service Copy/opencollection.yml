@@ -1,0 +1,23 @@
+opencollection: 1.0.0
+
+info:
+  name: Unicare Appointments Service Copy
+
+request:
+  variables:
+    - name: baseUrl
+      value: http://localhost:8080
+    - name: accessToken
+      value: your_access_token
+    - name: userId
+      value: "1"
+
+docs:
+  content: Postman Collection for all Appointment related controllers in CoreService.
+  type: text/markdown
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git
