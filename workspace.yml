@@ -4,8 +4,6 @@ info:
   type: workspace
 
 collections:
-  - name: "Untitled Collection"
-    path: "collections/Untitled Collection"
   - name: "MultiDbAppointmentsCollection"
     path: "collections/MultiDbAppointmentsCollection"
   - name: "Unicare Appointments Service Copy"

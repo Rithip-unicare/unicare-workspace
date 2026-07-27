@@ -13,7 +13,7 @@ http:
     type: json
     data: |-
       {
-          "location":"ALB5",
+          "location":"ALB1",
           "starDate":"2026-07-01",
           "endDate":"2026-07-30",
           "centerId":"1"
