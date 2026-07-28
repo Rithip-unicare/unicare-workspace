@@ -15,11 +15,9 @@ http:
       - name: englishName
         type: text
         value: MaxCare Hospital
-        disabled: true
       - name: arabicName
         type: text
         value: مستشفى يونيكير العام
-        disabled: true
       - name: shortName
         type: text
         value: CGH
@@ -71,11 +69,13 @@ http:
       - name: headerLogoFile
         type: file
         value:
-          - /Users/apple/Downloads/blue-abstract-5120x2880-25023.jpg
+          - /Users/apple/Downloads/ChatGPT Image Jul 22, 2026, 09_37_47 AM.png
+        contentType: image/png
       - name: smallLogoFile
         type: file
         value:
-          - /Users/apple/Downloads/one-piece-character-5120x2880-15328.jpeg
+          - /Users/apple/Downloads/ChatGPT Image Jul 22, 2026, 09_37_47 AM.png
+        contentType: image/png
       - name: permAddressLine
         type: text
         value: 123 Health Ave

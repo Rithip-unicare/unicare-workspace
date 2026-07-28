@@ -20,19 +20,19 @@ http:
         value: "105"
       - name: username
         type: text
-        value: rithip124789
+        value: partm
       - name: firstName
         type: text
-        value: RIthip
+        value: Parthiban
       - name: middleName
         type: text
         value: A
       - name: lastName
         type: text
-        value: valt
+        value: M
       - name: fullName
         type: text
-        value: RIthip Valt
+        value: Parthiban M
       - name: shortName
         type: text
         value: UMA
@@ -53,7 +53,7 @@ http:
         value: 2099-12-31
       - name: password
         type: text
-        value: "123456"
+        value: parthi
       - name: titleId
         type: text
         value: 57259cee-3fa4-4e95-b4e2-239fc399c63d
@@ -92,7 +92,7 @@ http:
         value: "+971987654321"
       - name: currentEmail
         type: text
-        value: rirhip184@gmail.com
+        value: theebanm24@gmail.com
       - name: currentAddressLine
         type: text
         value: THIRUPATHUR
@@ -168,11 +168,13 @@ http:
       - name: profileImgFile
         type: file
         value:
-          - /Users/apple/Downloads/one-piece-character-5120x2880-15328.jpeg
+          - /Users/apple/Downloads/image.png
+        contentType: image/png
       - name: signature1File
         type: file
         value:
-          - /Users/apple/Downloads/usman-yousaf-pTrhfmj2jDA-unsplash.jpg
+          - /Users/apple/Downloads/image.png
+        contentType: image/png
       - name: signature2File
         type: file
         value: []

@@ -2,13 +2,24 @@ opencollection: 1.0.0
 
 info:
   name: Unicare Backend - Complete API Collection (via API Gateway) Copy
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
 
 request:
   variables:
     - name: baseUrl
       value: http://localhost:8080
     - name: accessToken
-      value: ""
+      value: eyJhbGciOiJSUzI1NiJ9.eyJ1c2VySWQiOjMsInJvbGVJZCI6MSwiaG9zcGl0YWxJZCI6MSwic2Vzc2lvbklkIjoiNDE3MmExY2MtN2FjZi00M2RjLWI5NzYtMmViZjk5OTdjMDg5IiwiaWF0IjoxNzg1MjE5MTYyLCJleHAiOjE3ODUyMjYzNjJ9.Q0nuBS1hFCFVaMAlwoA2d6tDVR4M8SBPmOmalTfhYMHZoITwTxvUAxFVdW-LUSX6ILzjTjPeGk9j8J1HqNF_3N4Lzw_vwtglYEZFhrnXCTNxgzbyOAZWn7XEh63UDKy9VvcT62GzSvVKxdznMDEEGwrrWdUsITsOzgaJLjMy5Uq-FuFXVI6GWbY4BnSOFyhPy2dUd3b4RPbGDyjP5oWdsUDhtY_0lEBEmwrjZwgWetyYnIe0bRRJlebl9pfXju2-W5gyANZw2fNTA0Wd5mjoMRXCTf3Yb_INecf_NPJ489DhvLJ9d0G0SpBY6Uop4S9HZ-yIpWuJ9YuADacZ2q6WwA
     - name: sessionId
       value: ""
     - name: imageurl

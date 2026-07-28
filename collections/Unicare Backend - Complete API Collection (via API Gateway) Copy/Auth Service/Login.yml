@@ -13,8 +13,8 @@ http:
     type: json
     data: |-
       {
-        "username": "RithipValt",
-        "password": "Rithip@123",
+        "username": "partm",
+        "password": "parthi",
         "hospitalId": 1,
         "rememberMe": true
       }
