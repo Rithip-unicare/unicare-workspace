@@ -16,13 +16,15 @@ http:
           "doctorId": 1,
           "centerId": 1,
           "fromLocation": "ALB1",
-          "fromdate": "2026-08-01",
-          "todate": "2026-08-31",
-          "oldFromTime": "12:00:00",
-          "oldToTime": "17:00:00",
-          "newfromTime": "12:00:00",
-          "newtoTime": "14:30:00",
-          "toLocation": "ALB7"
+          "fromdate": "2026-07-03",
+          "todate": "2026-07-12",
+          "oldFromTime": "09:30:00",
+          "oldToTime": "17:30:00",
+          "newfromTime": "08:30:00",
+          "newtoTime": "18:30:00",
+          "oldFromDate":"2026-07-01",
+          "oldToDate":"2026-07-14",
+          "toLocation": "ALB3"
       }
   auth: inherit
 
