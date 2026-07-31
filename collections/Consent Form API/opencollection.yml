@@ -1,0 +1,27 @@
+opencollection: 1.0.0
+
+info:
+  name: Consent Form API
+
+request:
+  variables:
+    - name: baseUrl
+      value: http://localhost:9001
+    - name: accesstoken
+      value: YOUR_ACCESS_TOKEN_HERE
+    - name: formId
+      value: form_001
+    - name: facilityId
+      value: facility_001
+    - name: orgId
+      value: "1"
+
+docs:
+  content: "Endpoints for managing consent forms and their permissions. Base URL: http://localhost:9001 — all endpoints require JWT Bearer token and role CENTRAL_SUPER_ADMIN."
+  type: text/markdown
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git

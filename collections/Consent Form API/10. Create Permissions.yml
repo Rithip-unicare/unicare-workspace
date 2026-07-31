@@ -1,0 +1,28 @@
+info:
+  name: 10. Create Permissions
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: "{{baseUrl}}/admin/consentform/createPermissions"
+  headers:
+    - name: Authorization
+      value: Bearer {{accesstoken}}
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "orgId": 1,
+        "faciltyId": "facility_001",
+        "formIds": ["form_001", "form_002"]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

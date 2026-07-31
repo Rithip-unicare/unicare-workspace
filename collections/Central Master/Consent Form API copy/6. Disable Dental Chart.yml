@@ -1,0 +1,23 @@
+info:
+  name: 6. Disable Dental Chart
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/admin/consentform/dental-chart-disable?{{formId}}"
+  headers:
+    - name: Authorization
+      value: Bearer {{accesstoken}}
+  params:
+    - name: id
+      value: "{{formId}}"
+      type: query
+      description: Sent as query param
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

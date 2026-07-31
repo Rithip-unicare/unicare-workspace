@@ -1,0 +1,23 @@
+info:
+  name: 8. Disable Consent Form
+  type: http
+  seq: 8
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/admin/consentform/disable?{{formId}}"
+  headers:
+    - name: Authorization
+      value: Bearer {{accesstoken}}
+  params:
+    - name: id
+      value: "{{formId}}"
+      type: query
+      description: Sent as query param
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
