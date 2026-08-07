@@ -1,0 +1,20 @@
+info:
+  name: 4. Delete Consent Form
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/admin/consentform/delete/{{formId}}"
+  headers:
+    - name: Authorization
+      value: Bearer {{accesstoken}}
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: The controller uses @RequestParam("id") despite the {id} in the path, so the id must be a query parameter.
