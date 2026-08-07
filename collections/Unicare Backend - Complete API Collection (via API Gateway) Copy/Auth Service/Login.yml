@@ -13,9 +13,9 @@ http:
     type: json
     data: |-
       {
-        "username": "partm",
+        "username": "superadmin@unicare.com",
         "password": "parthi",
-        "hospitalId": 1,
+        "hospitalId": 3,
         "rememberMe": true
       }
   auth: inherit

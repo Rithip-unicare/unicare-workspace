@@ -2,13 +2,24 @@ opencollection: 1.0.0
 
 info:
   name: Unicare Appointments Service Copy
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
 
 request:
   variables:
     - name: baseUrl
       value: http://localhost:8080
     - name: accessToken
-      value: your_access_token
+      value: eyJhbGciOiJSUzI1NiJ9.eyJ1c2VySWQiOjMsInJvbGVJZCI6MiwiaG9zcGl0YWxJZCI6MSwic2Vzc2lvbklkIjoiMzlhODNlZjMtZTU4OC00OWVjLTk0ZmItODM3OTQ0NzJjMzc1IiwiYWxsb3dlZEhvc3BpdGFsSWRzIjpbMV0sImlhdCI6MTc4NTkxODQ5NiwiZXhwIjoxNzg1OTI1Njk2fQ.yixb2oiz8jzOFnazfW-Wyuoo4ltRYR1NjMelhGvRE3j4-4k1k2JJodSUJP7nMouV7qtuDLI8nLXVCks8JkTOgM57uU9d2DLu_5UjYqikMEz0NsolkGH6ii3Cj4_JWB1g3rw3iwzguvMaKmzkaiCGMQiLC8Rfypm6yMvBPmRGYvy4qnJB996vE1D4myxy29f8LHgapGP5rOyGYcihUiOisI0B7Lw2e1iGGfHEvBhEV3R4bzUEIscwlvjGU7-inphbsTq3NDPAdZp2N8B9GKjX7scXqUG_B3U9lGyIbyL6wn6smo6gvrDKCJVg9JBZEaityOb_lC9Xcwc9GYTC9PZnXQ
     - name: userId
       value: "1"
 

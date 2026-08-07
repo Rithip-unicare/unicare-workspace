@@ -1,17 +1,15 @@
 info:
-  name: "Doctors: Get All"
+  name: Insurance
   type: http
-  seq: 26
+  seq: 5
 
 http:
   method: GET
-  url: "{{baseUrl}}/api/organization/doctors/3"
+  url: "{{baseUrl}}/api/master/demographics/aggregator"
   headers:
     - name: Authorization
       value: Bearer {{accessToken}}
-  auth:
-    type: bearer
-    token: "{{accessToken}}"
+  auth: inherit
 
 settings:
   encodeUrl: true

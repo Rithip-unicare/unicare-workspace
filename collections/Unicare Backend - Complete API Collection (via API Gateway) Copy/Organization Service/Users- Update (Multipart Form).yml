@@ -14,14 +14,13 @@ http:
     data:
       - name: organizationId
         type: text
-        value: "1"
+        value: "3"
       - name: authUserId
         type: text
-        value: "0"
+        value: "6"
       - name: username
         type: text
-        value: dr_smith
-        disabled: true
+        value: parthisnfdn
       - name: firstName
         type: text
         value: John
@@ -132,7 +131,7 @@ http:
         value: []
       - name: id
         type: text
-        value: "6"
+        value: "4"
       - name: isActive
         type: text
         value: "false"
@@ -148,13 +147,22 @@ http:
         value: "true"
       - name: username
         type: text
-        value: RithipUnicare
+        value: RithipUnihf
+        disabled: true
       - name: password
         type: text
         value: "123456"
       - name: isMinimal
         type: text
         value: "true"
+      - name: multiLocation
+        type: text
+        value: "true"
+        disabled: true
+      - name: organizationIds
+        type: text
+        value: "2"
+        disabled: true
   auth: inherit
 
 settings:

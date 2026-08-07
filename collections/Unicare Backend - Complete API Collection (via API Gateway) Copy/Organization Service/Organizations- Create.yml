@@ -14,7 +14,7 @@ http:
     data:
       - name: englishName
         type: text
-        value: MaxCare Hospital
+        value: ROYAL Hospital
       - name: arabicName
         type: text
         value: مستشفى يونيكير العام
@@ -59,7 +59,7 @@ http:
         value: d3458712-fcf1-4e3e-9953-017fe3a11dc2
       - name: username
         type: text
-        value: UnicareAdmin
+        value: unicareAdmin
       - name: password
         type: text
         value: Password@123
@@ -69,13 +69,13 @@ http:
       - name: headerLogoFile
         type: file
         value:
-          - /Users/apple/Downloads/ChatGPT Image Jul 22, 2026, 09_37_47 AM.png
-        contentType: image/png
+          - C:\Users\PS07\Downloads\images (1).jpg
+        contentType: image/jpeg
       - name: smallLogoFile
         type: file
         value:
-          - /Users/apple/Downloads/ChatGPT Image Jul 22, 2026, 09_37_47 AM.png
-        contentType: image/png
+          - C:\Users\PS07\Downloads\images.jpg
+        contentType: image/jpeg
       - name: permAddressLine
         type: text
         value: 123 Health Ave

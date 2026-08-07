@@ -1,17 +1,15 @@
 info:
-  name: "Doctors: Get All"
+  name: Enquiry
   type: http
-  seq: 26
+  seq: 2
 
 http:
   method: GET
-  url: "{{baseUrl}}/api/organization/doctors/3"
+  url: "{{baseUrl}}/api/master/appointments/aggregator"
   headers:
     - name: Authorization
       value: Bearer {{accessToken}}
-  auth:
-    type: bearer
-    token: "{{accessToken}}"
+  auth: inherit
 
 settings:
   encodeUrl: true

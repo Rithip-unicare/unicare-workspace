@@ -5,10 +5,13 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/api/core/appointments/doctors-daily-appointments/1/50?date=2026-06-05"
+  url: "{{baseUrl}}/api/core/appointments/doctors-daily-appointments/5/1?date=2026-08-05&organizationId=2"
   params:
     - name: date
-      value: 2026-06-05
+      value: 2026-08-05
+      type: query
+    - name: organizationId
+      value: "2"
       type: query
   auth:
     type: bearer

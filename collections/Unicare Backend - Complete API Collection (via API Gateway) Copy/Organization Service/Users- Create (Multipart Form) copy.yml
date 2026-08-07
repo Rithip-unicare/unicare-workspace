@@ -1,10 +1,10 @@
 info:
-  name: "Users: Create (Multipart Form)"
+  name: "Users: Create (Multipart Form) copy"
   type: http
-  seq: 11
+  seq: 54
 
 http:
-  method: POST
+  method: PUT
   url: "{{baseUrl}}/api/organization/users"
   headers:
     - name: Authorization
@@ -14,16 +14,16 @@ http:
     data:
       - name: organizationId
         type: text
-        value: "1"
+        value: "3"
       - name: authUserId
         type: text
-        value: "102"
+        value: "6"
       - name: username
         type: text
-        value: parthi
+        value: partmre
       - name: firstName
         type: text
-        value: Parthiban
+        value: Parthiban kkkxcasfc
       - name: middleName
         type: text
         value: A
@@ -32,7 +32,7 @@ http:
         value: M
       - name: fullName
         type: text
-        value: Parthiban
+        value: Parthiban kkkqdwfcq
       - name: shortName
         type: text
         value: UMA
@@ -83,7 +83,7 @@ http:
         value: ec4afb28-f1df-480e-910b-86c612cdf81a
       - name: locationId
         type: text
-        value: "2"
+        value: "1"
       - name: currentMobile
         type: text
         value: "+971987654321"
@@ -207,10 +207,10 @@ http:
         value: "true"
       - name: organizationIds
         type: text
-        value: 1,2,3
-      - name: isActive
+        value: 1,2,4
+      - name: id
         type: text
-        value: "true"
+        value: "10"
   auth: inherit
 
 settings:
