@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/api/master/enquiry/aggregator"
+  url: "{{baseUrl}}/api/master/geography/aggregator"
   headers:
     - name: Authorization
       value: Bearer {{accessToken}}

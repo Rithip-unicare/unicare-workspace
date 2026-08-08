@@ -1,11 +1,11 @@
 info:
-  name: Get Insurance Main company
+  name: Get Patient current Appointment History
   type: http
-  seq: 57
+  seq: 13
 
 http:
   method: GET
-  url: "{{baseUrl}}/api/master/insurance/insurance-companies/main-company"
+  url: "{{baseUrl}}/api/core/appointments/patient-history/1/1"
   auth:
     type: bearer
     token: "{{accessToken}}"

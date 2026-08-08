@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/api/master/insurance-networks"
+  url: "{{baseUrl}}/api/master/insurance/insurance-networks"
   headers:
     - name: Authorization
       value: Bearer {{accessToken}}
