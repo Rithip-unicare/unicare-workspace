@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/masters/cancel-reasons"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 5000

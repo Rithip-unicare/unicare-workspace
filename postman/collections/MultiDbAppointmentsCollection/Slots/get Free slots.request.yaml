@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{baseUrl}}/doctors/free-slots/ALB1/1?date=2026-07-07?date=2026-07-07"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+queryParams:
+  date: 2026-07-07
+auth:
+  type: noauth
+order: 2000

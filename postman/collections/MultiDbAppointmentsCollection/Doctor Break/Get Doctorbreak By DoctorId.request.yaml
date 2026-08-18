@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{baseUrl}}/doctor-break/by-doctor"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+body:
+  type: json
+  content: |-
+    {
+        "location":"ALB1",
+        "doctorId":3,
+        "appointmentDate":"2026-07-27"
+    }
+auth:
+  type: noauth
+settings: {}
+order: 1000

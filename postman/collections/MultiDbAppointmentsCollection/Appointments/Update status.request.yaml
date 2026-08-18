@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{baseUrl}}/appointments/status"
+method: PATCH
+headers:
+  Authorization: Bearer {{accessToken}}
+body:
+  type: json
+  content: |
+    {
+      "apptId": 116590,
+      "Location": "abu_dhabi",
+      "status": "Confirmed",
+      "enterBy": "ADMIN"
+    }
+auth:
+  type: noauth
+order: 4000

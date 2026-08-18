@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/patient/insurance/ALB1/30318"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 3000

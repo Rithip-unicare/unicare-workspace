@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{baseUrl}}/appointments/current/ALB3/1?page=0&size=20?page=0&size=20"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+queryParams:
+  page: "0"
+  size: "20"
+auth:
+  type: noauth
+order: 11000

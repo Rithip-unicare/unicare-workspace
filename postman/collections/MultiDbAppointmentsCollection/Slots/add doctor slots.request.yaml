@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{baseUrl}}/doctors/slots/add"
+method: POST
+headers:
+  Authorization: Bearer {{accessToken}}
+body:
+  type: json
+  content: |-
+    {
+        "location":"ALB1",
+        "starDate":"2026-07-01",
+        "endDate":"2026-07-30",
+        "centerId":"1"
+        // "doctorId":"1"
+    }
+auth:
+  type: noauth
+order: 3000

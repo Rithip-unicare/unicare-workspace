@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{baseUrl}}/doctors/schedule?doctorId=20&location=ALB7?doctorId=20&location=ALB7"
+method: GET
+queryParams:
+  doctorId: "20"
+  location: ALB7
+auth:
+  type: noauth
+order: 1000

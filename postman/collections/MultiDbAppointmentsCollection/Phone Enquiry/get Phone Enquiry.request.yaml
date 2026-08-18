@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/phone-enquiry/ALB1/25874"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 2000

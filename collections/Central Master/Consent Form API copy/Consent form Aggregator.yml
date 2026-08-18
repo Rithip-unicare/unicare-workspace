@@ -11,6 +11,11 @@ http:
       value: Bearer {{accesstoken}}
   auth: inherit
 
+runtime:
+  variables:
+    - name: baseUrl
+      value: localhost:9001
+
 settings:
   encodeUrl: true
   timeout: 0

@@ -1,0 +1,22 @@
+$kind: http-request
+url: "{{baseUrl}}/appointments/transfer"
+method: POST
+headers:
+  Authorization: Bearer {{accessToken}}
+body:
+  type: json
+  content: |-
+    {
+      "fromLocation": "ALB3",
+      "appId": 136597,
+      "toLocation": "ALB1",
+      "date": "2026-07-08",
+      "doctorId": 1,
+      "deptId": 4,
+      "fromTime": "22:30:00",
+      "transferBy": "Variant",
+      "toTime": "23:00:00"
+    }
+auth:
+  type: noauth
+order: 8000
