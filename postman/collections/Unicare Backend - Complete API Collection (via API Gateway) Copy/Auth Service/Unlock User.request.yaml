@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{baseUrl}}/api/auth/unlock-user?userId=2?userId=2"
+method: POST
+headers:
+  Authorization: Bearer {{accessToken}}
+queryParams:
+  userId: "2"
+auth:
+  type: noauth
+order: 12000

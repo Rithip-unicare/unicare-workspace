@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{baseUrl}}/api/auth/force-logout?userId=1?userId=1"
+method: POST
+headers:
+  Authorization: Bearer {{accessToken}}
+queryParams:
+  userId: "1"
+auth:
+  type: noauth
+order: 13000

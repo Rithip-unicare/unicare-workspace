@@ -1,0 +1,9 @@
+$kind: http-request
+name: "Roles: Delete"
+url: "{{baseUrl}}/api/organization/roles/1"
+method: DELETE
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 18000

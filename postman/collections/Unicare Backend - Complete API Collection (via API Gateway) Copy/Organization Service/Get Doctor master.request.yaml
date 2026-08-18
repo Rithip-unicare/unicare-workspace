@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{baseUrl}}/api/organization/doctors/master/42"
+method: GET
+auth:
+  type: bearer
+order: 48000

@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{baseUrl}}/api/master/referral-doctors"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+                "active": true,
+                "source": "FRONTEND",
+                "name": "Acharya",
+                "arabicName": "أشاريا",
+                "code": "AS-12",
+                "clinicId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "clinicName": "ASHA",
+                "specialization": "DIABETIASIAN",
+                "contactNumber": "9632684778"
+               
+            }
+auth:
+  type: bearer
+order: 49000

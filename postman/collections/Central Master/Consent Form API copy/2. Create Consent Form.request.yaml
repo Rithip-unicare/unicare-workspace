@@ -1,0 +1,23 @@
+$kind: http-request
+url: "{{baseUrl}}/admin/consentform/create"
+method: POST
+headers:
+  Authorization: Bearer {{accesstoken}}
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "formId": "testing-001-test",
+      "formName": "General Consent Form",
+      "department": "OPD",
+      "isEnabled": true,
+      "isMobileEnabled": true,
+      "isTabletEnabled": true,
+      "isDesktopEnabled": true,
+      "isDentalEnabled": false,
+      "isPreviewEnabled": true
+    }
+auth:
+  type: noauth
+order: 2000

@@ -1,0 +1,11 @@
+$kind: http-request
+name: "Organizations: Get All"
+url: "{{baseUrl}}/api/organization/organizations"
+method: GET
+headers:
+  - key: Authorization
+    value: Bearer {{accessToken}}
+    disabled: true
+auth:
+  type: noauth
+order: 3000

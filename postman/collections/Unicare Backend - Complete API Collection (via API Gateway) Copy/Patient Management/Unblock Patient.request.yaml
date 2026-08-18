@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{baseUrl}}/api/core/patients/:patientId/unblock"
+method: POST
+headers:
+  Authorization: Bearer {{accessToken}}
+pathVariables:
+  patientId: "7"
+auth:
+  type: noauth
+order: 9000

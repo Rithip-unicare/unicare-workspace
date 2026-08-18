@@ -1,0 +1,211 @@
+$kind: http-request
+name: "Users: Create (Multipart Form)"
+url: "{{baseUrl}}/api/organization/users"
+method: POST
+headers:
+  Authorization: Bearer {{accessToken}}
+body:
+  type: formdata
+  content:
+    - type: text
+      key: organizationId
+      value: "1"
+    - type: text
+      key: authUserId
+      value: "102"
+    - type: text
+      key: username
+      value: parthi
+    - type: text
+      key: firstName
+      value: Parthiban
+    - type: text
+      key: middleName
+      value: A
+    - type: text
+      key: lastName
+      value: M
+    - type: text
+      key: fullName
+      value: Parthiban
+    - type: text
+      key: shortName
+      value: UMA
+    - type: text
+      key: userCode
+      value: "76543"
+    - type: text
+      key: dob
+      value: 1994-04-07
+    - type: text
+      key: empDoj
+      value: 2026-04-16
+    - type: text
+      key: empCode
+      value: "76543"
+    - type: text
+      key: expiryDate
+      value: 2099-12-31
+    - type: text
+      key: password
+      value: parthi
+    - type: text
+      key: titleId
+      value: 57259cee-3fa4-4e95-b4e2-239fc399c63d
+    - type: text
+      key: genderId
+      value: ed84a553-e11e-4175-a3c4-dc056e9696c6
+    - type: text
+      key: nationalityId
+      value: 3353af4d-e3d7-4339-a8ad-99d1515b4137
+    - type: text
+      key: maritalStatusId
+      value: 2a4f5068-0758-4914-a9c9-04f9510fb970
+    - type: text
+      key: religionId
+      value: 5ae32c89-2572-405b-9812-457966e6435a
+    - type: text
+      key: departmentId
+      value: 9a6265c5-43e3-4538-b373-37eade57aa50
+    - type: text
+      key: departmentCategoryId
+      value: 412f99e2-33d4-4a80-9b70-e091b7bf77ef
+    - type: text
+      key: jobTitleId
+      value: 41c91e11-6afa-475b-ac18-d6ca437fce66
+    - type: text
+      key: qualificationId
+      value: ec4afb28-f1df-480e-910b-86c612cdf81a
+    - type: text
+      key: locationId
+      value: "2"
+    - type: text
+      key: currentMobile
+      value: "+971987654321"
+    - type: text
+      key: currentPhone
+      value: "+971987654321"
+    - type: text
+      key: currentEmail
+      value: theebanm24@gmail.com
+    - type: text
+      key: currentAddressLine
+      value: THIRUPATHUR
+    - type: text
+      key: currentCountryId
+      value: 8d5ed7e4-658d-4b29-a6f9-dcabe85ff1a7
+    - type: text
+      key: currentCityId
+      value: e51a76cd-aa24-4e6f-ac2c-6879019a188e
+    - type: text
+      key: currentRegionId
+      value: 6b92f242-13c9-4632-905c-24be4a7b09d8
+    - type: text
+      key: apptInterval
+      value: "20"
+    - type: text
+      key: slotInterval
+      value: "15"
+    - type: text
+      key: licenseNo
+      value: t576g8tg87
+    - type: text
+      key: selectedColor
+      value: "#721616"
+    - type: text
+      key: viewOtherDoctorAppt
+      value: "true"
+    - type: text
+      key: viewInAppt
+      value: "true"
+    - type: text
+      key: contractNo
+      value: "987"
+    - type: text
+      key: offerNo
+      value: "98765"
+    - type: text
+      key: ledgerNo
+      value: "9876543"
+    - type: text
+      key: grade
+      value: Grade3
+    - type: text
+      key: sponsor
+      value: Sponsor3
+    - type: text
+      key: accessCardNo
+      value: "98765432"
+    - type: text
+      key: schedulerAccess
+      value: "true"
+    - type: text
+      key: insuranceCard
+      value: "true"
+    - type: text
+      key: accomodation
+      value: "true"
+    - type: text
+      key: motherName
+      value: UYTRE
+    - type: text
+      key: fatherOrHusband
+      value: UYTRE
+    - type: text
+      key: userStatus
+      value: "0"
+    - type: text
+      key: accountStatus
+      value: "0"
+    - type: text
+      key: roleId
+      value: "1"
+    - type: file
+      key: profileImgFile
+      src:
+        - C:\Users\PS07\Downloads\images (1).jpg
+      contentType: image/jpeg
+    - type: file
+      key: signature1File
+      src:
+        - C:\Users\PS07\Downloads\images.jpg
+      contentType: image/jpeg
+    - type: file
+      key: signature2File
+      src: []
+    - type: file
+      key: signature3File
+      src: []
+    - type: text
+      key: permAddressLine
+      value: 123 Health Ave
+    - type: text
+      key: permAddressPostbox
+      value: "635653"
+    - type: text
+      key: permCountryId
+      value: 6a20ee12-bb25-476a-9285-0064615b5c6e
+    - type: text
+      key: permCityId
+      value: d3458712-fcf1-4e3e-9953-017fe3a11dc2
+    - type: text
+      key: permRegionId
+      value: d3458712-fcf1-4e3e-9953-017fe3a11dc2
+    - type: text
+      key: qualifications
+      value: MBBS,MDS
+    - type: text
+      key: arabicName
+      value: fgirwwfgkrferfser
+    - type: text
+      key: multiLocation
+      value: "true"
+    - type: text
+      key: organizationIds
+      value: 1,2,3
+    - type: text
+      key: isActive
+      value: "true"
+auth:
+  type: noauth
+order: 11000

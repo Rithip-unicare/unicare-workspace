@@ -1,0 +1,18 @@
+$kind: http-request
+name: "Organization Settings: Update"
+url: "{{baseUrl}}/api/organization/organization-settings/1"
+method: PUT
+headers:
+  Authorization: Bearer {{accessToken}}
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "organizationId": 1,
+      "locationShortName": "HQ-Updated",
+      "centerName": "Updated Center"
+    }
+auth:
+  type: noauth
+order: 37000

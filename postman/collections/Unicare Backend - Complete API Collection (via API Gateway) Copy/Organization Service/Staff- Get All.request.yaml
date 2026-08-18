@@ -1,0 +1,9 @@
+$kind: http-request
+name: "Staff: Get All"
+url: "{{baseUrl}}/api/organization/staff"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 30000

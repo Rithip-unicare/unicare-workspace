@@ -1,0 +1,163 @@
+$kind: http-request
+name: "Users: Update (Multipart Form)"
+url: "{{baseUrl}}/api/organization/users"
+method: PUT
+headers:
+  Authorization: Bearer {{accessToken}}
+body:
+  type: formdata
+  content:
+    - type: text
+      key: organizationId
+      value: "3"
+    - type: text
+      key: authUserId
+      value: "6"
+    - type: text
+      key: username
+      value: parthisnfdn
+    - type: text
+      key: firstName
+      value: John
+    - type: text
+      key: middleName
+      value: A
+    - type: text
+      key: lastName
+      value: Smith
+    - type: text
+      key: fullName
+      value: Dr. John A Smith
+    - type: text
+      key: shortName
+      value: JSmith
+    - type: text
+      key: userCode
+      value: DOC-001
+    - type: text
+      key: dob
+      value: 1980-01-01
+    - type: text
+      key: empDoj
+      value: 2020-01-01
+    - type: text
+      key: empCode
+      value: EMP123
+    - type: text
+      key: titleId
+      value: 123e4567-e89b-12d3-a456-426614174000
+    - type: text
+      key: genderId
+      value: 123e4567-e89b-12d3-a456-426614174000
+    - type: text
+      key: nationalityId
+      value: 123e4567-e89b-12d3-a456-426614174000
+    - type: text
+      key: maritalStatusId
+      value: 123e4567-e89b-12d3-a456-426614174000
+    - type: text
+      key: religionId
+      value: 123e4567-e89b-12d3-a456-426614174000
+    - type: text
+      key: departmentId
+      value: a9befd65-d7fc-48c5-8681-04618434734d
+    - type: text
+      key: departmentCategoryId
+      value: 6c61b77f-8f5d-4bbb-8c00-605be1efb965
+    - type: text
+      key: jobTitleId
+      value: 123e4567-e89b-12d3-a456-426614174000
+    - type: text
+      key: qualificationId
+      value: 123e4567-e89b-12d3-a456-426614174000
+    - type: text
+      key: locationId
+      value: "1"
+    - type: text
+      key: visaTypeId
+      value: 123e4567-e89b-12d3-a456-426614174987
+    - type: text
+      key: currentMobile
+      value: "+1987654321"
+    - type: text
+      key: currentPhone
+      value: "+1987654321"
+    - type: text
+      key: currentEmail
+      value: drsmith@citygeneral.com
+    - type: text
+      key: currentAddressLine
+      value: Apt 4B, Med District
+    - type: text
+      key: currentCountryId
+      value: 123e4567-e89b-12d3-a456-426614174000
+    - type: text
+      key: currentCityId
+      value: 123e4567-e89b-12d3-a456-426614174000
+    - type: text
+      key: currentRegionId
+      value: 123e4567-e89b-12d3-a456-426614174000
+    - type: text
+      key: apptInterval
+      value: "15"
+    - type: text
+      key: slotInterval
+      value: "15"
+    - type: text
+      key: licenseNo
+      value: MED-Lic-9988
+    - type: text
+      key: roleId
+      value: "2"
+    - type: file
+      key: profileImgFile
+      src: []
+    - type: file
+      key: signature1File
+      src: []
+    - type: file
+      key: signature2File
+      src: []
+    - type: file
+      key: signature3File
+      src: []
+    - type: file
+      key: signatureFile
+      src: []
+    - type: text
+      key: id
+      value: "4"
+    - type: text
+      key: isActive
+      value: "false"
+    - type: text
+      key: userStatus
+      value: "false"
+      disabled: true
+    - type: text
+      key: accountStatus
+      value: "true"
+    - type: text
+      key: userStatus
+      value: "true"
+    - type: text
+      key: username
+      value: RithipUnihf
+      disabled: true
+    - type: text
+      key: password
+      value: "123456"
+    - type: text
+      key: isMinimal
+      value: "true"
+    - type: text
+      key: multiLocation
+      value: "true"
+      disabled: true
+    - type: text
+      key: organizationIds
+      value: "2"
+      disabled: true
+auth:
+  type: noauth
+order: 12000

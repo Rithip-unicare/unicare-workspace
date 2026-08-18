@@ -1,0 +1,9 @@
+$kind: http-request
+name: "Master: Get Industries"
+url: "{{baseUrl}}/api/master/industries"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 23000

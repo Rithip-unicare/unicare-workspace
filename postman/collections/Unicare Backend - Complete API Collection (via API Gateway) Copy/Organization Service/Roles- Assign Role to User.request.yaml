@@ -1,0 +1,17 @@
+$kind: http-request
+name: "Roles: Assign Role to User"
+url: "{{baseUrl}}/api/organization/roles/assign"
+method: POST
+headers:
+  Authorization: Bearer {{accessToken}}
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "userId": 1,
+      "roleId": 1
+    }
+auth:
+  type: noauth
+order: 19000

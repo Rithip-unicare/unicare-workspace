@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{baseUrl}}/api/master/insurance-networks/companywise/10831b59-d0bc-42a6-97ac-cf40e2e1a429"
+method: GET
+auth:
+  type: bearer
+order: 50000

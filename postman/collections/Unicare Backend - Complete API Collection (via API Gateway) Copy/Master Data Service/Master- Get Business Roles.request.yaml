@@ -1,0 +1,9 @@
+$kind: http-request
+name: "Master: Get Business Roles"
+url: "{{baseUrl}}/api/master/business-roles"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 26000

@@ -1,0 +1,17 @@
+$kind: http-request
+name: "Roles: Assign Permission to Role"
+url: "{{baseUrl}}/api/organization/role-permission"
+method: POST
+headers:
+  Authorization: Bearer {{accessToken}}
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "roleId": 1,
+      "permissionIds": [9]
+    }
+auth:
+  type: noauth
+order: 20000

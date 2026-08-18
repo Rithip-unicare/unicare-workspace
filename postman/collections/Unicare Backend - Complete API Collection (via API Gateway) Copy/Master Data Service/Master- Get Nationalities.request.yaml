@@ -1,0 +1,9 @@
+$kind: http-request
+name: "Master: Get Nationalities"
+url: "{{baseUrl}}/api/master/nationalities"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 14000

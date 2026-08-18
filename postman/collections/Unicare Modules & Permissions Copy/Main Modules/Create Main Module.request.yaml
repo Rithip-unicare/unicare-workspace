@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{baseUrl}}/api/organization/main-modules"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{accessToken}}
+body:
+  type: json
+  content: |-
+    {
+      "name": "Sample Main Module",
+      "order": 1,
+      "menuLink": "/sample-link",
+      "icon": "sample-icon",
+      "isActive": true,
+      "createdBy": 1,
+      "updatedBy": 1
+    }
+auth:
+  type: noauth
+order: 1000

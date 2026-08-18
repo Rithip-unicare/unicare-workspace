@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{baseUrl}}/api/core/patients/:patientId?hospitalId=1?hospitalId=1"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+queryParams:
+  hospitalId: "1"
+pathVariables:
+  patientId: "35"
+auth:
+  type: noauth
+order: 3000

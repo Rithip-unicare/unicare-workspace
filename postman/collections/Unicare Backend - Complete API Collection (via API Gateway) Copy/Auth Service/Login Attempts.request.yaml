@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/api/auth/login-attempts/1"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 15000

@@ -1,0 +1,18 @@
+$kind: http-request
+name: "Roles: Update"
+url: "{{baseUrl}}/api/organization/roles"
+method: PUT
+headers:
+  Authorization: Bearer {{accessToken}}
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "id": 1,
+      "roleName": "DOCTOR_ROLE",
+      "description": "Updated desc"
+    }
+auth:
+  type: noauth
+order: 17000

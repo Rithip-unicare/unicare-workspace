@@ -1,0 +1,9 @@
+$kind: http-request
+name: "Master: Get Patient Classes"
+url: "{{baseUrl}}/api/master/patient-classes"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 16000

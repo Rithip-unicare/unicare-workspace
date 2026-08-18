@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/admin/consentform/enable/{{formId}}"
+method: PUT
+headers:
+  Authorization: Bearer {{accesstoken}}
+auth:
+  type: noauth
+order: 7000

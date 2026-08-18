@@ -1,0 +1,9 @@
+$kind: http-request
+name: "Master: Get Hospital Types"
+url: "{{baseUrl}}/api/master/hospital-types"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 30000

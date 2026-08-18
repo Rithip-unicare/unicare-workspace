@@ -1,0 +1,9 @@
+$kind: http-request
+name: "Master: Get Appointment Statuses"
+url: "{{baseUrl}}/api/master/appointment-statuses"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 8000

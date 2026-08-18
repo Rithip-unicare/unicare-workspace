@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{baseUrl}}/api/master/insurance-plan-details/with-description/129e1df5-690d-4db9-8fb8-dc4de6895729"
+method: GET
+auth:
+  type: bearer
+order: 52000

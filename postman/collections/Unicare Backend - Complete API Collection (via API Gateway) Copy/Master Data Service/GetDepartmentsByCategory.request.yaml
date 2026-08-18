@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{baseUrl}}/api/master/category-department?ids=dcf2ca3c-b46f-4d6b-8474-2c6d4443772a,bd9f6f61-defd-40a0-b11a-927ee56cf352?ids=dcf2ca3c-b46f-4d6b-8474-2c6d4443772a,bd9f6f61-defd-40a0-b11a-927ee56cf352"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+queryParams:
+  ids: dcf2ca3c-b46f-4d6b-8474-2c6d4443772a,bd9f6f61-defd-40a0-b11a-927ee56cf352
+auth:
+  type: noauth
+order: 51000

@@ -1,0 +1,9 @@
+$kind: http-request
+description: Returns all consent forms as a list.
+url: "{{baseUrl}}/admin/consentform/all"
+method: GET
+headers:
+  Authorization: Bearer {{accesstoken}}
+auth:
+  type: noauth
+order: 1000

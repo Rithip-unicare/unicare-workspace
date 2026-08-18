@@ -1,0 +1,9 @@
+$kind: http-request
+name: "Doctors: Department Count"
+url: "{{baseUrl}}/api/organization/doctors/department-count/1"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 29000

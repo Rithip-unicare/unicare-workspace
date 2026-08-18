@@ -1,0 +1,43 @@
+$kind: http-request
+url: "{{baseUrl}}/api/organization/doctors/master"
+method: PUT
+body:
+  type: json
+  content: |-
+    {
+        "userId": 42,
+        "arabicName": "أجيت كومار",
+        "clinicianType": "Activity Clinician",
+        "emGuidelines": "1995 Guidelines",
+        "emValidator": false,
+        "lockEncounterDays": 0,
+        "followUpRequiredEmr": false,
+        "copyPrescription": false,
+        "maternityChart": false,
+        "childMentalHealth": false,
+        "disableSmsDoctor": false,
+        "disableExamNormal": false,
+        "unsignedCharts": false,
+        "refreshTimeUnsignedCharts": 0,
+        "notifyExpiryDays": 60,
+        "shifts": [
+            {
+                "shiftType": "MORNING",
+                "active": false,
+                "blocked": false
+            },
+            {
+                "shiftType": "EVENING",
+                "active": false,
+                "blocked": false
+            },
+            {
+                "shiftType": "FULL",
+                "active": false,
+                "blocked": false
+            }
+        ]
+    }
+auth:
+  type: bearer
+order: 47000

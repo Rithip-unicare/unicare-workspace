@@ -1,0 +1,9 @@
+$kind: http-request
+name: "Master: Get Department Categories"
+url: "{{baseUrl}}/api/master/department-categories"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 28000

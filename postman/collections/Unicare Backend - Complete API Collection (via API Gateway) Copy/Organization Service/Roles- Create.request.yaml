@@ -1,0 +1,18 @@
+$kind: http-request
+name: "Roles: Create"
+url: "{{baseUrl}}/api/organization/roles"
+method: POST
+headers:
+  Authorization: Bearer {{accessToken}}
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "organizationId": 1,
+      "roleName": "SUPER_ADMIN",
+      "description": "General role for who handing the software support"
+    }
+auth:
+  type: noauth
+order: 16000

@@ -1,0 +1,9 @@
+$kind: http-request
+name: "Organizations: Get by Id"
+url: "{{baseUrl}}/api/organization/organizations/1"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 4000

@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/api/master/financial/aggregator"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 6000

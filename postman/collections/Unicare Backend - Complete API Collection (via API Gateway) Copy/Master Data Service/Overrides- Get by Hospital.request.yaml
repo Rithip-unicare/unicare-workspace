@@ -1,0 +1,9 @@
+$kind: http-request
+name: "Overrides: Get by Hospital"
+url: "{{baseUrl}}/api/master/overrides/hospital-uuid-1"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 2000

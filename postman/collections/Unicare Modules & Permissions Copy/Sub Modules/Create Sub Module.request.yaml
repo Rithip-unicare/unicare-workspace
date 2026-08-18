@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{baseUrl}}/api/organization/sub-modules"
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{accessToken}}
+body:
+  type: json
+  content: |-
+    {
+      "moduleId": "1915e039-338a-4c09-bcf9-ff1b16228aa3",
+      "name": "Sample Sub Module",
+      "menuLink": "/sub-link",
+      "icon": "sub-icon",
+      "isActive": true,
+      "createdBy": 1,
+      "updatedBy": 1
+    }
+auth:
+  type: noauth
+order: 1000

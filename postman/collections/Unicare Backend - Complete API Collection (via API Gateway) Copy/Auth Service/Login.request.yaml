@@ -1,0 +1,30 @@
+$kind: http-request
+url: "{{baseUrl}}/api/auth/login"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "username": "rithip1234",
+      "password": "123456",
+      "hospitalId": 1,
+      "rememberMe": true
+    }
+auth:
+  type: noauth
+scripts:
+  - type: afterResponse
+    code: |-
+      const jsonData = pm.response.json();
+
+      if (jsonData.data && jsonData.data.accessToken) {
+        pm.variables.set("accessToken", jsonData.data.accessToken);
+      }
+
+      if (jsonData.data && jsonData.data.sessionId) {
+        pm.variables.set("sessionId", jsonData.data.sessionId);
+      }
+    language: text/javascript
+order: 1000

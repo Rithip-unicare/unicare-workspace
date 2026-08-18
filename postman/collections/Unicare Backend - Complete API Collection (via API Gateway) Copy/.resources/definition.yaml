@@ -1,0 +1,7 @@
+$kind: collection
+description: Auto-generated collection including all endpoints with highly accurate payloads mapped directly from Java DTOs.
+variables:
+  baseUrl: http://localhost:8080
+  accessToken: "{{supabase_service_role_api_key_0qoa}}"
+  sessionId: ""
+  imageurl: ""

@@ -1,0 +1,9 @@
+$kind: http-request
+name: "Sync: Versions"
+url: "{{baseUrl}}/api/master/sync/versions"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 4000

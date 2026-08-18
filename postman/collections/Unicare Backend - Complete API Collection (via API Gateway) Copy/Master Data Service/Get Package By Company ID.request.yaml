@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{baseUrl}}/api/master/insurance-packages/by-company/9ae33734-c5a5-496c-a03c-bbcf29300503"
+method: GET
+auth:
+  type: bearer
+order: 54000

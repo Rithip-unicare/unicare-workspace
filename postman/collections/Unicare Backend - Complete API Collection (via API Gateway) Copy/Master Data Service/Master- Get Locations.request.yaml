@@ -1,0 +1,9 @@
+$kind: http-request
+name: "Master: Get Locations"
+url: "{{baseUrl}}/api/master/locations"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 31000

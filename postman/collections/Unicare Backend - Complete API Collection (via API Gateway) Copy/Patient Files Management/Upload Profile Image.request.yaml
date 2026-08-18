@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{baseUrl}}/api/core/patients/:patientId/files/profile"
+method: POST
+pathVariables:
+  patientId: "1"
+body:
+  type: formdata
+  content:
+    - type: file
+      key: file
+      src: []
+auth:
+  type: noauth
+order: 1000

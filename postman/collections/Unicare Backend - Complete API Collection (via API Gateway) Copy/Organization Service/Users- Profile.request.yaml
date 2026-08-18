@@ -1,0 +1,9 @@
+$kind: http-request
+name: "Users: Profile"
+url: "{{baseUrl}}/api/organization/users/profile/1"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 10000

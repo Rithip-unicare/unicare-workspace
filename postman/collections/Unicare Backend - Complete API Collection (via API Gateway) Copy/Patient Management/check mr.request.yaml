@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/api/core/patients/checkmr/MR-1-000007?hospitalId=1?hospitalId=1"
+method: GET
+queryParams:
+  hospitalId: "1"
+auth:
+  type: bearer
+order: 11000

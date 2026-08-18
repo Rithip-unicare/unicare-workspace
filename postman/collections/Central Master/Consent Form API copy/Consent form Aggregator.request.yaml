@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/api/admin/consentform-masters"
+method: GET
+headers:
+  Authorization: Bearer {{accesstoken}}
+auth:
+  type: noauth
+order: 12000

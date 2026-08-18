@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{baseUrl}}/api/organization/user-module-permissions/sideMenuAllList"
+method: GET
+auth:
+  type: bearer
+order: 45000

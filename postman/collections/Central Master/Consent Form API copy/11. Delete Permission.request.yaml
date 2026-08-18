@@ -1,0 +1,9 @@
+$kind: http-request
+description: "Controller reads @RequestParam formId and @RequestParam orgId. Note: the URL template has a stray '}' ('/deletePermissions/{formId}/{facilityId}}') — use this query-param form to make it work."
+url: "{{baseUrl}}/admin/consentform/deletePermissions/{{formId}}/{{orgId}}"
+method: DELETE
+headers:
+  Authorization: Bearer {{accesstoken}}
+auth:
+  type: noauth
+order: 11000

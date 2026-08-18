@@ -1,0 +1,33 @@
+$kind: http-request
+url: "{{baseUrl}}/api/organization/role-module-permissions/role/:id"
+method: GET
+headers:
+  - key: Content-Type
+    value: application/json
+  - key: Authorization
+    value: Bearer {{accessToken}}
+  - key: Authorization
+    value: B
+    disabled: true
+pathVariables:
+  id: "17"
+body:
+  type: json
+  content: |-
+    {
+      "roleId": 1,
+      "moduleId": "module_uuid_here",
+      "subModuleId": "sub_module_uuid_here",
+      "isPermission": true,
+      "isAdd": true,
+      "isEdit": true,
+      "isDelete": true,
+      "isView": true,
+      "isActive": true,
+      "createdBy": 1,
+      "updatedBy": 1
+    }
+auth:
+  type: noauth
+settings: {}
+order: 6000

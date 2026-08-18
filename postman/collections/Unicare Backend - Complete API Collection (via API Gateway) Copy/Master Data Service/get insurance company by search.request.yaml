@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/api/master/insurance-companies/search?searchTerm=IC-AAFIYA-96?searchTerm=IC-AAFIYA-96"
+method: GET
+queryParams:
+  searchTerm: IC-AAFIYA-96
+auth:
+  type: bearer
+order: 56000
