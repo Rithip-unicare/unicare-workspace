@@ -1,0 +1,30 @@
+info:
+  name: Get Follow-up Yearly Trends
+  type: http
+  seq: 9
+
+http:
+  method: GET
+  url: "{{baseUrl}}/followup/stats/yearly-trends?year=&location=&doctorId=&centerId="
+  params:
+    - name: year
+      value: ""
+      type: query
+    - name: location
+      value: ""
+      type: query
+    - name: doctorId
+      value: ""
+      type: query
+    - name: centerId
+      value: ""
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Get yearly follow-up trend data with monthly breakdown.

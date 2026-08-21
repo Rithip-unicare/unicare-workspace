@@ -1,0 +1,30 @@
+info:
+  name: Update Referral Status
+  type: http
+  seq: 6
+
+http:
+  method: PATCH
+  url: "{{baseUrl}}/api/referrals/:location/:observationId/status"
+  headers:
+    - name: Content-Type
+      value: application/json
+  params:
+    - name: location
+      value: ""
+      type: path
+    - name: observationId
+      value: ""
+      type: path
+  body:
+    type: json
+    data: '{"status":"","comments":"","apptBooked":false,"forwardUserId":"","updatedBy":""}'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: "Generated from cURL: curl -X PATCH \"{{baseUrl}}/api/referrals/:location/:observationId/status\" -H \"Content-Type: application/json\" -d '{\"status\":\"\",\"comments\":\"\",\"apptBooked\":false,\"forwardUserId\":\"\",\"updatedBy\":\"\"}'"

@@ -1,0 +1,23 @@
+info:
+  name: "Waiting List: Update"
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/waiting-list/{{location}}/{{bookNo}}"
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: '{"location":"ALB1","patientId":0,"doctorId":0,"bookDate":"2026-08-08","bookTime":"09:00","userBooked":"admin","patName":"John Doe","patType":"NEW","status":"WAITING","patContact":"1234567890","ipadId":"IPAD001","apptId":0,"centerId":1,"rating":0,"comments":"","clinicType":"GENERAL"}'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: "Generated from cURL: curl -X PUT {{baseUrl}}/api/waiting-list/{{location}}/{{bookNo}} -H \"Content-Type: application/json\" -d '{\"location\":\"ALB1\",\"patientId\":0,\"doctorId\":0,\"bookDate\":\"2026-08-08\",\"bookTime\":\"09:00\",\"userBooked\":\"admin\",\"patName\":\"John Doe\",\"patType\":\"NEW\",\"status\":\"WAITING\",\"patContact\":\"1234567890\",\"ipadId\":\"IPAD001\",\"apptId\":0,\"centerId\":1,\"rating\":0,\"comments\":\"\",\"clinicType\":\"GENERAL\"}'"

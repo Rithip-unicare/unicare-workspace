@@ -1,0 +1,48 @@
+info:
+  name: Get Incomplete Follow-ups
+  type: http
+  seq: 11
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/followup/incomplete?location=ALB4&patientId=&emiratesId=&patientName=&doctorId=&doctorName=&fromDate=&toDate=&page=0&size=10"
+  params:
+    - name: location
+      value: ALB4
+      type: query
+    - name: patientId
+      value: ""
+      type: query
+    - name: emiratesId
+      value: ""
+      type: query
+    - name: patientName
+      value: ""
+      type: query
+    - name: doctorId
+      value: ""
+      type: query
+    - name: doctorName
+      value: ""
+      type: query
+    - name: fromDate
+      value: ""
+      type: query
+    - name: toDate
+      value: ""
+      type: query
+    - name: page
+      value: "0"
+      type: query
+    - name: size
+      value: "10"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Retrieves incomplete follow-ups with optional filters. Returns a paginated list of follow-up observation records.

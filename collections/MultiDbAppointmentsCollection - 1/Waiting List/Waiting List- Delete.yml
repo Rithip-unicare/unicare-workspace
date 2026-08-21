@@ -1,0 +1,17 @@
+info:
+  name: "Waiting List: Delete"
+  type: http
+  seq: 3
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/api/waiting-list/{{location}}/{{bookNo}}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: 'Generated from cURL: curl -X DELETE "{{baseUrl}}/api/waiting-list/{{location}}/{{bookNo}}"'

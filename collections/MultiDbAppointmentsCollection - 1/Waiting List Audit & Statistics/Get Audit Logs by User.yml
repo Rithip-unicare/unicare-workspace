@@ -1,0 +1,17 @@
+info:
+  name: Get Audit Logs by User
+  type: http
+  seq: 7
+
+http:
+  method: GET
+  url: "{{baseUrl}}/waiting-list-audit/logs/user/8"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Get detailed waiting list audit logs for a specific user.

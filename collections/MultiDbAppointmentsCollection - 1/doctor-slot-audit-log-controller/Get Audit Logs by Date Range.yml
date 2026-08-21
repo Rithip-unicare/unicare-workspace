@@ -1,0 +1,30 @@
+info:
+  name: Get Audit Logs by Date Range
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/audit-log/doctor-slots/range?fromDate=&toDate=&page=0&size=15"
+  params:
+    - name: fromDate
+      value: ""
+      type: query
+    - name: toDate
+      value: ""
+      type: query
+    - name: page
+      value: "0"
+      type: query
+    - name: size
+      value: "15"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: 'Generated from cURL: curl -X GET "{{baseUrl}}/api/audit-log/doctor-slots/range?fromDate=&toDate=&page=0&size=15"'

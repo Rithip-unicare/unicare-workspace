@@ -1,0 +1,18 @@
+info:
+  name: Get Appointment Reasons
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{baseUrl}}/masters/appointment-reasons"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

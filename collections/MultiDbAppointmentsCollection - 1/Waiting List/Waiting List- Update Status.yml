@@ -1,0 +1,23 @@
+info:
+  name: "Waiting List: Update Status"
+  type: http
+  seq: 1
+
+http:
+  method: PATCH
+  url: "{{baseUrl}}/api/waiting-list/{{location}}/{{bookNo}}/status"
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: '{"status":"WAITING"}'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: "Generated from cURL: curl -X PATCH {{baseUrl}}/api/waiting-list/{{location}}/{{bookNo}}/status -H \"Content-Type: application/json\" -d '{\"status\":\"WAITING\"}'"

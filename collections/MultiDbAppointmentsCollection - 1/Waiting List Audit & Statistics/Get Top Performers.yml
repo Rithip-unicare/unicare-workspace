@@ -1,0 +1,33 @@
+info:
+  name: Get Top Performers
+  type: http
+  seq: 8
+
+http:
+  method: GET
+  url: "{{baseUrl}}/waiting-list-audit/top-performers?fromDate=&toDate=&filterLocation=&sortBy=&topN=3"
+  params:
+    - name: fromDate
+      value: ""
+      type: query
+    - name: toDate
+      value: ""
+      type: query
+    - name: filterLocation
+      value: ""
+      type: query
+    - name: sortBy
+      value: ""
+      type: query
+    - name: topN
+      value: "3"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Get top-performing staff members overall

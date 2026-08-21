@@ -1,0 +1,57 @@
+info:
+  name: "Waiting List: Create"
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{baseUrl}}/waiting-list"
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: "{\r
+
+      \"location\":\"ALB1\",\r
+
+      \"patientId\":4,\r
+
+      \"doctorId\":38,\r
+
+      \"bookDate\":\"2026-08-08 00:00:00.000\",\r
+
+      \"bookTime\":\"01:07 pm\",\r
+
+      \"userBooked\":\"Variant\",\r
+
+      \"patName\":\"AHMAD MOHAMMAD DMIRIEH\",\r
+
+      \"patType\":\"Old\",\r
+
+      \"status\":\"WAITING\",\r
+
+      \"patContact\":\"1234567890\",\r
+
+      \"ipadId\":\"IPAD001\"\r
+
+      ,\"apptId\":0,\r
+
+      \"centerId\":90\r
+
+      ,\"rating\":1,\r
+
+      \"comments\":\"Testing\",\r
+
+      \"clinicType\":\"GENERAL\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: "Generated from cURL: curl -X POST {{baseUrl}}/api/waiting-list -H \"Content-Type: application/json\" -d '{\"location\":\"ALB1\",\"patientId\":0,\"doctorId\":0,\"bookDate\":\"2026-08-08\",\"bookTime\":\"09:00\",\"userBooked\":\"admin\",\"patName\":\"John Doe\",\"patType\":\"NEW\",\"status\":\"WAITING\",\"patContact\":\"1234567890\",\"ipadId\":\"IPAD001\",\"apptId\":0,\"centerId\":1,\"rating\":0,\"comments\":\"\",\"clinicType\":\"GENERAL\"}'"

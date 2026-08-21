@@ -1,0 +1,30 @@
+info:
+  name: Get Follow-up Stats by Doctors
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{baseUrl}}/followup/stats/doctors?page=0&size=10000"
+  headers:
+    - name: Content-Type
+      value: application/json
+  params:
+    - name: page
+      value: "0"
+      type: query
+    - name: size
+      value: "10000"
+      type: query
+  body:
+    type: json
+    data: '{"fromDate":"","toDate":"","location":"","doctorId":null,"deptId":null}'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Get paginated doctor-level follow-up statistics.

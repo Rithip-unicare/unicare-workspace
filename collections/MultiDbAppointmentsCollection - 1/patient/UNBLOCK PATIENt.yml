@@ -1,0 +1,24 @@
+info:
+  name: UNBLOCK PATIENt
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/patient/unblock"
+  body:
+    type: json
+    data: |-
+      {
+        "location":"ALB4",
+        "patientId":43554,
+        "comments":"parthiban",
+        "doctorIds":[11,20,23,22,28,20,0]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

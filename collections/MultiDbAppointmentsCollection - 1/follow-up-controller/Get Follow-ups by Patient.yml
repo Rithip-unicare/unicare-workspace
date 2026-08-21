@@ -1,0 +1,17 @@
+info:
+  name: Get Follow-ups by Patient
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{baseUrl}}/followup/patient/{{location}}/{{patientId}}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Get follow-up records for a patient at a specific location.

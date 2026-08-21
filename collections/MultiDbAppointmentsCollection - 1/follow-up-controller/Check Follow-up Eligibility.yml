@@ -1,0 +1,26 @@
+info:
+  name: Check Follow-up Eligibility
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/followup/check/{{location}}/{{patientId}}/{{doctorId}}"
+  auth: inherit
+
+runtime:
+  variables:
+    - name: location
+      value: ALB4
+    - name: patientId
+      value: "44894"
+    - name: doctorId
+      value: "23"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Check if a patient is eligible for a follow-up with a specific doctor at a location.

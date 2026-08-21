@@ -1,0 +1,17 @@
+info:
+  name: Init Audit Table
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/waiting-list-audit/init-table"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Initialize Tbl_WaitingList_User_Audit table across all branch databases.

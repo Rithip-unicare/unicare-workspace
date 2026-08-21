@@ -1,0 +1,27 @@
+info:
+  name: Create Referral
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/referrals?location=DMC"
+  headers:
+    - name: Content-Type
+      value: application/json
+  params:
+    - name: location
+      value: DMC
+      type: query
+  body:
+    type: json
+    data: '{"patientId":"","observationId":"","refDocId":"","refToDocId":"","dtRef":"","refReason":"","priority":"","typeRef":""}'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: "Generated from cURL: curl -X POST \"{{baseUrl}}/api/referrals?location=DMC\" -H \"Content-Type: application/json\" -d '{\"patientId\":\"\",\"observationId\":\"\",\"refDocId\":\"\",\"refToDocId\":\"\",\"dtRef\":\"\",\"refReason\":\"\",\"priority\":\"\",\"typeRef\":\"\"}'"

@@ -12,6 +12,8 @@ collections:
     path: "collections/Unicare Modules & Permissions Copy"
   - name: "Central Master"
     path: "collections/Central Master"
+  - name: "MultiDbAppointmentsCollection - 1"
+    path: "collections/MultiDbAppointmentsCollection - 1"
 
 specs:
 
