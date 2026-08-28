@@ -1,0 +1,32 @@
+info:
+  name: Transfer Appoiments
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{baseUrl}}/appointments/transfer"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |-
+      {
+        "fromLocation": "ALB1",
+        "appId": 116602,
+        "toLocation": "ALB4",
+        "date": "2026-07-08",
+        "doctorId": 1,
+        "deptId": 4,
+        "fromTime": "16:00:00",
+        "transferBy": "Variant",
+        "toTime": "16:30:00"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

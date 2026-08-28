@@ -1,0 +1,9 @@
+$kind: http-request
+name: "Master: Get Referral Sources"
+url: "{{baseUrl}}/api/master/referral-sources"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 45000

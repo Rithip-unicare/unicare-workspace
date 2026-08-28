@@ -1,0 +1,8 @@
+$kind: http-request
+name: "Doctor Fee: Get All by Doctor"
+description: 'Generated from cURL: curl -X GET "{{baseUrl}}/api/doctors/fee/1"'
+url: "{{baseUrl}}/api/doctors/fee/1"
+method: GET
+auth:
+  type: noauth
+order: 11000

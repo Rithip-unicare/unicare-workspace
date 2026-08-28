@@ -17,13 +17,13 @@ http:
     data: |-
       {
           "doctorId": 1,
-          "hospitalDetailId": 1,
+          "hospitalDetailId": 3,
           "patientDetailId": 1,
           "examId": 1,
           "visitTypeId": "929b7074-b4dd-472d-a69a-1220a8abb02c",
           "appointmentStatusId": "b9e4a847-e6b7-41df-9265-cbe122ad3666",
-          "appointmentDate": "2026-06-29",
-          "appointmentTime": "22:00:00",
+          "appointmentDate": "2026-08-05",
+          "appointmentTime": "10:30:00",
           "timeInterval": 15,
           "enquiryReasonId": "14d1ba5b-be24-4341-b128-aa5e1a6f05b3",
           "enquiryServiceId": "446c8cb6-9a6f-47e0-9aa8-0bac208aa687",

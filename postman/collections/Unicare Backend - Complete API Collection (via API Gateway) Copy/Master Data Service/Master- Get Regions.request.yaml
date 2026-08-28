@@ -1,0 +1,9 @@
+$kind: http-request
+name: "Master: Get Regions"
+url: "{{baseUrl}}/api/master/regions"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 24000

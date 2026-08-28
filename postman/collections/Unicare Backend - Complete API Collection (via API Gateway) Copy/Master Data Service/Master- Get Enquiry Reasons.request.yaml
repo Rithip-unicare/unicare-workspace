@@ -1,0 +1,9 @@
+$kind: http-request
+name: "Master: Get Enquiry Reasons"
+url: "{{baseUrl}}/api/master/enquiry/enquiry-reasons"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 42000

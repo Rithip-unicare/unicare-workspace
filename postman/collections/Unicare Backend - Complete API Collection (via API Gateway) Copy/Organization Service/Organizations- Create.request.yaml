@@ -1,0 +1,96 @@
+$kind: http-request
+name: "Organizations: Create"
+url: "{{baseUrl}}/api/organization/organizations"
+method: POST
+headers:
+  Authorization: Bearer {{accessToken}}
+body:
+  type: formdata
+  content:
+    - type: text
+      key: englishName
+      value: ROYAL Hospital
+    - type: text
+      key: arabicName
+      value: مستشفى يونيكير العام
+    - type: text
+      key: shortName
+      value: CGH
+    - type: text
+      key: addressLine1
+      value: 123 Health Ave
+    - type: text
+      key: addressLine2
+      value: Downtown
+    - type: text
+      key: cityId
+      value: d3458712-fcf1-4e3e-9953-017fe3a11dc2
+    - type: text
+      key: regionId
+      value: d3458712-fcf1-4e3e-9953-017fe3a11dc2
+    - type: text
+      key: countryId
+      value: 6a20ee12-bb25-476a-9285-0064615b5c6e
+    - type: text
+      key: email
+      value: contact@citygeneral.com
+    - type: text
+      key: phoneNumber
+      value: "+1234567890"
+    - type: text
+      key: faxNumber
+      value: "+1234567891"
+    - type: text
+      key: websiteUrl
+      value: www.citygeneral.com
+    - type: text
+      key: locationUrl
+      value: maps.google.com/xyz
+    - type: text
+      key: facilityLicenseNo
+      value: LIC-12345
+    - type: text
+      key: authorityRegionId
+      value: d3458712-fcf1-4e3e-9953-017fe3a11dc2
+    - type: text
+      key: username
+      value: unicareAdmin
+    - type: text
+      key: password
+      value: Password@123
+    - type: text
+      key: webServiceUrl
+      value: api.citygeneral.com
+    - type: file
+      key: headerLogoFile
+      src:
+        - C:\Users\PS07\Downloads\images (1).jpg
+      contentType: image/jpeg
+    - type: file
+      key: smallLogoFile
+      src:
+        - C:\Users\PS07\Downloads\images.jpg
+      contentType: image/jpeg
+    - type: text
+      key: permAddressLine
+      value: 123 Health Ave
+      disabled: true
+    - type: text
+      key: permAddressPostbox
+      value: "635653"
+      disabled: true
+    - type: text
+      key: permCountryId
+      value: 6a20ee12-bb25-476a-9285-0064615b5c6e
+      disabled: true
+    - type: text
+      key: permCityId
+      value: d3458712-fcf1-4e3e-9953-017fe3a11dc2
+      disabled: true
+    - type: text
+      key: permRegionId
+      value: d3458712-fcf1-4e3e-9953-017fe3a11dc2
+      disabled: true
+auth:
+  type: noauth
+order: 5000

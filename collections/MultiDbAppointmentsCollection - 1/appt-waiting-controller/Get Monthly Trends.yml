@@ -1,0 +1,30 @@
+info:
+  name: Get Monthly Trends
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{baseUrl}}/waiting-list/analytics/monthly-trends?year=2025&location=&doctorId=&centerId="
+  params:
+    - name: year
+      value: "2025"
+      type: query
+    - name: location
+      value: ""
+      type: query
+    - name: doctorId
+      value: ""
+      type: query
+    - name: centerId
+      value: ""
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Get monthly waiting list trends and peak demand months for a year

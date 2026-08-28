@@ -1,0 +1,28 @@
+info:
+  name: Check slot availability
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{baseUrl}}/appointments/check-appointment"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |-
+      {
+          "doctorId":1,
+          "apptDate":"2026-07-03",
+          "startTime":"08:30",
+          "endTime":"09:00",
+          "location":"ALB1"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

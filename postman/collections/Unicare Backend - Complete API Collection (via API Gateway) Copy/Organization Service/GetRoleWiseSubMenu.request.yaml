@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{baseUrl}}/api/organization/role-module-permissions/GetRoleWiseSubMenu/4/5947700c-f5c4-43ea-8704-72d4464162ac"
+method: GET
+auth:
+  type: bearer
+order: 52000

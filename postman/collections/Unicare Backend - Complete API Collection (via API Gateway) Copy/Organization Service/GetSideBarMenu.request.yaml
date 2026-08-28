@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/api/organization/user-module-permissions/sideMenuList/1"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 46000

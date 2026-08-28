@@ -1,0 +1,25 @@
+$kind: http-request
+url: "{{baseUrl}}/api/organization/role-module-permissions/:id"
+method: PUT
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{accessToken}}
+pathVariables:
+  id: "1"
+body:
+  type: json
+  content: |-
+    {
+      "roleId": 1,
+      "moduleId": "5947700c-f5c4-43ea-8704-72d4464162ac",
+      "subModuleId": "3cd26fbd-f4ce-4d80-947a-b83cfb0f34e4",
+      "isPermission": true,
+      "isAdd": true,
+      "isEdit": true,
+      "isDelete": true,
+      "isView": true,
+      "isActive": true
+    }
+auth:
+  type: noauth
+order: 4000

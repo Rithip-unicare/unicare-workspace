@@ -1,0 +1,9 @@
+$kind: http-request
+name: "Master: Get Designations"
+url: "{{baseUrl}}/api/master/designations"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 29000

@@ -1,0 +1,19 @@
+$kind: http-request
+name: "Permissions: Create"
+url: "{{baseUrl}}/api/organization/permissions"
+method: POST
+headers:
+  Authorization: Bearer {{accessToken}}
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "module": "PATIENT",
+      "action": "CREATE",
+      "permissionKey": "PATIENT_CREATE",
+      "description": "Can register new patients"
+    }
+auth:
+  type: noauth
+order: 23000

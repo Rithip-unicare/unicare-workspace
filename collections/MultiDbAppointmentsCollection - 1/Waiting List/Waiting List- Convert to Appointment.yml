@@ -1,0 +1,63 @@
+info:
+  name: "Waiting List: Convert to Appointment"
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseUrl}}/waiting-list/{{location}}/{{bookNo}}/convert"
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "location": "string",
+        "appointmentDate": "2026-08-08",
+        "patientId": 0,
+        "patientLocation": "string",
+        "startTime": "string",
+        "toTime": "string",
+        "doctorId": 0,
+        "deptId": 0,
+        "apptReason": "string",
+        "status": "string",
+        "enterBy": "string",
+        "enteredDate": "2026-08-08",
+        "duration": 0,
+        "patientType": "string",
+        "clinicType": "string",
+        "paymentMode": "string",
+        "posident": 0,
+        "patpolid": 0,
+        "centerId": 0,
+        "apptRemainder": "string",
+        "noansRemainder": "string",
+        "visitType": "string",
+        "appReasonId": 0,
+        "appServiceId": 0,
+        "apptTypeId": 0,
+        "isWalkIn": true,
+        "PHC_status": "string",
+        "DidUKnow": "string",
+        "notes": "string",
+        "patcomid": 0,
+        "isDoubleBooking": true,
+        "appNo": 0,
+        "lastEdited": "2026-08-08",
+        "staffId": 0,
+        "staffName": "string",
+        "lastEditedBy": "string"
+      }
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: 'Generated from cURL: curl -X POST "{{baseUrl}}/api/waiting-list/{{location}}/{{bookNo}}/convert"'

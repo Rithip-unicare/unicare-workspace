@@ -1,0 +1,20 @@
+$kind: http-request
+name: "Permissions: Update"
+url: "{{baseUrl}}/api/organization/permissions"
+method: PUT
+headers:
+  Authorization: Bearer {{accessToken}}
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "id": 1,
+      "module": "PATIENT",
+      "action": "UPDATE",
+      "permissionKey": "PATIENT_UPDATE",
+      "description": "Update"
+    }
+auth:
+  type: noauth
+order: 24000

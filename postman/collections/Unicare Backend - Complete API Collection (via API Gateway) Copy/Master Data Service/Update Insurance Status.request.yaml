@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{baseUrl}}/api/master/insurance-companies/status"
+method: PATCH
+headers:
+  Authorization: Bearer {{accessToken}}
+body:
+  type: json
+  content: |-
+    {
+      "companyID": "00587294-1b42-4adf-9ced-33b6959e0b1d",
+        "fieldValue": true,
+        "fieldName": "pharmacyToken"
+    }
+auth:
+  type: noauth
+order: 57000

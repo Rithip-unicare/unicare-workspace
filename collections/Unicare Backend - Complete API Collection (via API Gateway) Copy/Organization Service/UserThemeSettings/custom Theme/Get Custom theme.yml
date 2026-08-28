@@ -1,0 +1,43 @@
+info:
+  name: Get Custom theme
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/organization/themes/2/1"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |
+      {
+        "userId": 2,
+        "organizationId": 1,
+        "themeName": "custom",
+        "primaryColor": "#007bff",
+        "pgBg": "#121212",
+        "cardBg": "#1e1e1e",
+        "inrCardBg": "#2332a",
+        "dropDownBg": "#2d2d2d",
+        "headerBg": "#1f1f1f",
+        "sidebarBg": "#181818",
+        "mainTxt": "#ffffff",
+        "secondaryTxt": "#b3b3b3",
+        "tbGridBg": "#242424",
+        "thBg": "#333333",
+        "trHoverBg": "#3a3a3a",
+        "tbActiveBg": "#404040",
+        "tbPageActive": "#007bff",
+        "inputBg": "#2c2c2c",
+        "inputFocusBg": "#3a3a3a",
+        "borderDiv": "112244"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

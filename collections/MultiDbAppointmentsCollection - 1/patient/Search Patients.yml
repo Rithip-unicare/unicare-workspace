@@ -1,0 +1,27 @@
+info:
+  name: Search Patients
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/patient/search"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |-
+      {
+          "location":"ALB4",
+          "searchTerm":"M",
+          "searchType":"firstName",
+          "all":true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,25 @@
+$kind: http-request
+url: "{{baseUrl}}/doctors/slots/update-timing"
+method: POST
+headers:
+  Authorization: Bearer {{accessToken}}
+body:
+  type: json
+  content: |-
+    {
+        "doctorId": 1,
+        "centerId": 1,
+        "fromLocation": "ALB1",
+        "fromdate": "2026-07-03",
+        "todate": "2026-07-12",
+        "oldFromTime": "09:30:00",
+        "oldToTime": "17:30:00",
+        "newfromTime": "08:30:00",
+        "newtoTime": "18:30:00",
+        "oldFromDate":"2026-07-01",
+        "oldToDate":"2026-07-14",
+        "toLocation": "ALB3"
+    }
+auth:
+  type: noauth
+order: 6000

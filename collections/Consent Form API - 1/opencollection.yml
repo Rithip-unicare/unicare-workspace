@@ -1,0 +1,38 @@
+opencollection: 1.0.0
+
+info:
+  name: Consent Form API
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+
+request:
+  variables:
+    - name: baseUrl
+      value: http://localhost:9001
+    - name: accesstoken
+      value: eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJVTklDQVJFLUNFTlRSQUwtTUFTVEVSIiwic3ViIjoiMjY1MWY3ODgtZmI2Mi00NDNlLWE4NWUtNGNhNDMyNDEwMDU2Iiwicm9sZSI6IkNFTlRSQUxfU1VQRVJfQURNSU4iLCJ1c2VyVHlwZSI6IlBMQVRGT1JNX0FETUlOIiwic2NvcGUiOlsiY2VudHJhbC5tYXN0ZXIucmVhZCJdLCJ1c2VybmFtZSI6InN1cGVyYWRtaW5AdW5pY2FyZS5jb20iLCJpYXQiOjE3ODU0ODI4NjUsImV4cCI6MTc4NTQ4MzQ2NSwianRpIjoiMWQ2NTExNzctZmM2Ni00ZWExLWJmNDYtYTg0ZjdiODk2MmU3In0.mFnaTAvD5lnQCGFj5_zsRPPfzRVYzcqtlu_rpXH3QGwAJXkb6w8Mey37mSmR0eb1mozVpOfgilVtKUH-TpA-3__fxV8LhmML7tIoJpmEaI7CJzEpXcMV6uJhu2lFX-LzjwbAagHbfGbEZss-gbSyvtNZ2k6UusvuXVormVI880gKNz-f4LEqaZl5mNvV4J57T7sNOQY-t9hWXiXJ-k517KA_w0XrRpd71MYkUmHIYLTVh1gZ04Im3P5PC3DGJs4ute3BZM7p1SAlJ5J4zRxiJeOhhh7L78vPWcEAjBbVSgI94ONSVqLmr2bIK1kWraP68S7J2E5EoRBkOUxgo6bdUw
+    - name: formId
+      value: DEPT_Dermatology_GENERAL_CONSENT
+    - name: facilityId
+      value: facility_001
+    - name: orgId
+      value: "1"
+
+docs:
+  content: "Endpoints for managing consent forms and their permissions. Base URL: http://localhost:9001 — all endpoints require JWT Bearer token and role CENTRAL_SUPER_ADMIN."
+  type: text/markdown
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git

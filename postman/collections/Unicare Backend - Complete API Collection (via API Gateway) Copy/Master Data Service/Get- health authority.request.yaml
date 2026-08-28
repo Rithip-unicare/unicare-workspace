@@ -1,0 +1,7 @@
+$kind: http-request
+name: "Get: health authority"
+url: "{{baseUrl}}/api/master/regions/health-authority"
+method: GET
+auth:
+  type: bearer
+order: 55000

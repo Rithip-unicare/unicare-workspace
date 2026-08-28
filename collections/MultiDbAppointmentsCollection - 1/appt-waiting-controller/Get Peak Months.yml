@@ -1,0 +1,27 @@
+info:
+  name: Get Peak Months
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{baseUrl}}/waiting-list/analytics/peak-months?fromYear=2025&toYear=2026&location=ALB4"
+  params:
+    - name: fromYear
+      value: "2025"
+      type: query
+    - name: toYear
+      value: "2026"
+      type: query
+    - name: location
+      value: ALB4
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Compare peak waiting months across multiple years

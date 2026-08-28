@@ -1,0 +1,9 @@
+$kind: http-request
+name: "Users: Delete"
+url: "{{baseUrl}}/api/organization/users/1"
+method: DELETE
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 13000

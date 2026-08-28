@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{baseUrl}}/api/organization/doctors/fee"
+method: POST
+body:
+  type: json
+  content: |
+    {
+      "doctorId": 28,
+      "consultation": "General Consultation",
+      "charges": 150.00,
+      "isActive": true
+    }
+auth:
+  type: bearer
+order: 1000

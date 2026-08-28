@@ -1,0 +1,27 @@
+info:
+  name: Get doctorBreak in date range
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseUrl}}/doctor-break/breaks"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |-
+      {
+        "location": "ALB1",
+        "doctorId": 1,
+        "fromDate": "2026-07-01",
+        "toDate": "2026-07-29"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

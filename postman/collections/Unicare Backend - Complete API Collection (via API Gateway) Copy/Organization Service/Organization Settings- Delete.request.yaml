@@ -1,0 +1,9 @@
+$kind: http-request
+name: "Organization Settings: Delete"
+url: "{{baseUrl}}/api/organization/organization-settings/1"
+method: DELETE
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 38000

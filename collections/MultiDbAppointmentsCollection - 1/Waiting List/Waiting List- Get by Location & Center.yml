@@ -1,0 +1,24 @@
+info:
+  name: "Waiting List: Get by Location & Center"
+  type: http
+  seq: 6
+
+http:
+  method: GET
+  url: "{{baseUrl}}/waiting-list/{{location}}/{{centerIds}}?doctorId=&date=2026-08-08"
+  params:
+    - name: doctorId
+      value: ""
+      type: query
+    - name: date
+      value: 2026-08-08
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: 'Generated from cURL: curl -X GET "{{baseUrl}}/api/waiting-list/{{location}}/{{centerId}}?doctorId=&date="'

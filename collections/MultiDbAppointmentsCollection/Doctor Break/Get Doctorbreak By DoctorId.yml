@@ -13,9 +13,9 @@ http:
     type: json
     data: |-
       {
-          "location":"dubai",
-          "doctorId":24,
-          "appointmentDate":"2025-11-30"
+          "location":"ALB1",
+          "doctorId":3,
+          "appointmentDate":"2026-07-27"
       }
   auth: inherit
 

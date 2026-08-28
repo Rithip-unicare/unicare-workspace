@@ -1,0 +1,27 @@
+info:
+  name: Get Top Performers By Branch
+  type: http
+  seq: 9
+
+http:
+  method: GET
+  url: "{{baseUrl}}/waiting-list-audit/top-performers/by-branch?fromDate=&toDate=&topN=3"
+  params:
+    - name: fromDate
+      value: ""
+      type: query
+    - name: toDate
+      value: ""
+      type: query
+    - name: topN
+      value: "3"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Get top-performing staff members grouped by each clinic branch

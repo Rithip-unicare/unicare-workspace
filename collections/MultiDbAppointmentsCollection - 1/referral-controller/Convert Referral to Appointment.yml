@@ -1,0 +1,81 @@
+info:
+  name: Convert Referral to Appointment
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/referrals/:location/convert"
+  headers:
+    - name: Content-Type
+      value: application/json
+  params:
+    - name: location
+      value: ""
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+        "observationId": "",
+        "referralId": "",
+        "patientId": "",
+        "patientLocation": "",
+        "doctorId": "",
+        "deptId": "",
+        "appointmentDate": "",
+        "startTime": "",
+        "toTime": "",
+        "fromTime": "",
+        "duration": "",
+        "apptReason": "",
+        "appReasonId": "",
+        "appReason": "",
+        "status": "",
+        "patientType": "",
+        "clinicType": "",
+        "paymentMode": "",
+        "paymentModel": "",
+        "posident": "",
+        "patpolid": "",
+        "patcomid": "",
+        "centerId": "",
+        "apptRemainder": "",
+        "noansRemainder": "",
+        "visitType": "",
+        "appServiceId": "",
+        "apptTypeId": "",
+        "appTypeId": "",
+        "isWalkIn": false,
+        "PHC_status": "",
+        "DidUKnow": "",
+        "notes": "",
+        "isDoubleBooking": false,
+        "appNo": "",
+        "docId": "",
+        "roomNo": "",
+        "staffId": "",
+        "staffName": "",
+        "enterBy": "",
+        "enteredBy": "",
+        "enteredDate": "",
+        "lastEdited": "",
+        "lastEditedBy": "",
+        "resolvedToTime": "",
+        "resolvedEnterBy": "",
+        "resolvedVisitType": "",
+        "resolvedAppReasonId": "",
+        "resolvedAppointmentDate": "",
+        "resolvedStartTime": "",
+        "resolvedAppTypeId": "",
+        "resolvedPaymentMode": ""
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: "Generated from cURL: curl -X POST \"{{baseUrl}}/api/referrals/:location/convert\" -H \"Content-Type: application/json\" -d '{\"observationId\":\"\",\"referralId\":\"\",\"patientId\":\"\",\"doctorId\":\"\",\"appointmentDate\":\"\",\"fromTime\":\"\",\"toTime\":\"\",\"duration\":\"\",\"clinicType\":\"\",\"paymentModel\":\"\"}'"

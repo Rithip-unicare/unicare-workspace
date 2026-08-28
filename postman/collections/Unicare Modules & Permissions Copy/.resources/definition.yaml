@@ -1,0 +1,5 @@
+$kind: collection
+description: Postman collection for MainModule, SubModule, RoleModulePermission, and UserModulePermission via API Gateway.
+variables:
+  baseUrl: http://localhost:8080
+  accessToken: your_access_token_here

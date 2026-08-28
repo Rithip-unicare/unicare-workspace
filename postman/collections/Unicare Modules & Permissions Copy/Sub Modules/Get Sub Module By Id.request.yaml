@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{baseUrl}}/api/organization/sub-modules/:id"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+pathVariables:
+  id: uuid_here
+auth:
+  type: noauth
+order: 3000

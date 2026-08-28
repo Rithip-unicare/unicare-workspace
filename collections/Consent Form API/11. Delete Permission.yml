@@ -1,0 +1,27 @@
+info:
+  name: 11. Delete Permission
+  type: http
+  seq: 11
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/admin/consentform/deletePermissions?formId={{formId}}&orgId={{orgId}}"
+  headers:
+    - name: Authorization
+      value: Bearer {{accesstoken}}
+  params:
+    - name: formId
+      value: "{{formId}}"
+      type: query
+    - name: orgId
+      value: "{{orgId}}"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: "Controller reads @RequestParam formId and @RequestParam orgId. Note: the URL template has a stray '}' ('/deletePermissions/{formId}/{facilityId}}') — use this query-param form to make it work."

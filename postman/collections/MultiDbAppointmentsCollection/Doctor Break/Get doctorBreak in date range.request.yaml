@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{baseUrl}}/doctor-break/breaks"
+method: POST
+headers:
+  Authorization: Bearer {{accessToken}}
+body:
+  type: json
+  content: |-
+    {
+      "location": "ALB1",
+      "doctorId": 1,
+      "fromDate": "2026-07-01",
+      "toDate": "2026-07-29"
+    }
+auth:
+  type: noauth
+order: 2000

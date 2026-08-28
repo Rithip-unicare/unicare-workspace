@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/api/master/enquiry-reasons"
+  url: "{{baseUrl}}/api/master/enquiry/enquiry-reasons"
   headers:
     - name: Authorization
       value: Bearer {{accessToken}}

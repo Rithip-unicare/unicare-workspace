@@ -1,0 +1,9 @@
+$kind: http-request
+name: "Master: Get Cities"
+url: "{{baseUrl}}/api/master/cities"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 25000

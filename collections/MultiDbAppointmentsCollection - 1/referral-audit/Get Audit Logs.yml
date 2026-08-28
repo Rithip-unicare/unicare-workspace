@@ -1,0 +1,36 @@
+info:
+  name: Get Audit Logs
+  type: http
+  seq: 10
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/referral-audit/logs?userId=&operation=&fromDate=&toDate=&location=&incompleteOnly="
+  params:
+    - name: userId
+      value: ""
+      type: query
+    - name: operation
+      value: ""
+      type: query
+    - name: fromDate
+      value: ""
+      type: query
+    - name: toDate
+      value: ""
+      type: query
+    - name: location
+      value: ""
+      type: query
+    - name: incompleteOnly
+      value: ""
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: 'Generated from cURL: curl -X GET "{{baseUrl}}/api/referral-audit/logs?userId=&operation=&fromDate=&toDate=&location=&incompleteOnly="'

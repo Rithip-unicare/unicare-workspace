@@ -1,0 +1,6 @@
+$kind: collection
+description: ""
+variables:
+  baseUrl: http://localhost:9011/api
+  token: ""
+  accessToken: "{{supabase_service_role_api_key_08zo}}"

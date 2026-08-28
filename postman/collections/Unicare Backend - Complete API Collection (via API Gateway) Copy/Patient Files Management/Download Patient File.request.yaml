@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{baseUrl}}/api/core/patients/:patientId/files/:category"
+method: GET
+pathVariables:
+  patientId: "1"
+  category: profile
+auth:
+  type: bearer
+order: 4000

@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{baseUrl}}/users"
+method: POST
+headers:
+  Authorization: Bearer {{accessToken}}
+body:
+  type: json
+  content: |-
+    {
+      "name": "NAJAH BEN ALI",
+      "email": "rithip@prioritysystems.in",
+      "phone": "+9716369103643",
+    "username": "najah123",
+      "password": "najah@123",
+      "emiratesId":"784-1983-9482576-8",
+      "createdBy": "VariantComputers"
+    }
+auth:
+  type: noauth
+order: 1000

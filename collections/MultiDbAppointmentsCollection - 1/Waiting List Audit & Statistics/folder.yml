@@ -1,0 +1,7 @@
+info:
+  name: Waiting List Audit & Statistics
+  type: folder
+  seq: 13
+
+request:
+  auth: inherit

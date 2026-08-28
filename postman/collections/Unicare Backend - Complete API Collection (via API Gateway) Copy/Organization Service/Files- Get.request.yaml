@@ -1,0 +1,9 @@
+$kind: http-request
+name: "Files: Get"
+url: "{{baseUrl}}/api/organization/files/USER/1/PROFILE_PIC"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 31000

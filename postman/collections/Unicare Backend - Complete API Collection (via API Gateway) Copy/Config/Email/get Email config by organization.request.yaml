@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{baseUrl}}/api/organization/email-config/organization/1"
+method: GET
+auth:
+  type: bearer
+order: 2000

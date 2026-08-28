@@ -1,0 +1,43 @@
+$kind: http-request
+url: "{{baseUrl}}/appointments"
+method: PUT
+headers:
+  Authorization: Bearer {{accessToken}}
+body:
+  type: json
+  content: |
+    {
+      "apptId": 136615,
+      "Location": "ALB3",
+      "appointmentDate": "2026-08-26",
+      "startTime": "14:00",
+      "toTime": "14:30",
+      "doctorId": 2,
+      "deptId": 14,
+      "apptReason": "Follow-up",
+      "status": "Booked",
+      "enterBy": "ADMIN",
+      "enteredDate": "2026-06-26",
+      "duration": 30,
+      "patientType": "old",
+      "clinicType": "Clinical",
+      "paymentMode": "Cash",
+      "posident": 0,
+      "patpolid": null,
+      "centerId": 1,
+      "apptRemainder": "N",
+      "noansRemainder": "N",
+      "visitType": "NEW",
+      "appReasonId": 1,
+      "appServiceId": 1,
+      "apptTypeId": 1,
+      "isWalkIn": false,
+      "PHC_status": "ACTIVE",
+      "DidUKnow": "Website",
+      "appNo": 0,
+      "lastEdited": "2026-06-26",
+      "lastEditedBy": "ADMIN"
+    }
+auth:
+  type: noauth
+order: 3000

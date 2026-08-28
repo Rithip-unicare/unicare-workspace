@@ -1,0 +1,16 @@
+$kind: http-request
+name: "Overrides: Create"
+url: "{{baseUrl}}/api/master/overrides"
+method: POST
+headers:
+  Authorization: Bearer {{accessToken}}
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "hospitalId": "uuid"
+    }
+auth:
+  type: noauth
+order: 3000

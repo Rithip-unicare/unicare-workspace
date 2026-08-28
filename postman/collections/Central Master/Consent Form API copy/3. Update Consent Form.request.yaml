@@ -1,0 +1,23 @@
+$kind: http-request
+url: "{{baseUrl}}/admin/consentform/update"
+method: PUT
+headers:
+  Authorization: Bearer {{accesstoken}}
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "formId": "adnic-consent-form",
+      "formName": "General Consent Form (Updated)",
+      "department": "OPD",
+      "isEnabled": true,
+      "isMobileEnabled": false,
+      "isTabletEnabled": true,
+      "isDesktopEnabled": true,
+      "isDentalEnabled": false,
+      "isPreviewEnabled": true
+    }
+auth:
+  type: noauth
+order: 3000

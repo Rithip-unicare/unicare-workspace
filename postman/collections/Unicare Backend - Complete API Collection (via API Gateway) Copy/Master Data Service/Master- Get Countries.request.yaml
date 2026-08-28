@@ -1,0 +1,9 @@
+$kind: http-request
+name: "Master: Get Countries"
+url: "{{baseUrl}}/api/master/countries"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 6000

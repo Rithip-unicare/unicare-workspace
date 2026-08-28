@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{baseUrl}}/admin/consentform/disable?{{formId}}?id={{formId}}"
+method: PUT
+headers:
+  Authorization: Bearer {{accesstoken}}
+queryParams:
+  - key: id
+    value: "{{formId}}"
+    description: Sent as query param
+auth:
+  type: noauth
+order: 8000

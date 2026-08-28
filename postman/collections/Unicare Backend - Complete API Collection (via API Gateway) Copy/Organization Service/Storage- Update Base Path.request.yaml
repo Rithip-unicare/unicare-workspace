@@ -1,0 +1,17 @@
+$kind: http-request
+name: "Storage: Update Base Path"
+url: "{{baseUrl}}/api/organization/storage-config/base-path"
+method: PUT
+headers:
+  Authorization: Bearer {{accessToken}}
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "newPath": "/Users/apple/Pictures/OrganizationImages"
+      //"newPath": "/home/priority/Pictures/unicare"
+    }
+auth:
+  type: noauth
+order: 33000

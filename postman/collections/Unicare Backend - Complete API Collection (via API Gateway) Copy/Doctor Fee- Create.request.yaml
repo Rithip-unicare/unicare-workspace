@@ -1,0 +1,13 @@
+$kind: http-request
+name: "Doctor Fee: Create"
+description: "Generated from cURL: curl -X POST \"{{baseUrl}}/api/doctors/fee\" -H \"Content-Type: application/json\" -d '{\"doctorId\": 1, \"consultation\": \"General Consultation\", \"charges\": 150.00, \"isActive\": true}'"
+url: "{{baseUrl}}/api/doctors/fee"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: '{"doctorId": 1, "consultation": "General Consultation", "charges": 150.00, "isActive": true}'
+auth:
+  type: noauth
+order: 9000

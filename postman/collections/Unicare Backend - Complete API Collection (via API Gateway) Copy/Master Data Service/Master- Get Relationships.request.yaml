@@ -1,0 +1,9 @@
+$kind: http-request
+name: "Master: Get Relationships"
+url: "{{baseUrl}}/api/master/relationships"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 17000

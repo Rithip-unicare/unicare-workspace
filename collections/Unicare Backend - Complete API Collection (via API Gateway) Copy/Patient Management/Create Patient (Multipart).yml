@@ -17,7 +17,7 @@ http:
         value: |-
           {
             "userId": 1,
-            "hospitalId": 1,
+            "hospitalId": 3,
             "isMigration": false,
             "mrNumber": "MR-001002004",
             "patientPaymentMode":"1",
@@ -29,7 +29,7 @@ http:
             },
             "basicDetails": {
               "titleId": "ceba0c45-80de-452f-b835-738a783a9f1a",
-              "firstName": "Hellow",
+              "firstName": "Ashok",
               "middleName": "William",
               "lastName": "Doe",
               "genderId": "9e656848-07c4-4479-9b3d-e5ee49f10e8f",
@@ -151,15 +151,18 @@ http:
       - name: profileImage
         type: file
         value:
-          - /Users/apple/Pictures/brave_screenshot_unicaredev.online (1).png
+          - C:\Users\PS07\Downloads\images (1).jpg
+        contentType: image/jpeg
       - name: emirateFront
         type: file
         value:
-          - /Users/apple/Downloads/blue-abstract-5120x2880-25023.jpg
+          - C:\Users\PS07\Downloads\images.jpg
+        contentType: image/jpeg
       - name: emirateBack
         type: file
         value:
-          - /Users/apple/Downloads/yuji-itadori-x-yuta-5120x2880-25001.jpg
+          - C:\Users\PS07\Downloads\images (1).jpg
+        contentType: image/jpeg
   auth: inherit
 
 settings:

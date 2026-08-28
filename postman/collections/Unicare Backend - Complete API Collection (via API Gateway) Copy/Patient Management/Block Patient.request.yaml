@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{baseUrl}}/api/core/patients/:patientId/block?reason=Suspicious?reason=Suspicious"
+method: POST
+queryParams:
+  reason: Suspicious
+pathVariables:
+  patientId: "7"
+auth:
+  type: bearer
+order: 8000

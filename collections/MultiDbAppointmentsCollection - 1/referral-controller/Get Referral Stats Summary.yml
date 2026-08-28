@@ -1,0 +1,37 @@
+info:
+  name: Get Referral Stats Summary
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{baseUrl}}/referrals/stats/summary"
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: "{\r
+
+      \    \"fromDate\":\"\",\r
+
+      \    \"toDate\":\"\",\r
+
+      \    \"location\":\"ALB7\",\r
+
+      \    \"referringDoctorId\":\"\",\r
+
+      \    \"referredToDoctorId\":\"\",\r
+
+      \    \"centerId\":\"\"\r
+
+      \    }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: "Generated from cURL: curl -X POST \"{{baseUrl}}/api/referrals/stats/summary\" -H \"Content-Type: application/json\" -d '{\"fromDate\":\"\",\"toDate\":\"\",\"location\":\"\",\"referringDoctorId\":\"\",\"referredToDoctorId\":\"\",\"centerId\":\"\"}'"

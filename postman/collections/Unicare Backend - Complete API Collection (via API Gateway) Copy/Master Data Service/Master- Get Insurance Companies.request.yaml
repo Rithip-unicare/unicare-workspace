@@ -1,0 +1,9 @@
+$kind: http-request
+name: "Master: Get Insurance Companies"
+url: "{{baseUrl}}/api/master/insurance/insurance-companies"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 36000

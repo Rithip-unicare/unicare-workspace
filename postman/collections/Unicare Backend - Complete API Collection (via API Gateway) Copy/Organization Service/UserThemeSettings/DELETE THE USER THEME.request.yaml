@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{baseUrl}}/api/organization/user-theme-settings/1/1"
+method: DELETE
+headers:
+  Authorization: Bearer {{accessToken}}
+body:
+  type: text
+  content: ""
+auth:
+  type: noauth
+order: 5000

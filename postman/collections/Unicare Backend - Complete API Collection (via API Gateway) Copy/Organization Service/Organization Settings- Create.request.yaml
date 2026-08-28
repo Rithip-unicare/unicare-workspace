@@ -1,0 +1,20 @@
+$kind: http-request
+name: "Organization Settings: Create"
+url: "{{baseUrl}}/api/organization/organization-settings"
+method: POST
+headers:
+  Authorization: Bearer {{accessToken}}
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "organizationId": 1,
+      "locationShortName": "HQ",
+      "centerName": "Main Center",
+      "hospitalType": "General",
+      "facilityId": "FAC123"
+    }
+auth:
+  type: noauth
+order: 36000

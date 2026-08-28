@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/doctor-break/schedule-break/1921/ALB1"
+method: DELETE
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 3000

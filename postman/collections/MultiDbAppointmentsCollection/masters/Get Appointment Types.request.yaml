@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/masters/appointment-types"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 4000

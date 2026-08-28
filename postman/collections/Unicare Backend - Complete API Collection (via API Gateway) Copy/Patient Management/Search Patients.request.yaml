@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{baseUrl}}/api/core/patients/search?hospitalId=0&type=firstName&value=moh?hospitalId=0&mrNumber=&primaryContact=&fullName=&patientStatus=&type=firstName&value=moh"
+method: GET
+queryParams:
+  hospitalId: "0"
+  mrNumber: ""
+  primaryContact: ""
+  fullName: ""
+  patientStatus: ""
+  type: firstName
+  value: moh
+auth:
+  type: bearer
+order: 6000

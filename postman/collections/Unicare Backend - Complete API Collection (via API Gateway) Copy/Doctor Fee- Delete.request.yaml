@@ -1,0 +1,8 @@
+$kind: http-request
+name: "Doctor Fee: Delete"
+description: 'Generated from cURL: curl -X DELETE "{{baseUrl}}/api/doctors/fee/5"'
+url: "{{baseUrl}}/api/doctors/fee/5"
+method: DELETE
+auth:
+  type: noauth
+order: 13000

@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{baseUrl}}/patient/search"
+method: POST
+headers:
+  Authorization: Bearer {{accessToken}}
+body:
+  type: json
+  content: |-
+    {
+        "location":"ALB3",
+        "searchTerm":"BADAL",
+        "searchType":"firstName",
+        "all":false
+    }
+auth:
+  type: noauth
+order: 1000

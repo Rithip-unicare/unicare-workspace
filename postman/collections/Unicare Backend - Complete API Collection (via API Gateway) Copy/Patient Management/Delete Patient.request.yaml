@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{baseUrl}}/api/core/patients/:patientId?hospitalId=1?hospitalId=1"
+method: DELETE
+queryParams:
+  hospitalId: "1"
+pathVariables:
+  patientId: "202"
+auth:
+  type: bearer
+order: 7000

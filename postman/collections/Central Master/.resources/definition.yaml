@@ -1,0 +1,8 @@
+$kind: collection
+description: ""
+variables:
+  baseUrl: ""
+  accesstoken: ""
+  formId: ""
+  orgId: ""
+  facilityId: ""

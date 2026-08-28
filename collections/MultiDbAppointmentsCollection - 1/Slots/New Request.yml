@@ -1,0 +1,28 @@
+info:
+  name: New Request
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseUrl}}/doctors/slots/add"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |-
+      {
+       "location":"ALB1",
+      "starDate":"2026-07-01",
+      "endDate":"2026-07-20"
+      //  "centerId":"1",
+      //  "doctorId":"1"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

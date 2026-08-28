@@ -1,0 +1,23 @@
+$kind: http-request
+url: "{{baseUrl}}/api/organization/sub-modules/:id"
+method: PUT
+headers:
+  Content-Type: application/json
+  Authorization: Bearer {{accessToken}}
+pathVariables:
+  id: uuid_here
+body:
+  type: json
+  content: |-
+    {
+      "moduleId": "main_module_uuid_here",
+      "name": "Updated Sub Module",
+      "menuLink": "/sub-link",
+      "icon": "sub-icon",
+      "isActive": true,
+      "createdBy": 1,
+      "updatedBy": 1
+    }
+auth:
+  type: noauth
+order: 4000

@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{baseUrl}}/admin/consentform/createPermissions"
+method: POST
+headers:
+  Authorization: Bearer {{accesstoken}}
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "orgId": 1,
+      "faciltyId": "facility_001",
+      "formIds": ["DEPT_Dermatology_GENERAL CONSENT", "DEPT_Dermatology_GENERAL_CONSENT"]
+    }
+auth:
+  type: noauth
+order: 10000

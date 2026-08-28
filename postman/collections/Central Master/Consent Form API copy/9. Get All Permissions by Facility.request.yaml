@@ -1,0 +1,9 @@
+$kind: http-request
+description: The controller uses @RequestParam("facilityId") despite the {facilityId} in the path.
+url: "{{baseUrl}}/admin/consentform/getAllPermissions/{{facilityId}}"
+method: GET
+headers:
+  Authorization: Bearer {{accesstoken}}
+auth:
+  type: noauth
+order: 9000

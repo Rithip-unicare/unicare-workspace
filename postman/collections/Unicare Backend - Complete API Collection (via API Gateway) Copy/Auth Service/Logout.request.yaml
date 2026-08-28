@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{baseUrl}}/api/auth/logout?sessionId={{sessionId}}?sessionId={{sessionId}}"
+method: POST
+headers:
+  Authorization: Bearer {{accessToken}}
+queryParams:
+  sessionId: "{{sessionId}}"
+auth:
+  type: noauth
+order: 2000

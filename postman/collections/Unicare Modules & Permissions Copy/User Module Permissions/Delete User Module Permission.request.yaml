@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{baseUrl}}/api/organization/user-module-permissions/:id"
+method: DELETE
+headers:
+  Authorization: Bearer {{accessToken}}
+pathVariables:
+  id: "1"
+auth:
+  type: noauth
+order: 5000

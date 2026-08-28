@@ -1,0 +1,9 @@
+$kind: http-request
+name: "Master: Get Genders"
+url: "{{baseUrl}}/api/master/demographics/genders"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 5000

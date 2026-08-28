@@ -1,0 +1,77 @@
+$kind: http-request
+name: "Organizations: Update"
+url: "{{baseUrl}}/api/organization/organizations"
+method: PUT
+headers:
+  Authorization: Bearer {{accessToken}}
+body:
+  type: formdata
+  content:
+    - type: text
+      key: englishName
+      value: City General Hospital
+    - type: text
+      key: arabicName
+      value: مستشفى المدينة العام
+    - type: text
+      key: shortName
+      value: CGHY
+    - type: text
+      key: addressLine1
+      value: 123 Health Ave
+    - type: text
+      key: addressLine2
+      value: Downtown
+    - type: text
+      key: cityId
+      value: 123e4567-e89b-12d3-a456-426614174000
+    - type: text
+      key: regionId
+      value: 123e4567-e89b-12d3-a456-426614174000
+    - type: text
+      key: countryId
+      value: 123e4567-e89b-12d3-a456-426614174000
+    - type: text
+      key: email
+      value: contact@citygeneral.com
+    - type: text
+      key: phoneNumber
+      value: "+1234567890"
+    - type: text
+      key: faxNumber
+      value: "+1234567891"
+    - type: text
+      key: websiteUrl
+      value: www.citygeneral.com
+    - type: text
+      key: locationUrl
+      value: maps.google.com/xyz
+    - type: text
+      key: facilityLicenseNo
+      value: LIC-12345
+    - type: text
+      key: authorityRegionId
+      value: 124e4567-e89b-12d3-a456-426614174000
+    - type: text
+      key: username
+      value: cgh_admin
+    - type: text
+      key: password
+      value: Password@123
+    - type: text
+      key: webServiceUrl
+      value: api.citygeneral.com
+    - type: file
+      key: headerLogoFile
+      src:
+        - /Users/apple/Downloads/yuji-itadori-x-yuta-5120x2880-25001.jpg
+    - type: file
+      key: smallLogoFile
+      src:
+        - /Users/apple/Downloads/IMG_20260213_095834189_HDR.jpg
+    - type: text
+      key: id
+      value: "1"
+auth:
+  type: noauth
+order: 6000

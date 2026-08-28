@@ -1,0 +1,9 @@
+$kind: http-request
+name: "Permissions: Get All"
+url: "{{baseUrl}}/api/organization/permissions"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 21000

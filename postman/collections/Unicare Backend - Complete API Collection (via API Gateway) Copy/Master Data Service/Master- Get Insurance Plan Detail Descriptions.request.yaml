@@ -1,0 +1,9 @@
+$kind: http-request
+name: "Master: Get Insurance Plan Detail Descriptions"
+url: "{{baseUrl}}/api/master/insurance-plan-detail-descriptions"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+auth:
+  type: noauth
+order: 41000

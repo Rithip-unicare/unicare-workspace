@@ -1,0 +1,50 @@
+info:
+  name: Get Incomplete Follow-ups (POST)
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/followup/incomplete?page=0&size=10"
+  headers:
+    - name: Content-Type
+      value: application/json
+  params:
+    - name: page
+      value: "0"
+      type: query
+    - name: size
+      value: "10"
+      type: query
+  body:
+    type: json
+    data: "{ \r
+
+      \ \"emiratesId\": \"\",\r
+
+      \  \"patientName\": \"\",\r
+
+      \    \"doctorName\": \"\",\r
+
+      \     \"fromDate\": \"\",\r
+
+      \     \"toDate\": \"\",\r
+
+      \      \"flupRqstDone\": \"\",\r
+
+      \       \"location\": \"ALB3\",        \r
+
+      \         \"incompleteOnly\": true,\r
+
+      \         \"status\": \"\"\r
+
+      \         }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Retrieves incomplete follow-ups via request body filters. Returns a paginated list of follow-up observation records.

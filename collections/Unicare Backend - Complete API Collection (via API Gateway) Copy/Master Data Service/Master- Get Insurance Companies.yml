@@ -5,17 +5,10 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/api/master/insurance-companies?page=0&size=10"
+  url: "{{baseUrl}}/api/master/insurance/insurance-companies"
   headers:
     - name: Authorization
       value: Bearer {{accessToken}}
-  params:
-    - name: page
-      value: "0"
-      type: query
-    - name: size
-      value: "10"
-      type: query
   auth: inherit
 
 settings:

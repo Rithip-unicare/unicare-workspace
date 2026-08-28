@@ -1,0 +1,43 @@
+info:
+  name: All branch
+  type: http
+  seq: 13
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/followup/all-branches?size=1000"
+  headers:
+    - name: Content-Type
+      value: application/json
+  params:
+    - name: size
+      value: "1000"
+      type: query
+  body:
+    type: json
+    data: "{
+
+      \ \ 
+
+      \  \"location\":\"ALB4\",
+
+      \  \"doctorId\":23,
+
+      \  \"page\":0,
+
+      \  \"size\":15
+
+      \\ 
+
+      }
+
+      \         "
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Retrieves incomplete follow-ups via request body filters. Returns a paginated list of follow-up observation records.

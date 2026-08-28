@@ -1,0 +1,33 @@
+info:
+  name: New Request
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{baseUrl}}/followup/stats/summary"
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: "{\r
+
+      \    \"fromDate\":\"\",\r
+
+      \    \"toDate\":\"\",\r
+
+      \    \"location\":\"\",\r
+
+      \    \"doctorId\":null,\r
+
+      \    \"deptId\":null\r
+
+      \    }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,27 @@
+info:
+  name: Get Doctor daily appointments
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{baseUrl}}/doctors/daily-appointments"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |-
+      {
+          "location":"ALB1",
+          "date":"2026-06-30",
+          "doctorId":1,
+          "centerId":1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

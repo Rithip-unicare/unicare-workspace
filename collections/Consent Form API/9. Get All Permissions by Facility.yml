@@ -1,0 +1,25 @@
+info:
+  name: 9. Get All Permissions by Facility
+  type: http
+  seq: 9
+
+http:
+  method: GET
+  url: "{{baseUrl}}/admin/consentform/getAllPermissions?facilityId={{facilityId}}"
+  headers:
+    - name: Authorization
+      value: Bearer {{accesstoken}}
+  params:
+    - name: facilityId
+      value: "{{facilityId}}"
+      type: query
+      description: Sent as query param despite {facilityId} in path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: The controller uses @RequestParam("facilityId") despite the {facilityId} in the path.

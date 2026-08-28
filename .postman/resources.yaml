@@ -1,0 +1,13 @@
+workspace:
+  id: 2cf79834-a15d-4ed3-8b8b-dbf0de7ade19
+
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+
+cloudResources:
+  collections:
+    ../postman/collections/MultiDbAppointmentsCollection: 48732261-3851c1b7-36ce-4e8f-a3fa-729f49644456
+    ../postman/collections/Central Master: 13e43e8a-9ecb-4c19-af4a-1439427145fe
+    ../postman/collections/Unicare Backend - Complete API Collection (via API Gateway) Copy: 1fb0c36e-e5d9-44d5-af8c-85b4ab13a100
+    ../postman/collections/Unicare Modules & Permissions Copy: 988be577-ac38-44b3-b353-2e4e0660799c
+  globals:
+    ../postman/globals/workspace.globals.yaml: 21246e67-eb0f-481c-8789-b9f2c038b5f4

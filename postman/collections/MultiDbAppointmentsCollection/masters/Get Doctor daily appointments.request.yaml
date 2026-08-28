@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{baseUrl}}/doctors/daily-appointments"
+method: POST
+headers:
+  Authorization: Bearer {{accessToken}}
+body:
+  type: json
+  content: |-
+    {
+        "location":"ALB1",
+        "date":"2026-06-30",
+        "doctorId":1,
+        "centerId":1
+    }
+auth:
+  type: noauth
+order: 9000

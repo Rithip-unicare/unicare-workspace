@@ -13,11 +13,12 @@ http:
     type: json
     data: |-
       {
-        "name": "rithip",
-        "email": "ashokacharya7e@gmail.com",
+        "name": "NAJAH BEN ALI",
+        "email": "rithip@prioritysystems.in",
         "phone": "+9716369103643",
-      "username": "ashok",
-        "password": "ashok@123",
+      "username": "najah123",
+        "password": "najah@123",
+        "emiratesId":"784-1983-9482576-8",
         "createdBy": "VariantComputers"
       }
   auth: inherit

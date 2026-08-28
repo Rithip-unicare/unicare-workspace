@@ -1,0 +1,9 @@
+$kind: http-request
+description: The controller uses @RequestParam("id") despite the {id} in the path, so the id must be a query parameter.
+url: "{{baseUrl}}/admin/consentform/delete/{{formId}}"
+method: DELETE
+headers:
+  Authorization: Bearer {{accesstoken}}
+auth:
+  type: noauth
+order: 4000

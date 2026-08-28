@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{baseUrl}}/api/organization/sms-config/organization/1"
+method: GET
+body:
+  type: text
+  content: ""
+auth:
+  type: bearer
+settings: {}
+order: 2000

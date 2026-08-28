@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{baseUrl}}/api/core/patients/mr/:mrNumber?hospitalId=1?hospitalId=1"
+method: GET
+queryParams:
+  hospitalId: "1"
+pathVariables:
+  mrNumber: MAXA0000004
+auth:
+  type: bearer
+order: 4000
