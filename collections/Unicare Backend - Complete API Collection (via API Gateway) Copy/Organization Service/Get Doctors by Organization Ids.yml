@@ -5,13 +5,13 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/api/organization/doctors/by-organizations?orgIds=1,2"
+  url: "{{baseUrl}}/api/organization/doctors/by-organizations?orgIds=1"
   headers:
     - name: Authorization
       value: Bearer {{accessToken}}
   params:
     - name: orgIds
-      value: 1,2
+      value: "1"
       type: query
   auth: inherit
 

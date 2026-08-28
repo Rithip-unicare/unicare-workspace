@@ -1,0 +1,1288 @@
+info:
+  name: Get messages
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/Messages/getmessages?contactNo={{mobileNo}}&channelName=WHATSAPP&id=0"
+  headers:
+    - name: accept
+      value: "*/*"
+    - name: X-Api-Key
+      value: "{{apikey}}"
+  params:
+    - name: contactNo
+      value: "{{mobileNo}}"
+      type: query
+    - name: channelName
+      value: WHATSAPP
+      type: query
+    - name: id
+      value: "0"
+      type: query
+
+runtime:
+  variables:
+    - name: mobileNo
+      value: "9113098166"
+    - name: apikey
+      value: D7ABBC42-8A61-47B0-9CF2-F7C4C8927536
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: Get messages
+    request:
+      url: https://apiv1.anantya.ai/api/Messages/getmessages?contactNo=•••••••&channelName=WHATSAPP&id=0
+      method: GET
+      headers:
+        - name: accept
+          value: "*/*"
+        - name: X-Api-Key
+          value: "{{apikey}}"
+      params:
+        - name: contactNo
+          value: •••••••
+          type: query
+        - name: channelName
+          value: WHATSAPP
+          type: query
+        - name: id
+          value: "0"
+          type: query
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: Transfer-Encoding
+          value: chunked
+        - name: Content-Type
+          value: application/json; charset=utf-8
+        - name: Server
+          value: Microsoft-IIS/10.0
+        - name: X-Rate-Limit-Limit
+          value: 10s
+        - name: X-Rate-Limit-Remaining
+          value: "999"
+        - name: X-Rate-Limit-Reset
+          value: 2024-03-12T11:06:55.1208951Z
+        - name: X-Powered-By
+          value: ASP.NET
+        - name: Date
+          value: Tue, 12 Mar 2024 11:06:47 GMT
+      body:
+        type: json
+        data: |-
+          {
+              "dataObj": [
+                  {
+                      "msgId": 7376,
+                      "keyFromMe": 1,
+                      "mediaType": "LISTBUTTON",
+                      "msgText": "{\"buttons\":null,\"List\":{\"sections\":[{\"title\":\"movie show\",\"rows\":[{\"id\":\"0\",\"title\":\"morning\"}]}],\"buttontext\":\"Menu\"},\"Body\":{\"text\":\"list button test\"},\"header\":null}",
+                      "msgTime": "11/03/2024 18:30:00",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 7375,
+                      "keyFromMe": 1,
+                      "mediaType": "LISTBUTTON",
+                      "msgText": "{\"buttons\":null,\"List\":{\"sections\":[{\"title\":\"movie show\",\"rows\":[{\"id\":\"0\",\"title\":\"morning\"}]}],\"buttontext\":\"Menu\"},\"Body\":{\"text\":\"list button test\"},\"header\":null}",
+                      "msgTime": "11/03/2024 18:30:00",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 7374,
+                      "keyFromMe": 1,
+                      "mediaType": "BUTTON",
+                      "msgText": "{\"buttons\":[{\"type\":\"reply\",\"id\":\"0\",\"text\":\"Book now\"}],\"List\":null,\"Body\":{\"text\":\"Hello test message\"},\"header\":null}",
+                      "msgTime": "11/03/2024 18:27:00",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 7373,
+                      "keyFromMe": 1,
+                      "mediaType": "BUTTON",
+                      "msgText": "{\"buttons\":[{\"type\":\"reply\",\"id\":\"0\",\"text\":\"Book now\"}],\"List\":null,\"Body\":{\"text\":\"Hello test message\"},\"header\":null}",
+                      "msgTime": "11/03/2024 18:27:00",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 7367,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "https://Anantya.link/fyqbyd",
+                      "msgTime": "11/03/2024 17:16:31",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 7366,
+                      "keyFromMe": 0,
+                      "mediaType": "TEXT",
+                      "msgText": "helo",
+                      "msgTime": "11/03/2024 17:16:31",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 7365,
+                      "keyFromMe": 1,
+                      "mediaType": "BUTTON",
+                      "msgText": "{\"buttons\":[{\"type\":\"reply\",\"id\":\"1\",\"text\":\"button\"}],\"Body\":{\"text\":\"this template is for form overview\"}}",
+                      "msgTime": "11/03/2024 17:14:35",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6850,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "878",
+                      "msgTime": "05/03/2024 18:44:00",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6849,
+                      "keyFromMe": 0,
+                      "mediaType": "TEXT",
+                      "msgText": "test12",
+                      "msgTime": "05/03/2024 18:43:55",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6845,
+                      "keyFromMe": 0,
+                      "mediaType": "TEXT",
+                      "msgText": "ddd",
+                      "msgTime": "05/03/2024 17:51:22",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6844,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "he;;p",
+                      "msgTime": "05/03/2024 17:51:00",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6843,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "hjbjb",
+                      "msgTime": "05/03/2024 17:50:00",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6842,
+                      "keyFromMe": 0,
+                      "mediaType": "TEXT",
+                      "msgText": "Hello",
+                      "msgTime": "05/03/2024 17:48:09",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6839,
+                      "keyFromMe": 0,
+                      "mediaType": "DOC",
+                      "msgText": null,
+                      "msgTime": "05/03/2024 11:29:19",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": "https://media.trringme.com/ad75f6SampleDOCFile_1.195921mb.pdf.pdf",
+                      "fileExt": "pdf",
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6838,
+                      "keyFromMe": 0,
+                      "mediaType": "TEXT",
+                      "msgText": "hello",
+                      "msgTime": "04/03/2024 12:54:49",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6836,
+                      "keyFromMe": 0,
+                      "mediaType": "TEXT",
+                      "msgText": "Stop Promotion",
+                      "msgTime": "02/03/2024 17:30:16",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6832,
+                      "keyFromMe": 0,
+                      "mediaType": "DOC",
+                      "msgText": null,
+                      "msgTime": "02/03/2024 17:16:23",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": "https://media.trringme.com/e78955SampleDOCFile_1.195921mb.pdf.pdf",
+                      "fileExt": "pdf",
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6831,
+                      "keyFromMe": 0,
+                      "mediaType": "VIDEO",
+                      "msgText": null,
+                      "msgTime": "02/03/2024 17:15:43",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": "https://media.trringme.com/31d054425115429990905.mp4",
+                      "fileExt": "mp4",
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6830,
+                      "keyFromMe": 0,
+                      "mediaType": "CAPTION",
+                      "msgText": "ndksfnkjsdafasdhfkjasdhfkjdas",
+                      "msgTime": "02/03/2024 17:15:33",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": "https://media.trringme.com/45825d741940508035190.mp4",
+                      "fileExt": "mp4",
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6829,
+                      "keyFromMe": 1,
+                      "mediaType": "VIDEO",
+                      "msgText": null,
+                      "msgTime": "02/03/2024 17:15:00",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": "https://media.trringme.com/138322file_example_MP4_480_1_5MG.mp4",
+                      "fileExt": "mp4",
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6828,
+                      "keyFromMe": 0,
+                      "mediaType": "VCARD",
+                      "msgText": "BEGIN:VCARD \nVERSION:3.0 \nN:;Devant;;; \nFN:Devant \nTEL;type=CELL; \nitem1.TEL;waid=+44 7424 813662:447424813662 \nitem1.X-ABLabel:Phone \nEND:VCARD",
+                      "msgTime": "02/03/2024 17:07:21",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6826,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "Dear happy,\nHi, You received the enquiry. Here are the details as below:\nContact no.: 919265372319",
+                      "msgTime": "02/03/2024 16:55:31",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6824,
+                      "keyFromMe": 1,
+                      "mediaType": "BUTTON",
+                      "msgText": "{\"buttons\":[{\"type\":\"reply\",\"id\":\"1\",\"text\":\"Visit Website\"},{\"type\":\"reply\",\"id\":\"2\",\"text\":\"Call now\"}],\"Body\":{\"text\":\"Breaking News 2024 Lavender Hotel Al Nahda has transformed from dry to wet status.  Our new outlet Exit 69 - Lounge Bar Welcomes you🍹🥂 Areej Resto Bar has a new menu and Banquet Functions are ongoing with more variety\\n\\n#loungebar #dubainightlife #meetingspot #lavenderalnahdahotel #lavendercheers #transformation #drytowet #exit69 #theborder #lavenderhoteldubai #dubaihotels #dubailife #happyhours #drinkinghaven #indulgence #luxury…\"},\"header\":{\"type\":\"video\"},\"footer\":{\"text\":\"Reply 'STOP' to unsubscribe\"}}",
+                      "msgTime": "02/03/2024 16:54:07",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": "https://media.trringme.com/424763815_2539758316198808_4464820923421106337_n.mp4",
+                      "fileExt": "mp4",
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6823,
+                      "keyFromMe": 1,
+                      "mediaType": "BUTTON",
+                      "msgText": "{\"buttons\":[{\"type\":\"reply\",\"id\":\"1\",\"text\":\"Stop Promotion\"},{\"type\":\"reply\",\"id\":\"2\",\"text\":\"Call us\"},{\"type\":\"reply\",\"id\":\"3\",\"text\":\"Book now\"}],\"Body\":{\"text\":\"this is sample text\"},\"header\":{\"type\":\"TEXT\",\"text\":\"test\"},\"footer\":{\"text\":\"Not interested? Tap on Stop Promotion\"}}",
+                      "msgTime": "02/03/2024 16:52:39",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6822,
+                      "keyFromMe": 0,
+                      "mediaType": "TEXT",
+                      "msgText": ".",
+                      "msgTime": "02/03/2024 16:49:59",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6821,
+                      "keyFromMe": 0,
+                      "mediaType": "TEXT",
+                      "msgText": "click count report quick reply",
+                      "msgTime": "02/03/2024 16:48:55",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6819,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "Dear devant,\nHi, You received the enquiry. Here are the details as below:\nContact no.: 919328601010",
+                      "msgTime": "02/03/2024 16:36:35",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6815,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "4454",
+                      "msgTime": "02/03/2024 16:20:00",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6814,
+                      "keyFromMe": 0,
+                      "mediaType": "FLOWRES",
+                      "msgText": "{\"flow_token\":\"unused\"}",
+                      "msgTime": "02/03/2024 16:15:23",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6809,
+                      "keyFromMe": 1,
+                      "mediaType": "BUTTON",
+                      "msgText": "{\"buttons\":[{\"type\":\"reply\",\"id\":\"1\",\"text\":\"button\"}],\"Body\":{\"text\":\"fewfwef\"}}",
+                      "msgTime": "02/03/2024 16:12:43",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6808,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "Dear deesha13,\nHi, You received the enquiry. Here are the details as below:\nContact no.: 919408143666",
+                      "msgTime": "02/03/2024 15:16:37",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6807,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "Dear test,\nHi, You received the enquiry. Here are the details as below:\nContact no.: 919328601010",
+                      "msgTime": "02/03/2024 15:11:16",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6806,
+                      "keyFromMe": 1,
+                      "mediaType": "CAPTION",
+                      "msgText": "safvvsdhfjbsbdfhjbsadhjfbhsfbhwebrhwqbverhjbqwerqhw lbwfw nerfwqe rfuwrfuhwuifwif w hfqhwfuhuwihfuhwfuhwuf wfuhwf",
+                      "msgTime": "02/03/2024 15:06:00",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": "https://media.trringme.com/9304392.jpg",
+                      "fileExt": "jpg",
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6805,
+                      "keyFromMe": 1,
+                      "mediaType": "IMAGE",
+                      "msgText": null,
+                      "msgTime": "02/03/2024 15:05:00",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": "https://media.trringme.com/6910061.jpg",
+                      "fileExt": "jpg",
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6804,
+                      "keyFromMe": 0,
+                      "mediaType": "CAPTION",
+                      "msgText": "test test test tetstsfbhdvfsdhafbvadhsfvdhjsvfhsvdfhjsvdf k sfvkhasvhfjvashfjvhjasdf",
+                      "msgTime": "02/03/2024 15:05:01",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": "https://media.trringme.com/d5fdbb1116486806172665.jpeg",
+                      "fileExt": "jpeg",
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6803,
+                      "keyFromMe": 0,
+                      "mediaType": "IMAGE",
+                      "msgText": null,
+                      "msgTime": "02/03/2024 15:04:45",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": "https://media.trringme.com/5713d8950854606386798.jpeg",
+                      "fileExt": "jpeg",
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6802,
+                      "keyFromMe": 0,
+                      "mediaType": "TEXT",
+                      "msgText": "hello",
+                      "msgTime": "02/03/2024 15:03:58",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6801,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "hello",
+                      "msgTime": "02/03/2024 15:00:00",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6795,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "Dear devant,\nHi, You have received the enquiry. Here are the details as below:\nContact no.: 919408143666",
+                      "msgTime": "02/03/2024 12:57:38",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6794,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "Dear deesha13,\nHi, You have received the enquiry. Here are the details as below:\nContact no.: 919408143666",
+                      "msgTime": "02/03/2024 12:57:37",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6793,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "Dear parth1,\nHi, You have received the enquiry. Here are the details as below:\nContact no.: 919408143666",
+                      "msgTime": "02/03/2024 12:57:37",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6792,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "Dear devant,\nHi, You have received the enquiry. Here are the details as below:\nContact no.: 919408143666",
+                      "msgTime": "02/03/2024 12:57:16",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6791,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "Dear parth1,\nHi, You have received the enquiry. Here are the details as below:\nContact no.: 919408143666",
+                      "msgTime": "02/03/2024 12:57:15",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6790,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "Dear deesha13,\nHi, You have received the enquiry. Here are the details as below:\nContact no.: 919408143666",
+                      "msgTime": "02/03/2024 12:57:15",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6788,
+                      "keyFromMe": 1,
+                      "mediaType": "BUTTON",
+                      "msgText": "{\"buttons\":[{\"type\":\"reply\",\"id\":\"1\",\"text\":\"button\"}],\"Body\":{\"text\":\"this template is for form overview\"}}",
+                      "msgTime": "02/03/2024 12:45:22",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6786,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "Dear parth1,\nHi, You have received the enquiry. Here are the details as below:\nContact no.: 919429727638",
+                      "msgTime": "02/03/2024 12:36:49",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6785,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "Dear devant,\nHi, You have received the enquiry. Here are the details as below:\nContact no.: 919429727638",
+                      "msgTime": "02/03/2024 12:36:49",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6784,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "Dear deesha13,\nHi, You have received the enquiry. Here are the details as below:\nContact no.: 919429727638",
+                      "msgTime": "02/03/2024 12:36:49",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6778,
+                      "keyFromMe": 0,
+                      "mediaType": "TEXT",
+                      "msgText": "sdgfdfsg",
+                      "msgTime": "02/03/2024 10:29:21",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6777,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "dfgsdfgdsfg",
+                      "msgTime": "02/03/2024 10:29:00",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6776,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "cvbcxvbxcbxcvb",
+                      "msgTime": "02/03/2024 10:28:00",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6774,
+                      "keyFromMe": 1,
+                      "mediaType": "BUTTON",
+                      "msgText": "{\"buttons\":[{\"type\":\"reply\",\"id\":\"1\",\"text\":\"button\"}],\"Body\":{\"text\":\"this template is for form overview\"}}",
+                      "msgTime": "01/03/2024 17:12:58",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6773,
+                      "keyFromMe": 0,
+                      "mediaType": "DOC",
+                      "msgText": null,
+                      "msgTime": "01/03/2024 16:42:58",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": "https://media.trringme.com/b06766SampleDOCFile_5.380521mb.pdf.pdf",
+                      "fileExt": "pdf",
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6772,
+                      "keyFromMe": 0,
+                      "mediaType": "CAPTION",
+                      "msgText": "hrehtuiheruthrueiwthurehturheuthreuithrueithueirhtuirhetuirheuithrueithrueiwthuiewhtuirewht",
+                      "msgTime": "01/03/2024 16:42:37",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": "https://media.trringme.com/f1ae87954362346026443.mp4",
+                      "fileExt": "mp4",
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6771,
+                      "keyFromMe": 0,
+                      "mediaType": "VIDEO",
+                      "msgText": null,
+                      "msgTime": "01/03/2024 16:42:32",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": "https://media.trringme.com/208671420078400458912.mp4",
+                      "fileExt": "mp4",
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6770,
+                      "keyFromMe": 0,
+                      "mediaType": "CAPTION",
+                      "msgText": "dfgdfhghuitheuitheuirthueirhtiurhetuier",
+                      "msgTime": "01/03/2024 16:42:18",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": "https://media.trringme.com/06369b278233098632749.jpeg",
+                      "fileExt": "jpeg",
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6769,
+                      "keyFromMe": 0,
+                      "mediaType": "IMAGE",
+                      "msgText": null,
+                      "msgTime": "01/03/2024 16:42:02",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": "https://media.trringme.com/d4e86d693293362747724.jpeg",
+                      "fileExt": "jpeg",
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6768,
+                      "keyFromMe": 0,
+                      "mediaType": "IMAGE",
+                      "msgText": null,
+                      "msgTime": "01/03/2024 16:42:01",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": "https://media.trringme.com/857e60776933017627349.jpeg",
+                      "fileExt": "jpeg",
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6767,
+                      "keyFromMe": 0,
+                      "mediaType": "TEXT",
+                      "msgText": "hello\\",
+                      "msgTime": "01/03/2024 16:41:57",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6766,
+                      "keyFromMe": 1,
+                      "mediaType": "AUDIO",
+                      "msgText": null,
+                      "msgTime": "01/03/2024 16:41:00",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": "https://media.trringme.com/997771file_example_MP3_1MG.mp3",
+                      "fileExt": "mp3",
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6765,
+                      "keyFromMe": 1,
+                      "mediaType": "DOC",
+                      "msgText": null,
+                      "msgTime": "01/03/2024 16:41:00",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": "https://media.trringme.com/434394SampleDOCFile_1.195921mb.pdf",
+                      "fileExt": "pdf",
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6764,
+                      "keyFromMe": 1,
+                      "mediaType": "CAPTION",
+                      "msgText": "rheqwhrueihquweirhuiqewhruiehqwueir huweruhewurhueiwrhueiwhrui werui whuiewhruhwuirhueiwhr uewhruiew",
+                      "msgTime": "01/03/2024 16:40:00",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": "https://media.trringme.com/691278file_example_MP4_1280_10MG.mp4",
+                      "fileExt": "mp4",
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6763,
+                      "keyFromMe": 1,
+                      "mediaType": "VIDEO",
+                      "msgText": null,
+                      "msgTime": "01/03/2024 16:40:00",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": "https://media.trringme.com/319351file_example_MP4_480_1_5MG.mp4",
+                      "fileExt": "mp4",
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6762,
+                      "keyFromMe": 1,
+                      "mediaType": "CAPTION",
+                      "msgText": "shfkjdhskjfhdkjashfashfuhasuierhfueiwri wrhuiwehruiewhruihewuirhfuiwe ruew ruhweuirhuiwehruiwer hewuirhueiwhruiwheruiqhrueihwueirhueiwr",
+                      "msgTime": "01/03/2024 16:40:00",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": "https://media.trringme.com/9120231.jpg",
+                      "fileExt": "jpg",
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6761,
+                      "keyFromMe": 1,
+                      "mediaType": "IMAGE",
+                      "msgText": null,
+                      "msgTime": "01/03/2024 16:39:00",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": "https://media.trringme.com/4895560.jpg",
+                      "fileExt": "jpg",
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6760,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "hello\\",
+                      "msgTime": "01/03/2024 16:39:00",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6759,
+                      "keyFromMe": 0,
+                      "mediaType": "DOC",
+                      "msgText": null,
+                      "msgTime": "01/03/2024 16:22:02",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": "https://media.trringme.com/6bacdeDocument1-converted.pdf.pdf.pdf",
+                      "fileExt": "pdf",
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6757,
+                      "keyFromMe": 0,
+                      "mediaType": "STICKER",
+                      "msgText": null,
+                      "msgTime": "01/03/2024 16:17:06",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": "https://media.trringme.com/211618215334937.webp",
+                      "fileExt": "webp",
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6756,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "gfhgfhfghgfhdgfhg",
+                      "msgTime": "01/03/2024 16:09:00",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6755,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "fghgfhdfghdfghgf",
+                      "msgTime": "01/03/2024 16:08:00",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6754,
+                      "keyFromMe": 0,
+                      "mediaType": "TEXT",
+                      "msgText": "STOP",
+                      "msgTime": "01/03/2024 15:41:45",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6753,
+                      "keyFromMe": 0,
+                      "mediaType": "TEXT",
+                      "msgText": "Stop Promotion",
+                      "msgTime": "01/03/2024 15:41:23",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6752,
+                      "keyFromMe": 0,
+                      "mediaType": "TEXT",
+                      "msgText": "Visit website",
+                      "msgTime": "01/03/2024 15:41:21",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6747,
+                      "keyFromMe": 0,
+                      "mediaType": "TEXT",
+                      "msgText": "ewhfuwehfuhwnbdfkjsbgjdbhghdsfhg dgnfkjdhfgsdfhgjuhsd dfgdsfgdsfgdfgds dfgsgfdfgdsfgdsfgs",
+                      "msgTime": "01/03/2024 15:36:47",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6746,
+                      "keyFromMe": 1,
+                      "mediaType": "BUTTON",
+                      "msgText": "{\"buttons\":[{\"type\":\"reply\",\"id\":\"1\",\"text\":\"Stop Promotion\"},{\"type\":\"reply\",\"id\":\"2\",\"text\":\"Call us\"},{\"type\":\"reply\",\"id\":\"3\",\"text\":\"Visit website\"}],\"Body\":{\"text\":\"click count report quick reply\"},\"header\":{\"type\":\"TEXT\",\"text\":\"count of click\"},\"footer\":{\"text\":\"Not interested? Tap on Stop Promotion\"}}",
+                      "msgTime": "01/03/2024 15:35:58",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6739,
+                      "keyFromMe": 0,
+                      "mediaType": "TEXT",
+                      "msgText": "Stop Promotion",
+                      "msgTime": "01/03/2024 15:30:24",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6729,
+                      "keyFromMe": 1,
+                      "mediaType": "BUTTON",
+                      "msgText": "{\"buttons\":[{\"type\":\"reply\",\"id\":\"1\",\"text\":\"Stop Promotion\"},{\"type\":\"reply\",\"id\":\"2\",\"text\":\"Book now\"}],\"Body\":{\"text\":\"single button count\"},\"footer\":{\"text\":\"Not interested? Tap on Stop Promotion\"}}",
+                      "msgTime": "01/03/2024 15:29:31",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6727,
+                      "keyFromMe": 0,
+                      "mediaType": "TEXT",
+                      "msgText": "Visit website",
+                      "msgTime": "01/03/2024 15:28:15",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6726,
+                      "keyFromMe": 0,
+                      "mediaType": "TEXT",
+                      "msgText": "Call us",
+                      "msgTime": "01/03/2024 15:28:10",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6725,
+                      "keyFromMe": 0,
+                      "mediaType": "TEXT",
+                      "msgText": "Stop Promotion",
+                      "msgTime": "01/03/2024 15:28:01",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6724,
+                      "keyFromMe": 1,
+                      "mediaType": "BUTTON",
+                      "msgText": "{\"buttons\":[{\"type\":\"reply\",\"id\":\"1\",\"text\":\"Stop Promotion\"},{\"type\":\"reply\",\"id\":\"2\",\"text\":\"Call us\"},{\"type\":\"reply\",\"id\":\"3\",\"text\":\"Visit website\"}],\"Body\":{\"text\":\"click count report quick reply\"},\"header\":{\"type\":\"TEXT\",\"text\":\"count of click\"},\"footer\":{\"text\":\"Not interested? Tap on Stop Promotion\"}}",
+                      "msgTime": "01/03/2024 15:27:35",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6723,
+                      "keyFromMe": 1,
+                      "mediaType": "IMAGE",
+                      "msgText": null,
+                      "msgTime": "01/03/2024 15:17:00",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": "https://media.trringme.com/736508image.png",
+                      "fileExt": "png",
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6722,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "\"Detail of click count date wise in click count report\nAdd today`s click count column\" In progress\n\"Show multiple numbers in profile show backup numbers also\n\nMultiple numbers are running on the same account,if one number goes under review then the other number is activate automatically\n\nIf number goes in review then all queries redirect to another number \" Open\nMobile app or API Open\nNeed contacts for sahil Pending from bizz",
+                      "msgTime": "01/03/2024 15:16:00",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6715,
+                      "keyFromMe": 0,
+                      "mediaType": "TEXT",
+                      "msgText": "Call us",
+                      "msgTime": "01/03/2024 15:09:37",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6712,
+                      "keyFromMe": 1,
+                      "mediaType": "BUTTON",
+                      "msgText": "{\"buttons\":[{\"type\":\"reply\",\"id\":\"1\",\"text\":\"Stop Promotion\"},{\"type\":\"reply\",\"id\":\"2\",\"text\":\"Call us\"},{\"type\":\"reply\",\"id\":\"3\",\"text\":\"Visit website\"}],\"Body\":{\"text\":\"click count report quick reply\"},\"header\":{\"type\":\"TEXT\",\"text\":\"count of click\"},\"footer\":{\"text\":\"Not interested? Tap on Stop Promotion\"}}",
+                      "msgTime": "01/03/2024 15:08:56",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6710,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "hello",
+                      "msgTime": "01/03/2024 14:16:00",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6707,
+                      "keyFromMe": 0,
+                      "mediaType": "TEXT",
+                      "msgText": "dsfsdfsdf",
+                      "msgTime": "01/03/2024 13:19:42",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6706,
+                      "keyFromMe": 0,
+                      "mediaType": "TEXT",
+                      "msgText": "dfssdf",
+                      "msgTime": "01/03/2024 13:19:29",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6705,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "87858454545454",
+                      "msgTime": "01/03/2024 13:14:00",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6704,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "gre",
+                      "msgTime": "01/03/2024 13:14:00",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6703,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "dsfsdfasdfsfsdf",
+                      "msgTime": "01/03/2024 13:13:00",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6702,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "dfasfdasfdasfasdfa\nhas",
+                      "msgTime": "01/03/2024 13:13:00",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6701,
+                      "keyFromMe": 0,
+                      "mediaType": "TEXT",
+                      "msgText": "ewhfuwehfuhw nbdfkjsbgjdbhghdsfhg dgnfkjdhfgsdfhgjuhsd dfgdsfgdsfgdfgds dfgsgfdfgdsfgdsfgs",
+                      "msgTime": "01/03/2024 13:11:38",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6700,
+                      "keyFromMe": 0,
+                      "mediaType": "TEXT",
+                      "msgText": "ewhfuwehfuhw nbdfkjsbgjdbhghdsfhg dgnfkjdhfgsdfhgjuhsd dfgdsfgdsfgdfgds",
+                      "msgTime": "01/03/2024 13:11:19",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6699,
+                      "keyFromMe": 0,
+                      "mediaType": "TEXT",
+                      "msgText": "ewhfuwehfuhw nbdfkjsbgjdbhghdsfhg dgnfkjdhfgsdfhgjuhsd",
+                      "msgTime": "01/03/2024 13:10:55",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6698,
+                      "keyFromMe": 0,
+                      "mediaType": "TEXT",
+                      "msgText": "ewhfuwehfuhw nbdfkjsbgjdbhghdsfhg",
+                      "msgTime": "01/03/2024 13:10:40",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6697,
+                      "keyFromMe": 0,
+                      "mediaType": "TEXT",
+                      "msgText": "hadfghdjasgf",
+                      "msgTime": "01/03/2024 13:10:23",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6696,
+                      "keyFromMe": 0,
+                      "mediaType": "TEXT",
+                      "msgText": "ewhfuwehfuhw",
+                      "msgTime": "01/03/2024 13:09:31",
+                      "msgStatus": 0,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6695,
+                      "keyFromMe": 1,
+                      "mediaType": "TEXT",
+                      "msgText": "hello",
+                      "msgTime": "01/03/2024 13:09:00",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  },
+                  {
+                      "msgId": 6687,
+                      "keyFromMe": 1,
+                      "mediaType": "BUTTON",
+                      "msgText": "{\"buttons\":[{\"type\":\"reply\",\"id\":\"1\",\"text\":\"test\"},{\"type\":\"reply\",\"id\":\"2\",\"text\":\"test1\"},{\"type\":\"reply\",\"id\":\"3\",\"text\":\"test3\"}],\"Body\":{\"text\":\"test\"}}",
+                      "msgTime": "29/02/2024 19:18:46",
+                      "msgStatus": 13,
+                      "contactNo": "••••••••••••",
+                      "mediaFileName": null,
+                      "fileExt": null,
+                      "channelName": "WHATSAPP"
+                  }
+              ],
+              "isSuccess": true,
+              "message": null
+          }
+
+docs: By utilizing this API,users can efficiently retrieve detailed information about all messages related to a specific contact within their applications.

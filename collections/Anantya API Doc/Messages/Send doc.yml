@@ -1,0 +1,96 @@
+info:
+  name: Send doc
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/Messages/senddoc?contactNo={{mobileNo}}"
+  headers:
+    - name: accept
+      value: "*/*"
+    - name: X-Api-Key
+      value: "{{apikey}}"
+  params:
+    - name: contactNo
+      value: "{{mobileNo}}"
+      type: query
+  body:
+    type: multipart-form
+    data:
+      - name: docFile
+        type: file
+        value:
+          - /C:/Users/Deesha/Desktop/Media/Document/SampleDOCFile_1.195921mb.pdf
+        contentType: application/pdf
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: Send doc
+    request:
+      url: "{{baseUrl}}/api/Messages/senddoc?contactNo={{mobileNo}}"
+      method: POST
+      headers:
+        - name: accept
+          value: "*/*"
+        - name: X-Api-Key
+          value: "{{apikey}}"
+      params:
+        - name: contactNo
+          value: "{{mobileNo}}"
+          type: query
+      body:
+        type: multipart-form
+        data:
+          - name: docFile
+            type: file
+            value:
+              - /C:/Users/Deesha/Desktop/Media/Document/SampleDOCFile_1.195921mb.pdf
+            contentType: application/pdf
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: Transfer-Encoding
+          value: chunked
+        - name: Content-Type
+          value: application/json
+        - name: Server
+          value: Microsoft-IIS/10.0
+        - name: X-Rate-Limit-Limit
+          value: 10s
+        - name: X-Rate-Limit-Remaining
+          value: "999"
+        - name: X-Rate-Limit-Reset
+          value: 2024-03-12T11:08:01.7207353Z
+        - name: X-Powered-By
+          value: ASP.NET
+        - name: Date
+          value: Tue, 12 Mar 2024 11:07:56 GMT
+      body:
+        type: json
+        data: |-
+          {
+              "dataObj": {
+                  "msgId": 7410,
+                  "keyFromMe": 1,
+                  "mediaType": "DOC",
+                  "msgText": null,
+                  "msgTime": "12/03/2024 16:37:00",
+                  "msgStatus": 0,
+                  "contactNo": "••••••••••••",
+                  "mediaFileName": "404276SampleDOCFile_1.195921mb.pdf",
+                  "fileExt": "pdf",
+                  "channelName": "WHATSAPP"
+              },
+              "isSuccess": true,
+              "message": null
+          }
+
+docs: To send a document to a particular contact, users can utilize this API

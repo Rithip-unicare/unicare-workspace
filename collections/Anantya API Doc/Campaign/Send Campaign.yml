@@ -1,0 +1,124 @@
+info:
+  name: Send Campaign
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/Campaign/SendCampaign?templateId=193"
+  headers:
+    - name: accept
+      value: "*/*"
+    - name: X-Api-Key
+      value: "{{apikey}}"
+    - name: Content-Type
+      value: application/json
+  params:
+    - name: templateId
+      value: "193"
+      type: query
+  body:
+    type: json
+    data: |-
+      [
+        {
+          "contactName": "Deesha",
+          "contactNo": "{{mobileNo}}",
+          "mediaFileName":null,
+          "mediaFile": null,
+          "attribute1":null,
+          "attribute2": null,
+          "attribute3":null,
+          "attribute4": null,
+          "attribute5":null,
+          "attribute6":null,
+          "attribute7":null,
+          "attribute8": null
+        }
+      ]
+  auth: inherit
+
+runtime:
+  variables:
+    - name: apikey
+      value: |-
+        
+        D7ABBC42-8A61-47B0-9CF2-F7C4C8927536
+    - name: mobileNo
+      value: "9113098166"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: Send Campaign
+    request:
+      url: https://apiv1.anantya.ai/api/Campaign/SendCampaign?templateId=193
+      method: POST
+      headers:
+        - name: accept
+          value: "*/*"
+        - name: X-Api-Key
+          value: "{{apikey}}"
+        - name: Content-Type
+          value: application/json
+      params:
+        - name: templateId
+          value: "193"
+          type: query
+      body:
+        type: json
+        data: |-
+          [
+            {
+              "contactName": "Deesha",
+              "contactNo": "•••••••",
+              "mediaFileName":null,
+              "mediaFile": null,
+              "attribute1":null,
+              "attribute2": null,
+              "attribute3":null,
+              "attribute4": null,
+              "attribute5":null,
+              "attribute6":null,
+              "attribute7":null,
+              "attribute8": null
+            }
+          ]
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: Transfer-Encoding
+          value: chunked
+        - name: Content-Type
+          value: application/json; charset=utf-8
+        - name: Server
+          value: Microsoft-IIS/10.0
+        - name: X-Rate-Limit-Limit
+          value: 10s
+        - name: X-Rate-Limit-Remaining
+          value: "999"
+        - name: X-Rate-Limit-Reset
+          value: 2024-03-12T10:24:41.8732282Z
+        - name: X-Powered-By
+          value: ASP.NET
+        - name: Date
+          value: Tue, 12 Mar 2024 10:24:36 GMT
+      body:
+        type: json
+        data: |-
+          {
+              "dataObj": {
+                  "id": 453,
+                  "orderNo": "ANTCAM-120324001",
+                  "orderFrom": "CAMPAIGN"
+              },
+              "isSuccess": true,
+              "message": null
+          }
+
+docs: Through the this API, users can effectively send campaigns using the ID of a template, customizing the message content and targeting specific contacts as needed.

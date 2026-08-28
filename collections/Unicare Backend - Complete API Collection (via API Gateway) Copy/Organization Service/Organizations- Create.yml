@@ -14,8 +14,7 @@ http:
     data:
       - name: englishName
         type: text
-        value: MaxCare Hospital
-        disabled: true
+        value: maxcare hospital
       - name: arabicName
         type: text
         value: مستشفى يونيكير العام
@@ -71,11 +70,13 @@ http:
       - name: headerLogoFile
         type: file
         value:
-          - /Users/apple/Downloads/blue-abstract-5120x2880-25023.jpg
+          - C:\Users\Dell\Pictures\Saved Pictures\images (1).jpg
+        contentType: image/jpeg
       - name: smallLogoFile
         type: file
         value:
-          - /Users/apple/Downloads/one-piece-character-5120x2880-15328.jpeg
+          - C:\Users\Dell\Pictures\Saved Pictures\download.jpg
+        contentType: image/jpeg
       - name: permAddressLine
         type: text
         value: 123 Health Ave
@@ -103,3 +104,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

@@ -1,0 +1,39 @@
+info:
+  name: user permission
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/consentform/consent-form-user-permissions"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |-
+      {
+        "formId": "drtfwvd"
+      }
+  auth: inherit
+
+runtime:
+  scripts:
+    - type: after-response
+      code: |-
+        var jsonData = res.getBody();
+
+        if (jsonData.data && jsonData.data.accessToken) {
+            bru.setVar('accessToken', jsonData.data.accessToken);
+        }
+
+        if (jsonData.data && jsonData.data.sessionId) {
+            bru.setVar('sessionId', jsonData.data.sessionId);
+        }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

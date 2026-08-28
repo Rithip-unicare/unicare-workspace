@@ -14,6 +14,8 @@ collections:
     path: "collections/Unicare Backend - Complete API Collection (via API Gateway) Copy"
   - name: "Unicare Modules & Permissions Copy"
     path: "collections/Unicare Modules & Permissions Copy"
+  - name: "Anantya API Doc"
+    path: "collections/Anantya API Doc"
 
 specs:
 

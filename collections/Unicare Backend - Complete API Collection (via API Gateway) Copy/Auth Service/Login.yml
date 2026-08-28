@@ -13,8 +13,8 @@ http:
     type: json
     data: |-
       {
-        "username": "RithipValt",
-        "password": "Rithip@123",
+        "username": "nandhushree",
+        "password": "Password@123",
         "hospitalId": 1,
         "rememberMe": true
       }
@@ -33,3 +33,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

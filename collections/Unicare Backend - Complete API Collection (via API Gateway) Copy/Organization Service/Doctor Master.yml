@@ -10,9 +10,9 @@ http:
     type: json
     data: |-
       {
-          "userId": 42,
-          "arabicName": "أجيت كومار",
-          "clinicianType": "Activity Clinician",
+          "userId": 5,
+          "arabicName": "Audit Test Doctor",
+          "clinicianType": "Doctor",
           "emGuidelines": "1995 Guidelines",
           "emValidator": false,
           "lockEncounterDays": 0,
@@ -28,17 +28,7 @@ http:
           "shifts": [
               {
                   "shiftType": "MORNING",
-                  "active": false,
-                  "blocked": false
-              },
-              {
-                  "shiftType": "EVENING",
-                  "active": false,
-                  "blocked": false
-              },
-              {
-                  "shiftType": "FULL",
-                  "active": false,
+                  "active": true,
                   "blocked": false
               }
           ]

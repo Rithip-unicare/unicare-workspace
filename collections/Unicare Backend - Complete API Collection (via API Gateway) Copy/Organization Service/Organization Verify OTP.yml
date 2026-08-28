@@ -1,0 +1,33 @@
+info:
+  name: Organization Verify OTP
+  type: http
+  seq: 55
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/organization/auth/verify-otp"
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "userId":64 ,
+        "otp": "683842"
+      }
+  auth: inherit
+
+runtime:
+  scripts:
+    - type: after-response
+      code: |-
+        var jsonData = res.getBody();
+        if(jsonData.data && jsonData.data.accessToken) { bru.setVar('accessToken', jsonData.data.accessToken); }
+        if(jsonData.data && jsonData.data.sessionId) { bru.setVar('sessionId', jsonData.data.sessionId); }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

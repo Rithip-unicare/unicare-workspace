@@ -1,0 +1,76 @@
+info:
+  name: Get Campaign
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/Campaign/GetCampaign?CampaignId=452"
+  headers:
+    - name: accept
+      value: "*/*"
+    - name: X-Api-Key
+      value: "{{apikey}}"
+  params:
+    - name: CampaignId
+      value: "452"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: Get Campaign
+    request:
+      url: https://apiv1.anantya.ai/api/Campaign/GetCampaign?CampaignId=452
+      method: POST
+      headers:
+        - name: accept
+          value: "*/*"
+        - name: X-Api-Key
+          value: "{{apikey}}"
+      params:
+        - name: CampaignId
+          value: "452"
+          type: query
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: Transfer-Encoding
+          value: chunked
+        - name: Content-Type
+          value: application/json; charset=utf-8
+        - name: Server
+          value: Microsoft-IIS/10.0
+        - name: X-Rate-Limit-Limit
+          value: 10s
+        - name: X-Rate-Limit-Remaining
+          value: "999"
+        - name: X-Rate-Limit-Reset
+          value: 2024-03-12T11:05:44.4394257Z
+        - name: X-Powered-By
+          value: ASP.NET
+        - name: Date
+          value: Tue, 12 Mar 2024 11:05:36 GMT
+      body:
+        type: json
+        data: |-
+          {
+              "dataObj": [
+                  {
+                      "contactNo": "••••••••••••",
+                      "messageStatus": "Read",
+                      "failedReason": null,
+                      "updatedAt": "2024-03-11T19:21:58.663"
+                  }
+              ],
+              "isSuccess": true,
+              "message": null
+          }
+
+docs: Through this API, users can retrieve detailed information about each sent campaign, including recipient details, message status, failure reasons (if any), and the timestamp of the campaign deployment.

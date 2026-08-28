@@ -1,0 +1,85 @@
+info:
+  name: Get status of message
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/Messages/getStatus?msgId=12"
+  headers:
+    - name: accept
+      value: "*/*"
+    - name: X-Api-Key
+      value: "{{apikey}}"
+  params:
+    - name: msgId
+      value: "12"
+      type: query
+  auth: inherit
+
+runtime:
+  variables:
+    - name: apikey
+      value: D7ABBC42-8A61-47B0-9CF2-F7C4C8927536
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: Get status of message
+    request:
+      url: https://apiv1.anantya.ai/api/Messages/getStatus?msgId=12
+      method: GET
+      headers:
+        - name: accept
+          value: "*/*"
+        - name: X-Api-Key
+          value: "{{apikey}}"
+      params:
+        - name: msgId
+          value: "12"
+          type: query
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: Transfer-Encoding
+          value: chunked
+        - name: Content-Type
+          value: application/json; charset=utf-8
+        - name: Server
+          value: Microsoft-IIS/10.0
+        - name: X-Rate-Limit-Limit
+          value: 10s
+        - name: X-Rate-Limit-Remaining
+          value: "999"
+        - name: X-Rate-Limit-Reset
+          value: 2024-03-12T11:06:36.6838833Z
+        - name: X-Powered-By
+          value: ASP.NET
+        - name: Date
+          value: Tue, 12 Mar 2024 11:06:29 GMT
+      body:
+        type: json
+        data: |-
+          {
+              "dataObj": {
+                  "msgId": 12,
+                  "keyFromMe": 1,
+                  "mediaType": "TEXT",
+                  "msgText": "thank you for contacting us\n",
+                  "msgTime": "18/11/2023 15:42:17",
+                  "msgStatus": 13,
+                  "contactNo": "••••••••••••",
+                  "mediaFileName": null,
+                  "fileExt": null,
+                  "channelName": "WHATSAPP"
+              },
+              "isSuccess": true,
+              "message": null
+          }
+
+docs: By using the provided API endpoint users can efficiently retrieve the status and details of a single message

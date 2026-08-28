@@ -1,0 +1,113 @@
+info:
+  name: Send media
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/Messages/sendmedia"
+  headers:
+    - name: accept
+      value: "*/*"
+    - name: X-Api-Key
+      value: "{{apikey}}"
+  body:
+    type: multipart-form
+    data:
+      - name: MsgText
+        type: text
+        value: test text message
+      - name: ContactNo
+        type: text
+        value: "{{mobileNo}}"
+      - name: interactiveAction
+        type: text
+        value: ""
+      - name: MediaFile
+        type: file
+        value:
+          - C:\Users\Dell\Pictures\Saved Pictures\download.jpg
+        contentType: image/jpeg
+  auth: inherit
+
+runtime:
+  variables:
+    - name: mobileNo
+      value: "9113098166"
+    - name: apikey
+      value: D7ABBC42-8A61-47B0-9CF2-F7C4C8927536
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: Send media
+    request:
+      url: "{{baseUrl}}/api/Messages/sendmedia"
+      method: POST
+      headers:
+        - name: accept
+          value: "*/*"
+        - name: X-Api-Key
+          value: "{{apikey}}"
+      body:
+        type: multipart-form
+        data:
+          - name: MsgText
+            type: text
+            value: test text message
+          - name: ContactNo
+            type: text
+            value: "{{mobileNo}}"
+          - name: interactiveAction
+            type: text
+            value: ""
+          - name: MediaFile
+            type: file
+            value:
+              - /C:/Users/Deesha/Desktop/Media/Images/0.jpg
+            contentType: image/jpeg
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: Transfer-Encoding
+          value: chunked
+        - name: Content-Type
+          value: application/json; charset=utf-8
+        - name: Server
+          value: Microsoft-IIS/10.0
+        - name: X-Rate-Limit-Limit
+          value: 10s
+        - name: X-Rate-Limit-Remaining
+          value: "999"
+        - name: X-Rate-Limit-Reset
+          value: 2024-03-12T11:07:47.3639522Z
+        - name: X-Powered-By
+          value: ASP.NET
+        - name: Date
+          value: Tue, 12 Mar 2024 11:07:41 GMT
+      body:
+        type: json
+        data: |-
+          {
+              "dataObj": {
+                  "msgId": 7409,
+                  "keyFromMe": 1,
+                  "mediaType": "CAPTION",
+                  "msgText": "test text message",
+                  "msgTime": "12/03/2024 16:37:00",
+                  "msgStatus": 0,
+                  "contactNo": "••••••••••••",
+                  "mediaFileName": "6604790.jpg",
+                  "fileExt": "jpg",
+                  "channelName": "WHATSAPP"
+              },
+              "isSuccess": true,
+              "message": null
+          }
+
+docs: To send different types of media (such as images, videos, or documents) along with text to an existing contact, users can utilize this API

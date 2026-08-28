@@ -1,0 +1,1852 @@
+info:
+  name: Get Templates
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/Campaign/GetTemplates"
+  headers:
+    - name: accept
+      value: "*/*"
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: Get Templates
+    request:
+      url: https://apiv1.anantya.ai/api/Campaign/GetTemplates
+      method: GET
+      headers:
+        - name: accept
+          value: "*/*"
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: Transfer-Encoding
+          value: chunked
+        - name: Content-Type
+          value: application/json; charset=utf-8
+        - name: Server
+          value: Microsoft-IIS/10.0
+        - name: X-Rate-Limit-Limit
+          value: 10s
+        - name: X-Rate-Limit-Remaining
+          value: "999"
+        - name: X-Rate-Limit-Reset
+          value: 2024-03-12T10:22:49.3221270Z
+        - name: X-Powered-By
+          value: ASP.NET
+        - name: Date
+          value: Tue, 12 Mar 2024 10:22:43 GMT
+      body:
+        type: json
+        data: |-
+          {
+              "dataObj": [
+                  {
+                      "id": 1,
+                      "templateName": "open",
+                      "mediaType": "TEXT",
+                      "msgText": "We are open today",
+                      "mediaFileName": null,
+                      "templateStatus": "In review",
+                      "isActive": true
+                  },
+                  {
+                      "id": 2,
+                      "templateName": "open1",
+                      "mediaType": "TEXT",
+                      "msgText": "A VERY WARM WELCOME 🌟 ! We`re rolling out an Exclusive offer Only for You.",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 3,
+                      "templateName": "abc",
+                      "mediaType": "TEXT",
+                      "msgText": "fwefwf",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 4,
+                      "templateName": "xcz",
+                      "mediaType": "TEXT",
+                      "msgText": "uioyoiuouou",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 5,
+                      "templateName": "opne1",
+                      "mediaType": "TEXT",
+                      "msgText": "this is testing template",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 6,
+                      "templateName": "opens12",
+                      "mediaType": "CAPTION",
+                      "msgText": "Diwali Deals on Staples Essentials are Here",
+                      "mediaFileName": "423154WhatsApp_Image_2021-09-16_at_7.33.23_PM.jpeg",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 7,
+                      "templateName": "open13",
+                      "mediaType": "CAPTION",
+                      "msgText": "dynamic media test template",
+                      "mediaFileName": "4047360.jpg",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 8,
+                      "templateName": "opens14",
+                      "mediaType": "CAPTION",
+                      "msgText": "test template for standard video",
+                      "mediaFileName": "743772file_example_MP4_480_1_5MG.mp4",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 9,
+                      "templateName": "opens16",
+                      "mediaType": "DOC",
+                      "msgText": "your details are here",
+                      "mediaFileName": "776562Document1-converted.pdf",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 10,
+                      "templateName": "desertevent",
+                      "mediaType": "CAPTION",
+                      "msgText": "Pickup & Drop on 4X4, Dune Bashing, Sandboarding, Quad Bike / Buggy, Refreshment, Shisha, Belly Dance, Tanura Show, Fire Show, Buffet with Live BBQ, Mic with Speaker.",
+                      "mediaFileName": "214586DSC013625664.jpg",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 11,
+                      "templateName": "test1234",
+                      "mediaType": "CAPTION",
+                      "msgText": "Hello team",
+                      "mediaFileName": "376992NewImage.jpg",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 12,
+                      "templateName": "test20231108",
+                      "mediaType": "TEXT",
+                      "msgText": "new template test",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 13,
+                      "templateName": "gets",
+                      "mediaType": "TEXT",
+                      "msgText": "test form sending",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 14,
+                      "templateName": "browse_catalog_on_whatsapp",
+                      "mediaType": "TEXT",
+                      "msgText": "Hey {{1}} 👋\n\nYou can browse through our catalog on WhatsApp itself! 🎉\n\nClick below & we will take you through our collections! 🛍️",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 15,
+                      "templateName": "custommedia",
+                      "mediaType": "DOC",
+                      "msgText": "Hello Dear\n\nDetails of your account",
+                      "mediaFileName": "314078Document1-converted.pdf",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 16,
+                      "templateName": "freshdeals",
+                      "mediaType": "TEXT",
+                      "msgText": "عروض جديدة ستسعدك. تسوق الآن على JioMart أثناء الدردشة على WhatsApp واستفد من العروض المثيرة",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 17,
+                      "templateName": "test2",
+                      "mediaType": "TEXT",
+                      "msgText": "This is testing",
+                      "mediaFileName": null,
+                      "templateStatus": "In review",
+                      "isActive": true
+                  },
+                  {
+                      "id": 18,
+                      "templateName": "est22",
+                      "mediaType": "TEXT",
+                      "msgText": "This is testing1Wa",
+                      "mediaFileName": null,
+                      "templateStatus": "In review",
+                      "isActive": true
+                  },
+                  {
+                      "id": 19,
+                      "templateName": "yghghjgg",
+                      "mediaType": "TEXT",
+                      "msgText": "yjhjfghfghfgh",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 20,
+                      "templateName": "templatenamesms1",
+                      "mediaType": "TEXT",
+                      "msgText": "this is waBody Tessting",
+                      "mediaFileName": null,
+                      "templateStatus": "In review",
+                      "isActive": true
+                  },
+                  {
+                      "id": 21,
+                      "templateName": "tnamewa1",
+                      "mediaType": "TEXT",
+                      "msgText": "this is temaplatwa body",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 22,
+                      "templateName": "watamp1",
+                      "mediaType": "TEXT",
+                      "msgText": "this is body wa",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 23,
+                      "templateName": "test41",
+                      "mediaType": "TEXT",
+                      "msgText": "December is lit with AJIO Big Bold Sale ✨\n\nBest seller footwears \nNike - MRP ₹4995 | AJIO Price ₹1998\nhttps://ajioapps.onelink.me/2ic3/3arppq5r",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 24,
+                      "templateName": "test41",
+                      "mediaType": "TEXT",
+                      "msgText": "New message  hfsdhfuasufhsf  sdfysdbfyusdfyasghyfusd f sdfysdghfyuagsdyfusbvdyufgasdyufgdyusa doas fyasduvfyudasvfuasgdfugsdyugfyusdfu das c csadfuv sdyuf dosfasfausdfasfuaasfasyf sf  fs df",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 25,
+                      "templateName": "estname33",
+                      "mediaType": "TEXT",
+                      "msgText": "Testing ttttwe",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 26,
+                      "templateName": "estname33",
+                      "mediaType": "TEXT",
+                      "msgText": "dkjdhf kdhfkjd",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 27,
+                      "templateName": "ttttttt",
+                      "mediaType": "TEXT",
+                      "msgText": "bbbbbb",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 28,
+                      "templateName": "ddssaaa",
+                      "mediaType": "TEXT",
+                      "msgText": "xasdasdasdasd",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 29,
+                      "templateName": "newtemplate",
+                      "mediaType": "TEXT",
+                      "msgText": "hello test",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 30,
+                      "templateName": "testcampaign",
+                      "mediaType": "CAPTION",
+                      "msgText": "new message template for testing",
+                      "mediaFileName": "1490730.jpg",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 31,
+                      "templateName": "test3456",
+                      "mediaType": "CAPTION",
+                      "msgText": "testing template for sms",
+                      "mediaFileName": "5016120.jpg",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 32,
+                      "templateName": "test3456",
+                      "mediaType": "TEXT",
+                      "msgText": "sms message when not sending",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 33,
+                      "templateName": "hello123",
+                      "mediaType": "TEXT",
+                      "msgText": "Whatsapp text",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 34,
+                      "templateName": "hello123",
+                      "mediaType": "TEXT",
+                      "msgText": "SMS text",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 35,
+                      "templateName": "topwa1",
+                      "mediaType": "TEXT",
+                      "msgText": "this is testing wa body",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 36,
+                      "templateName": "topwa1",
+                      "mediaType": "TEXT",
+                      "msgText": "This is testing SMS Body",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 37,
+                      "templateName": "hello456",
+                      "mediaType": "TEXT",
+                      "msgText": "Body text",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 38,
+                      "templateName": "hello456",
+                      "mediaType": "TEXT",
+                      "msgText": "sms text",
+                      "mediaFileName": null,
+                      "templateStatus": "Rejected",
+                      "isActive": true
+                  },
+                  {
+                      "id": 39,
+                      "templateName": "atop1",
+                      "mediaType": "TEXT",
+                      "msgText": "This is wa body",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 40,
+                      "templateName": "atop1",
+                      "mediaType": "TEXT",
+                      "msgText": "dfsdffdsf",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 41,
+                      "templateName": "emtopsms22",
+                      "mediaType": "TEXT",
+                      "msgText": "thi is wa body",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 42,
+                      "templateName": "emtopsms22",
+                      "mediaType": "TEXT",
+                      "msgText": "this is sms Body",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 43,
+                      "templateName": "testghjui",
+                      "mediaType": "TEXT",
+                      "msgText": "dfsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsf",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 44,
+                      "templateName": "testghjui",
+                      "mediaType": "TEXT",
+                      "msgText": "dsfasdfgsdhfahkhewrfewhrkjhewrqwerhuwherewhnrfkjewhn",
+                      "mediaFileName": null,
+                      "templateStatus": "Rejected",
+                      "isActive": true
+                  },
+                  {
+                      "id": 45,
+                      "templateName": "ajio1234456666",
+                      "mediaType": "TEXT",
+                      "msgText": "flat 50% discount on all products",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 46,
+                      "templateName": "ajio1234456666",
+                      "mediaType": "TEXT",
+                      "msgText": "this is sms message",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 47,
+                      "templateName": "watestbroadcast",
+                      "mediaType": "TEXT",
+                      "msgText": "testing template",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 48,
+                      "templateName": "watestbroadcast",
+                      "mediaType": "TEXT",
+                      "msgText": "this is sms template",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 49,
+                      "templateName": "testtttttt",
+                      "mediaType": "TEXT",
+                      "msgText": "test",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 50,
+                      "templateName": "testtttttt",
+                      "mediaType": "TEXT",
+                      "msgText": "testest",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 51,
+                      "templateName": "smsmessage",
+                      "mediaType": "TEXT",
+                      "msgText": "this is whatsapp template message",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 52,
+                      "templateName": "smsmessage",
+                      "mediaType": "TEXT",
+                      "msgText": "this is sms template message",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 53,
+                      "templateName": "helo111",
+                      "mediaType": "TEXT",
+                      "msgText": "body text",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 54,
+                      "templateName": "helo111",
+                      "mediaType": "TEXT",
+                      "msgText": "sms text",
+                      "mediaFileName": null,
+                      "templateStatus": "Rejected",
+                      "isActive": true
+                  },
+                  {
+                      "id": 55,
+                      "templateName": "hello789",
+                      "mediaType": "TEXT",
+                      "msgText": "msg text",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 56,
+                      "templateName": "hello789",
+                      "mediaType": "TEXT",
+                      "msgText": "msg text",
+                      "mediaFileName": null,
+                      "templateStatus": "Rejected",
+                      "isActive": true
+                  },
+                  {
+                      "id": 57,
+                      "templateName": "hello999",
+                      "mediaType": "TEXT",
+                      "msgText": "body text",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 58,
+                      "templateName": "hello999",
+                      "mediaType": "TEXT",
+                      "msgText": "msg text",
+                      "mediaFileName": null,
+                      "templateStatus": "Rejected",
+                      "isActive": true
+                  },
+                  {
+                      "id": 59,
+                      "templateName": "hello45678",
+                      "mediaType": "TEXT",
+                      "msgText": "body text",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 60,
+                      "templateName": "hello45678",
+                      "mediaType": "TEXT",
+                      "msgText": "msg text",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 61,
+                      "templateName": "newmessage",
+                      "mediaType": "TEXT",
+                      "msgText": "this is testing",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 62,
+                      "templateName": "newmessage",
+                      "mediaType": "TEXT",
+                      "msgText": "new message",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 63,
+                      "templateName": "newkiiii",
+                      "mediaType": "CAPTION",
+                      "msgText": "new message new new",
+                      "mediaFileName": "5390650.jpg",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 64,
+                      "templateName": "newkiiii",
+                      "mediaType": "TEXT",
+                      "msgText": "hekl0fhjdjhjdhgudhfhgufhuhdghgdu g dhbgishguhauguhagf gdfgdfgudfhghdfighidfhgidhfigdf gdfgdfigjdfigidfjgaidfjgidfjgidfjgijdfgoioioioi fdhodfhjogidhfaogiogiogiog",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 65,
+                      "templateName": "new123",
+                      "mediaType": "TEXT",
+                      "msgText": "dsfsafasdfdasf",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 66,
+                      "templateName": "fdsf",
+                      "mediaType": "TEXT",
+                      "msgText": "fdsfdsfds",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 67,
+                      "templateName": "qqqqqqqqqq",
+                      "mediaType": "CAPTION",
+                      "msgText": "this is whatsapp template with media dynamic",
+                      "mediaFileName": "719276file_example_MP4_480_1_5MG.mp4",
+                      "templateStatus": "In review",
+                      "isActive": true
+                  },
+                  {
+                      "id": 68,
+                      "templateName": "qqqqqqqqqq",
+                      "mediaType": "TEXT",
+                      "msgText": "it`s sms template message for fallback\n\nFresh Deals to Bowl You Over. Now shop on JioMart as you chat on WhatsApp to avail exciting offers",
+                      "mediaFileName": null,
+                      "templateStatus": "Rejected",
+                      "isActive": true
+                  },
+                  {
+                      "id": 69,
+                      "templateName": "dynamictemplate",
+                      "mediaType": "CAPTION",
+                      "msgText": "this is dynamic whatsapp template message",
+                      "mediaFileName": "565380file_example_MP4_480_1_5MG.mp4",
+                      "templateStatus": "In review",
+                      "isActive": true
+                  },
+                  {
+                      "id": 70,
+                      "templateName": "dynamictemplate",
+                      "mediaType": "TEXT",
+                      "msgText": "this is sms template message \nthis is whatsapp fallback sms template message \n\nthank you for contacting us\nnosnia tech pvt ltd \nfor more.",
+                      "mediaFileName": null,
+                      "templateStatus": "Rejected",
+                      "isActive": true
+                  },
+                  {
+                      "id": 71,
+                      "templateName": "tyurtyurtutyurty",
+                      "mediaType": "TEXT",
+                      "msgText": "rurtyutryu",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 72,
+                      "templateName": "tttttt1",
+                      "mediaType": "CAPTION",
+                      "msgText": "weweqweqe",
+                      "mediaFileName": "205089faggbfs.png",
+                      "templateStatus": "In review",
+                      "isActive": true
+                  },
+                  {
+                      "id": 73,
+                      "templateName": "tttttt1",
+                      "mediaType": "TEXT",
+                      "msgText": "ddddddd",
+                      "mediaFileName": null,
+                      "templateStatus": "Rejected",
+                      "isActive": true
+                  },
+                  {
+                      "id": 74,
+                      "templateName": "tedddddds1",
+                      "mediaType": "CAPTION",
+                      "msgText": "fgfgdfgsfgsdfg",
+                      "mediaFileName": "323115gh.png",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 75,
+                      "templateName": "tedddddds1",
+                      "mediaType": "TEXT",
+                      "msgText": "fffffff",
+                      "mediaFileName": null,
+                      "templateStatus": "Rejected",
+                      "isActive": true
+                  },
+                  {
+                      "id": 76,
+                      "templateName": "newtemplate12",
+                      "mediaType": "CAPTION",
+                      "msgText": "this is dynamic template with details",
+                      "mediaFileName": "498668SampleJPGImage_5mbmb__1_.jpg",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 77,
+                      "templateName": "newtemplate12",
+                      "mediaType": "TEXT",
+                      "msgText": "this is sms template",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 78,
+                      "templateName": "ewear2024wa",
+                      "mediaType": "TEXT",
+                      "msgText": "This is testing",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 79,
+                      "templateName": "hp123",
+                      "mediaType": "TEXT",
+                      "msgText": "Whatsapp text",
+                      "mediaFileName": null,
+                      "templateStatus": "In review",
+                      "isActive": true
+                  },
+                  {
+                      "id": 80,
+                      "templateName": "hp123",
+                      "mediaType": "TEXT",
+                      "msgText": "SMS text",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 81,
+                      "templateName": "hp1234",
+                      "mediaType": "TEXT",
+                      "msgText": "whatsapp text",
+                      "mediaFileName": null,
+                      "templateStatus": "In review",
+                      "isActive": true
+                  },
+                  {
+                      "id": 82,
+                      "templateName": "hp1234",
+                      "mediaType": "TEXT",
+                      "msgText": "SMS text",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 83,
+                      "templateName": "hp12345",
+                      "mediaType": "TEXT",
+                      "msgText": "Body text",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 84,
+                      "templateName": "hp12345",
+                      "mediaType": "TEXT",
+                      "msgText": "SMS text",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 85,
+                      "templateName": "test",
+                      "mediaType": "CAPTION",
+                      "msgText": "Fresh Deals to Bowl You Over. Now shop on JioMart as you chat on WhatsApp to avail exciting offers\n\nGet Cash Back of 10% upto Rs.60 on your first order above Rs.400 T&C Apply\nhttps://www.jiomart.com/offers/cashback-offer\n\nClick on Shop Now, View Catalog, Add products to the cart & make payment to complete your order",
+                      "mediaFileName": "741340download__1_.jpeg",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 86,
+                      "templateName": "test",
+                      "mediaType": "TEXT",
+                      "msgText": "December is lit with AJIO Big Bold Sale ✨\n\nBest seller footwears \nNike - MRP ₹4995 | AJIO Price ₹1998\nhttps://ajioapps.onelink.me/2ic3/3arpp",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 87,
+                      "templateName": "test1",
+                      "mediaType": "TEXT",
+                      "msgText": "Best seller footwears \nNike - MRP ₹4995 | AJIO Price ₹1998\nhttps://ajioapps.onelink.me/2ic3/3arppq5r\n\nGo big & bold with rewards too:\n1.Enjoy Top Shopper Rewards & Assured Gifts\n2.Shop & get Police & Cross bags, iPhone, MacBook, Samsung Fold 4 & S23 Ultra\n3.Get 10% Instant Discount on ICICI Cards",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 88,
+                      "templateName": "test3",
+                      "mediaType": "TEXT",
+                      "msgText": "This is your last chance to save BIG \n\nCheck out the INSANE deal lineup for the day \n\nMin. 55% Off on MANGO\nhttps://bit.ly/48n2dMF",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 89,
+                      "templateName": "test4",
+                      "mediaType": "CAPTION",
+                      "msgText": "Lifestyle Presents Perfume Affair with Carolina Herrera!\n\nStep into a world of exquisite fragrances at Lifestyle!\n\nImmerse yourself in the captivating scent of The Bad Boy Eau de Parfum Extreme for men.\n\nVisit your nearest store today to explore this daring fragrance, a symbol of sophistication and style.",
+                      "mediaFileName": "306210WhatsApp_Video_2023-05-08_at_4.30.36_PM.mp4",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 90,
+                      "templateName": "test4",
+                      "mediaType": "TEXT",
+                      "msgText": "Upto 50% OFF on your FAVORITE BRANDS in Fashion, Beauty and more.\n10% instant discount on ICICI credit cards. Visit the nears",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 91,
+                      "templateName": "barcouncil",
+                      "mediaType": "TEXT",
+                      "msgText": "Respected Members of Bar,\nI am contesting for election of ACCBA for the post of President at Sr.no 1.\nPlease give me your precious vote.\n\nDate-22/12/23\nDay- Friday\nTime-10:00 AM-5:00 PM\n\nDinesh Pandya(Advocate)\nM-9825322927\n\n🌺Candidate for President🌺",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 92,
+                      "templateName": "test34",
+                      "mediaType": "CAPTION",
+                      "msgText": "this is template message of whatsapp",
+                      "mediaFileName": "9901710.jpg",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 93,
+                      "templateName": "test34",
+                      "mediaType": "TEXT",
+                      "msgText": "this is sms template message",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 94,
+                      "templateName": "satyam_template",
+                      "mediaType": "TEXT",
+                      "msgText": "Hello This is test SMS",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 95,
+                      "templateName": "wa_satyam_template",
+                      "mediaType": "TEXT",
+                      "msgText": "Hello this is only WhatsApp template.",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 96,
+                      "templateName": "wa_standard_drackus",
+                      "mediaType": "TEXT",
+                      "msgText": "this is an sample WhatsApp message.",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 97,
+                      "templateName": "test457",
+                      "mediaType": "TEXT",
+                      "msgText": "test",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 98,
+                      "templateName": "smstestcampaign",
+                      "mediaType": "TEXT",
+                      "msgText": "this is test sms campaign message from deesha",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 99,
+                      "templateName": "sms1template",
+                      "mediaType": "TEXT",
+                      "msgText": "this is test campaign from disha1",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 100,
+                      "templateName": "test2345",
+                      "mediaType": "TEXT",
+                      "msgText": "this is",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 101,
+                      "templateName": "wsapap",
+                      "mediaType": "CAPTION",
+                      "msgText": "The End Of Reason Sale ends in 2-days \n\nThis is your last chance to save BIG \n\nCheck out the INSANE deal lineup for the day",
+                      "mediaFileName": "185439WhatsApp_Image_2023-05-08_at_4.29.45_PM.jpeg",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 102,
+                      "templateName": "wsapap",
+                      "mediaType": "TEXT",
+                      "msgText": "Wanna win 200 MynCash? \nGuess the tagline for Myntra`s End Of Reason Sale \n\nA. Make The Most Of It\nB. Save on Fashion. Save Fashion",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 103,
+                      "templateName": "newww",
+                      "mediaType": "TEXT",
+                      "msgText": "zcxvc",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 104,
+                      "templateName": "newww",
+                      "mediaType": "TEXT",
+                      "msgText": "cvzvxcvcxvzcvcvcvcvcvcvv",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 105,
+                      "templateName": "sadsad",
+                      "mediaType": "TEXT",
+                      "msgText": "sadsadasdasd",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 106,
+                      "templateName": "sadsad",
+                      "mediaType": "TEXT",
+                      "msgText": "sadsadsadasdsad",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 107,
+                      "templateName": "newtemplatesms",
+                      "mediaType": "TEXT",
+                      "msgText": "sms",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 108,
+                      "templateName": "eeee",
+                      "mediaType": "TEXT",
+                      "msgText": "dsfsdfsfsfsfsfd",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 109,
+                      "templateName": "scxcxcxcxc",
+                      "mediaType": "TEXT",
+                      "msgText": "xcxcxcxcxcx",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 110,
+                      "templateName": "newtemplate9",
+                      "mediaType": "TEXT",
+                      "msgText": "test",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 111,
+                      "templateName": "new978",
+                      "mediaType": "TEXT",
+                      "msgText": "test",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 112,
+                      "templateName": "tempsmsnull",
+                      "mediaType": "TEXT",
+                      "msgText": "Testinf SMS temp",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 113,
+                      "templateName": "wsaprj",
+                      "mediaType": "CAPTION",
+                      "msgText": "Fresh Deals to Bowl You Over. Now shop on JioMart as you chat on WhatsApp to avail exciting offers\n\nGet Cash Back of 10% upto Rs.60 on your first order above Rs.400 T&C Apply\nhttps://www.jiomart.com/offers/cashback-offer",
+                      "mediaFileName": "177324WhatsApp_Video_2023-05-08_at_4.30.36_PM.mp4",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 114,
+                      "templateName": "wsaprj",
+                      "mediaType": "TEXT",
+                      "msgText": "this is sms template for rejection",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 115,
+                      "templateName": "wsaprj1",
+                      "mediaType": "CAPTION",
+                      "msgText": "Fresh Deals to Bowl You Over. Now shop on JioMart as you chat on WhatsApp to avail exciting offers\n\nGet Cash Back of 10% upto Rs.60 on your first order above Rs.400 T&C Apply\nhttps://www.jiomart.com/offers/cashback-offer",
+                      "mediaFileName": "194760WhatsApp_Video_2023-05-08_at_4.30.36_PM.mp4",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 116,
+                      "templateName": "wsaprj1",
+                      "mediaType": "TEXT",
+                      "msgText": "this is sms template for rejection",
+                      "mediaFileName": null,
+                      "templateStatus": "Rejected",
+                      "isActive": true
+                  },
+                  {
+                      "id": 118,
+                      "templateName": "ttttt",
+                      "mediaType": "TEXT",
+                      "msgText": "ccccccc",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 120,
+                      "templateName": "devtemp1",
+                      "mediaType": "TEXT",
+                      "msgText": "Body testing sms",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 122,
+                      "templateName": "test122",
+                      "mediaType": "TEXT",
+                      "msgText": "this is testing template",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 123,
+                      "templateName": "rejectsms",
+                      "mediaType": "CAPTION",
+                      "msgText": "Fresh Deals to Bowl You Over. Now shop on JioMart as you chat on WhatsApp to avail exciting offers\n\n🎉 Get Cash Back of 10% upto Rs.60 on your first order above Rs.400 T&C Apply\nhttps://www.jiomart.com/offers/cashback-offer\n\n⭐ Click on Shop Now, View Catalog, Add products to the cart & make payment to complete your order",
+                      "mediaFileName": "947103istockphoto-1095286208-170667a.jpg",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 124,
+                      "templateName": "rejectsms",
+                      "mediaType": "TEXT",
+                      "msgText": "The End Of Reason Sale ends in 2-days 😱\n\nThis is your last chance to save BIG 🚨\n\nCheck out the INSANE deal lineup for the day 🏃",
+                      "mediaFileName": null,
+                      "templateStatus": "Rejected",
+                      "isActive": true
+                  },
+                  {
+                      "id": 125,
+                      "templateName": "happy1",
+                      "mediaType": "TEXT",
+                      "msgText": "December is lit with AJIO Big Bold Sale ✨\n\nBest seller footwears \nNike - MRP ₹4995 | AJIO Price ₹1998\nhttps://ajioapps.onelink.me/2ic3/3arppq5r\n\nGo big & bold with rewards too:\n🪙 Enjoy Top Shopper Rewards & Assured Gifts\n🎁 Shop & get Police & Cross bags, iPhone, MacBook, Samsung Fold 4 & S23 Ultra\n💰 Get 10% Instant Discount on ICICI Cards",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 126,
+                      "templateName": "happy1",
+                      "mediaType": "TEXT",
+                      "msgText": "this is sms template message \n\nGo big & bold with rewards too:\n Enjoy Top Shopper Rewards & Assured Gifts\n🎁 Shop & get Police & Cross bag",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 127,
+                      "templateName": "happy2",
+                      "mediaType": "CAPTION",
+                      "msgText": "Redeem now and Get 10% off up to Rs.60/- on your first transaction on orders above Rs.400. Applicable for New Customers on JioMart ordered via WhatsApp and pay on JioMart. T&C Apply. \n\nFollow these simple steps to order from JioMart through WhatsApp 👇 \nStep 1 - Click on the Shop Now button to start shopping ☑️ \nStep 2 - Browse through the JioMart product catalog 📱 \nStep 3 - Add to cart 🛒 \nStep 4 - Click Pay on JioMart, Apply coupon, Make payment & Receive order confirmation ✅",
+                      "mediaFileName": "156988file_example_MP4_480_1_5MG.mp4",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 128,
+                      "templateName": "happy2",
+                      "mediaType": "TEXT",
+                      "msgText": "⭐ Good News! Now shop for latest fashion, beauty, grocery and premium fruits on Jiomart as you chat on WhatsApp\n\n⭐ Here is your coupon JMWA1",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 130,
+                      "templateName": "happy5",
+                      "mediaType": "TEXT",
+                      "msgText": "Coming Soon: The Big Fashion Festival \nExplore these top offers that were hand\n\ntesting template only sms",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 132,
+                      "templateName": "happy6",
+                      "mediaType": "TEXT",
+                      "msgText": "Sale\nGo big & bold with rewards too:\nEnjoy Top Shopper Rewards & Assured GiftsShop & get Police & Cross bags, iPhone, MacBook, Samsung Fol",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 133,
+                      "templateName": "happy7",
+                      "mediaType": "TEXT",
+                      "msgText": "CENTRO`s Runway Fashion Preview SALE is live now exclusively for Reliance One members -12th to 14th Dec",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 134,
+                      "templateName": "tspacecheck",
+                      "mediaType": "CAPTION",
+                      "msgText": "👉🪀⭕⭕💥👗☃️👕⭕⭕  💁\u200d♀️ ફેશન હાઉસ લાવ્યું છે   ✨ \"STOCK CLEARANS સ્પેશ્યલ ઓફર\" ✨  👉 *Buy 3 Get 2 Free.- શો-રૂમ ના દરેક ગાર્મેન્ટ્સ ઉપર  🟣 50% ડિસ્કાઉન્ટ Winter Collection ઉપર 🟣  🟣50% થી વધારે ડિસ્કાઉન્ટ Ethnik Wear ની દરેક બ્રાન્ડ્સ પર 🟣   👉 તા. 21 ડિસેમ્બર થી 31 ડિસેમ્બર 2023 સુધી જ..  🕺 જેંટ્સવેર, લેડીઝવેર, ચિલડ્રનવેર માટે ફેન્સી ડિઝાઈનર કપડાં ખરીદવાનું ઉત્તમ સ્થળ  સરનામું 👉 *ફેશન હાઉસ - પાલડી * 🟣1. ૧-૫-૧૧-૧૦૧ - સહજાનંદ પ્લાઝા , ભઠ્ઠા ચાર રસ્તા પાસે , પાલડી , અમદાવાદ - 96872 22577  🟣2. નરોડા : ૧૬-૧૭, રાજ મંદિર કોમ્પ્લેક્સ , દેવી મલ્ટીપ્લેક્સ ની સામે , બેઠક રોડ , નરોડા - 7405768302    👉 અવનવી ફેન્સી ડિઝાઈનર કપડાના ફોટા જોવા નીચે આપેલી લિંક ખોલીને વોટ્સએપ કરો 👉🪀https://whatsapp.com/channel/0029VaDwlwnLo4hgeZAn120W  https://www.instagram.com/fashionhouse.officially?igsh=MTNiYzNiMzkwZA%3D%3D&utm_source=qr",
+                      "mediaFileName": "749577faggbfs.png",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 135,
+                      "templateName": "tspacecheck1",
+                      "mediaType": "TEXT",
+                      "msgText": "This is \n\nspace check1",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 136,
+                      "templateName": "tspacecheck22",
+                      "mediaType": "TEXT",
+                      "msgText": "this \n\n3 enter",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": false
+                  },
+                  {
+                      "id": 137,
+                      "templateName": "tspacecheck4",
+                      "mediaType": "TEXT",
+                      "msgText": "there\n\nare 4 enter",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": false
+                  },
+                  {
+                      "id": 138,
+                      "templateName": "tspacecheck6",
+                      "mediaType": "TEXT",
+                      "msgText": "This \n\nis\n\nEnter\n\n\nfour",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": false
+                  },
+                  {
+                      "id": 139,
+                      "templateName": "tspacte77",
+                      "mediaType": "TEXT",
+                      "msgText": "this\n\n\nentere firve",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": false
+                  },
+                  {
+                      "id": 140,
+                      "templateName": "tempsms1",
+                      "mediaType": "TEXT",
+                      "msgText": "this is new testing v8",
+                      "mediaFileName": null,
+                      "templateStatus": "Rejected",
+                      "isActive": true
+                  },
+                  {
+                      "id": 141,
+                      "templateName": "test4976",
+                      "mediaType": "TEXT",
+                      "msgText": "test",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 142,
+                      "templateName": "newmessage1",
+                      "mediaType": "TEXT",
+                      "msgText": "this is sms message",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 143,
+                      "templateName": "smstemplate1",
+                      "mediaType": "TEXT",
+                      "msgText": "this is sms template message",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 144,
+                      "templateName": "testsms1",
+                      "mediaType": "TEXT",
+                      "msgText": "dfsdfdsfsdfsd",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 145,
+                      "templateName": "testsms3",
+                      "mediaType": "TEXT",
+                      "msgText": "uhkjhjkhjkhjk",
+                      "mediaFileName": null,
+                      "templateStatus": "Rejected",
+                      "isActive": true
+                  },
+                  {
+                      "id": 146,
+                      "templateName": "tttttttttt",
+                      "mediaType": "TEXT",
+                      "msgText": "jhgjhjjkhjk",
+                      "mediaFileName": null,
+                      "templateStatus": "Rejected",
+                      "isActive": true
+                  },
+                  {
+                      "id": 147,
+                      "templateName": "tf3",
+                      "mediaType": "TEXT",
+                      "msgText": "jhgjhhgjhghjg",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": false
+                  },
+                  {
+                      "id": 148,
+                      "templateName": "tf4",
+                      "mediaType": "TEXT",
+                      "msgText": "this is whatsapp only template",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": false
+                  },
+                  {
+                      "id": 149,
+                      "templateName": "test123",
+                      "mediaType": "TEXT",
+                      "msgText": "Reject this template",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 150,
+                      "templateName": "wa_approve_sms_inreview",
+                      "mediaType": "CAPTION",
+                      "msgText": "December is lit with AJIO Big Bold Sale ✨\n\nBest seller footwears \nNike - MRP ₹4995 | AJIO Price ₹1998\nhttps://ajioapps.onelink.me/2ic3/3arppq5r",
+                      "mediaFileName": "1305201.jpg",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 151,
+                      "templateName": "wa_approve_sms_inreview",
+                      "mediaType": "TEXT",
+                      "msgText": "Upto 50% OFF on your FAVORITE BRANDS in Fashion, Beauty and more.👗👕👠⌚💄\n\n💳 10% instant discount on ICICI credit cards.",
+                      "mediaFileName": null,
+                      "templateStatus": "Rejected",
+                      "isActive": true
+                  },
+                  {
+                      "id": 152,
+                      "templateName": "wa_approve_sms_inreview111",
+                      "mediaType": "CAPTION",
+                      "msgText": "Wanna win 200 MynCash? 🤯\nGuess the tagline for Myntra`s End Of Reason Sale 😎",
+                      "mediaFileName": "6052531.jpg",
+                      "templateStatus": "Accepted",
+                      "isActive": false
+                  },
+                  {
+                      "id": 153,
+                      "templateName": "wa_approve_sms_inreview111",
+                      "mediaType": "TEXT",
+                      "msgText": "Big Fashion Festival is ending TOMORROW 😮\nThat’s less than 37-Hours ⏰",
+                      "mediaFileName": null,
+                      "templateStatus": "Rejected",
+                      "isActive": true
+                  },
+                  {
+                      "id": 154,
+                      "templateName": "wa_reject_sms_inreview222",
+                      "mediaType": "TEXT",
+                      "msgText": "this is testing temp",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 155,
+                      "templateName": "wa_reject_sms_inreview222",
+                      "mediaType": "TEXT",
+                      "msgText": "this is for testing",
+                      "mediaFileName": null,
+                      "templateStatus": "Rejected",
+                      "isActive": true
+                  },
+                  {
+                      "id": 156,
+                      "templateName": "sms_inreview_wa_inreview",
+                      "mediaType": "TEXT",
+                      "msgText": "this is whatsapp sms template",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 157,
+                      "templateName": "sms_inreview_wa_inreview",
+                      "mediaType": "TEXT",
+                      "msgText": "this is testing sms template",
+                      "mediaFileName": null,
+                      "templateStatus": "Rejected",
+                      "isActive": true
+                  },
+                  {
+                      "id": 158,
+                      "templateName": "sms_approved_wa_inreview",
+                      "mediaType": "TEXT",
+                      "msgText": "this is WhatsApp template",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 159,
+                      "templateName": "sms_approved_wa_inreview",
+                      "mediaType": "TEXT",
+                      "msgText": "this is sms template",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 160,
+                      "templateName": "testsms1234",
+                      "mediaType": "TEXT",
+                      "msgText": "this is testing sms template",
+                      "mediaFileName": null,
+                      "templateStatus": "In review",
+                      "isActive": true
+                  },
+                  {
+                      "id": 161,
+                      "templateName": "dwdwd",
+                      "mediaType": "TEXT",
+                      "msgText": "dwdwd",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": false
+                  },
+                  {
+                      "id": 162,
+                      "templateName": "fwefw",
+                      "mediaType": "TEXT",
+                      "msgText": "fwefew",
+                      "mediaFileName": null,
+                      "templateStatus": "In review",
+                      "isActive": true
+                  },
+                  {
+                      "id": 163,
+                      "templateName": "satyam_v1_image",
+                      "mediaType": "Image",
+                      "msgText": "Hello image",
+                      "mediaFileName": "eren_pic.png",
+                      "templateStatus": "In review",
+                      "isActive": true
+                  },
+                  {
+                      "id": 164,
+                      "templateName": "satyam_v1_image_1",
+                      "mediaType": "Image",
+                      "msgText": "Hello eren",
+                      "mediaFileName": "eren_pic.png",
+                      "templateStatus": "In review",
+                      "isActive": true
+                  },
+                  {
+                      "id": 165,
+                      "templateName": "bjp",
+                      "mediaType": "CAPTION",
+                      "msgText": "भारतीय जनता पार्टी का यह सर्वेक्षण राज्य और देश में हो रहे विकास के बारे में आपकी राय जानने के लिए है। कृपया इसमें हमारे साथ सहयोग करें और आपके दृष्टिकोण से हो रहे विकास को समझने में मदद करें। आपकी भागीदारी महत्वपूर्ण है!",
+                      "mediaFileName": "135575WhatsApp_Video_2024-01-18_at_15.55.29_4d783323.mp4",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 166,
+                      "templateName": "testtemp1",
+                      "mediaType": "CAPTION",
+                      "msgText": "this is testing template",
+                      "mediaFileName": "293130b96d95779265594017882.jpeg",
+                      "templateStatus": "In review",
+                      "isActive": true
+                  },
+                  {
+                      "id": 167,
+                      "templateName": "authenticationtemplate",
+                      "mediaType": "TEXT",
+                      "msgText": "Your authentication code for login is {{1}}",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 168,
+                      "templateName": "authtestparth",
+                      "mediaType": "TEXT",
+                      "msgText": "Hello your authentication code is {{1}}",
+                      "mediaFileName": null,
+                      "templateStatus": "Rejected",
+                      "isActive": true
+                  },
+                  {
+                      "id": 169,
+                      "templateName": "survey_2",
+                      "mediaType": "CAPTION",
+                      "msgText": "आपका सर्वे - आपकी सरकार - आपका विकास \n\nभारीतय जनता पार्टी द्वारा देश और राज्यों में विकास कार्यो पर आपकी राय जानने के लिए सर्वे कर रही है। \nकृपया अपना बहुमूल्य सर्वे दे कर हमारी सहायता करे और आपके दृष्टिकोण से विकास कार्यो को समझने में मदद करे।\n\nआपकी भागेदारी महत्वपूर्ण है।\n\nसर्वे के लिए नीचे दिए बटन पर क्लिक करे।",
+                      "mediaFileName": "424881494_1840441956427563_9031769390490061345_n.png",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 170,
+                      "templateName": "survey",
+                      "mediaType": "TEXT",
+                      "msgText": "Government Survey",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 171,
+                      "templateName": "video1",
+                      "mediaType": "CAPTION",
+                      "msgText": "test",
+                      "mediaFileName": "368436file_example_MP4_1280_10MG.mp4",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 172,
+                      "templateName": "video2",
+                      "mediaType": "CAPTION",
+                      "msgText": "test",
+                      "mediaFileName": "705235file_example_MP4_1280_10MG.mp4",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 173,
+                      "templateName": "c415fh4c5",
+                      "mediaType": "CAPTION",
+                      "msgText": "hjhvj",
+                      "mediaFileName": "123937profile.jpg",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 174,
+                      "templateName": "ganpat",
+                      "mediaType": "TEXT",
+                      "msgText": "hgfhfhfdh",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 175,
+                      "templateName": "fdfasd",
+                      "mediaType": "TEXT",
+                      "msgText": "asdfdsaf",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 176,
+                      "templateName": "ttt",
+                      "mediaType": "TEXT",
+                      "msgText": "4568787897415486787897897897456746878967896768467687",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 177,
+                      "templateName": "deeshatest1",
+                      "mediaType": "CAPTION",
+                      "msgText": "this is testing template 1",
+                      "mediaFileName": "6131770.jpg",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 178,
+                      "templateName": "deeshatest2",
+                      "mediaType": "CAPTION",
+                      "msgText": "this is testing campaign for dynamic template",
+                      "mediaFileName": "104578SampleVideo_360x240_1mb.mp4",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 179,
+                      "templateName": "fdsfdgs",
+                      "mediaType": "TEXT",
+                      "msgText": "test",
+                      "mediaFileName": null,
+                      "templateStatus": "In review",
+                      "isActive": true
+                  },
+                  {
+                      "id": 181,
+                      "templateName": "abcd_flow",
+                      "mediaType": "TEXT",
+                      "msgText": "fwfwe",
+                      "mediaFileName": null,
+                      "templateStatus": "In review",
+                      "isActive": true
+                  },
+                  {
+                      "id": 182,
+                      "templateName": "flow_text_with_id",
+                      "mediaType": "TEXT",
+                      "msgText": "fwferwgreg",
+                      "mediaFileName": null,
+                      "templateStatus": "In review",
+                      "isActive": true
+                  },
+                  {
+                      "id": 183,
+                      "templateName": "test_flow_sample",
+                      "mediaType": "TEXT",
+                      "msgText": "fgreg",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 184,
+                      "templateName": "testmydata",
+                      "mediaType": "TEXT",
+                      "msgText": "test my daata",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 185,
+                      "templateName": "flowsample",
+                      "mediaType": "TEXT",
+                      "msgText": "fwfef",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 186,
+                      "templateName": "lavenderhotel1",
+                      "mediaType": "CAPTION",
+                      "msgText": "Breaking News 2024 Lavender Hotel Al Nahda has transformed from dry to wet status.  Our new outlet Exit 69 - Lounge Bar Welcomes you🍹🥂 Areej Resto Bar has a new menu and Banquet Functions are ongoing with more variety\n\n#loungebar #dubainightlife #meetingspot #lavenderalnahdahotel #lavendercheers #transformation #drytowet #exit69 #theborder #lavenderhoteldubai #dubaihotels #dubailife #happyhours #drinkinghaven #indulgence #luxury…",
+                      "mediaFileName": "424763815_2539758316198808_4464820923421106337_n.mp4",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 187,
+                      "templateName": "test_data_deesha",
+                      "mediaType": "TEXT",
+                      "msgText": "this is sample",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 188,
+                      "templateName": "newbuttontest",
+                      "mediaType": "TEXT",
+                      "msgText": "test",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 189,
+                      "templateName": "quickreply1",
+                      "mediaType": "TEXT",
+                      "msgText": "click count report quick reply",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 190,
+                      "templateName": "quickreply2",
+                      "mediaType": "TEXT",
+                      "msgText": "click count report",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 191,
+                      "templateName": "quickreply3",
+                      "mediaType": "TEXT",
+                      "msgText": "single button count",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 192,
+                      "templateName": "test_d1",
+                      "mediaType": "TEXT",
+                      "msgText": "form test data",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 193,
+                      "templateName": "test_d2",
+                      "mediaType": "TEXT",
+                      "msgText": "this template is for form overview",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 194,
+                      "templateName": "forwardtotemplate",
+                      "mediaType": "TEXT",
+                      "msgText": "Dear {{1}},\nHi, You have received the enquiry. Here are the details as below:\nContact no.: {{2}}",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 195,
+                      "templateName": "single_screen_flow_satyam",
+                      "mediaType": "TEXT",
+                      "msgText": "fewfwefwef",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 196,
+                      "templateName": "forwardtotemplate1",
+                      "mediaType": "TEXT",
+                      "msgText": "Dear {{1}},\nHi, You received the enquiry. Here are the details as below:\nContact no.: {{2}}",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 197,
+                      "templateName": "fwerfwerf",
+                      "mediaType": "TEXT",
+                      "msgText": "fewfwef",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 198,
+                      "templateName": "testnew",
+                      "mediaType": "TEXT",
+                      "msgText": "this is sample text",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 199,
+                      "templateName": "fewfwgergerge",
+                      "mediaType": "TEXT",
+                      "msgText": "gergeg",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 200,
+                      "templateName": "efewfwe",
+                      "mediaType": "DOC",
+                      "msgText": "*Dear Principal,*  \n\nPlease find attached the CBSE Skill Subjects Circular & PDF containing sample chapters for Skill Subjects Books.  Kindly share this with your *Subject Teachers.*  *Orange Education* takes pride in being the pioneer publisher for *ICT Skill Education* Textbooks in schools.  These resources are also available on *Amazon & Flipkart.*  If you like the contents of the sample chapters, then please fill out the google form for a *Evaluation Copy* in the link given below. Your support is appreciated.  https://forms.gle/5qSV1HGogUXpKn1p7  \nRegards *Team Orange*",
+                      "mediaFileName": "627517SampleDOCFile_1.195921mb.pdf.pdf",
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 201,
+                      "templateName": "test12378",
+                      "mediaType": "TEXT",
+                      "msgText": "testt",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 202,
+                      "templateName": "refferallink1",
+                      "mediaType": "TEXT",
+                      "msgText": "Hello,\nthis message from link",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 203,
+                      "templateName": "refferallink2",
+                      "mediaType": "TEXT",
+                      "msgText": "Hello,\nthis message from link\nhttps://Anantya.link/{{1}}",
+                      "mediaFileName": null,
+                      "templateStatus": "Accepted",
+                      "isActive": true
+                  },
+                  {
+                      "id": 204,
+                      "templateName": "test4578977",
+                      "mediaType": "None",
+                      "msgText": "hello 1234",
+                      "mediaFileName": null,
+                      "templateStatus": "In review",
+                      "isActive": true
+                  },
+                  {
+                      "id": 205,
+                      "templateName": "test4578977",
+                      "mediaType": "None",
+                      "msgText": "hello 1234",
+                      "mediaFileName": null,
+                      "templateStatus": "In review",
+                      "isActive": true
+                  }
+              ],
+              "isSuccess": true,
+              "message": null
+          }
+
+docs: Through the this API, users can access comprehensive details about all available templates within the system. These details are essential for effective management and utilization of templates.

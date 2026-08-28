@@ -1,0 +1,24 @@
+opencollection: 1.0.0
+
+info:
+  name: Anantya API Doc
+
+request:
+  auth:
+    type: apikey
+    key: x-api-key
+    value: "{{apiKey}}"
+    placement: header
+  variables:
+    - name: baseUrl
+      value: https://apiv1.anantya.ai
+
+docs:
+  content: API documentation typically provides comprehensive information about how to use an API (Application Programming Interface). It serves as a reference guide for developers who want to integrate the API into their applications or systems.
+  type: text/markdown
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git

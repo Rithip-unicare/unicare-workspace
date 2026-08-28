@@ -1,0 +1,96 @@
+info:
+  name: Send audio
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/Messages/sendaudio?contactNo={{mobileNo}}"
+  headers:
+    - name: accept
+      value: "*/*"
+    - name: X-Api-Key
+      value: "{{apikey}}"
+  params:
+    - name: contactNo
+      value: "{{mobileNo}}"
+      type: query
+  body:
+    type: multipart-form
+    data:
+      - name: audioFile
+        type: file
+        value:
+          - /C:/Users/Deesha/Desktop/Media/audio/file_example_MP3_1MG.mp3
+        contentType: audio/mpeg
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: Send audio
+    request:
+      url: "{{baseUrl}}/api/Messages/sendaudio?contactNo={{mobileNo}}"
+      method: POST
+      headers:
+        - name: accept
+          value: "*/*"
+        - name: X-Api-Key
+          value: "{{apikey}}"
+      params:
+        - name: contactNo
+          value: "{{mobileNo}}"
+          type: query
+      body:
+        type: multipart-form
+        data:
+          - name: audioFile
+            type: file
+            value:
+              - /C:/Users/Deesha/Desktop/Media/audio/file_example_MP3_1MG.mp3
+            contentType: audio/mpeg
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: Transfer-Encoding
+          value: chunked
+        - name: Content-Type
+          value: application/json; charset=utf-8
+        - name: Server
+          value: Microsoft-IIS/10.0
+        - name: X-Rate-Limit-Limit
+          value: 10s
+        - name: X-Rate-Limit-Remaining
+          value: "999"
+        - name: X-Rate-Limit-Reset
+          value: 2024-03-12T11:10:16.9716570Z
+        - name: X-Powered-By
+          value: ASP.NET
+        - name: Date
+          value: Tue, 12 Mar 2024 11:10:10 GMT
+      body:
+        type: json
+        data: |-
+          {
+              "dataObj": {
+                  "msgId": 7412,
+                  "keyFromMe": 1,
+                  "mediaType": "AUDIO",
+                  "msgText": null,
+                  "msgTime": "12/03/2024 16:40:00",
+                  "msgStatus": 0,
+                  "contactNo": "••••••••••••",
+                  "mediaFileName": "586371file_example_MP3_1MG.mp3",
+                  "fileExt": "mp3",
+                  "channelName": "WHATSAPP"
+              },
+              "isSuccess": true,
+              "message": null
+          }
+
+docs: To send an audio file to a specific contact, users can utilize the provided API

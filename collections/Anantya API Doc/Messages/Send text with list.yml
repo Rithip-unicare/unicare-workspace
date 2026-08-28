@@ -1,0 +1,123 @@
+info:
+  name: Send text with list
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/Messages/sendtext"
+  headers:
+    - name: accept
+      value: "*/*"
+    - name: X-Api-Key
+      value: "{{apikey}}"
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "msgText": "Hello, this is a test message",
+        "contactNo": "{{mobileNo}}",
+        "list": {
+          "listTitle": "Menu",
+          "sections": [
+            {
+              "sectionTitle": "movie show",
+              "options": [
+                {
+                  "optionsTitle": "morning"
+                }
+              ]
+            }
+          ]
+        }
+      }
+
+runtime:
+  variables:
+    - name: apikey
+      value: D7ABBC42-8A61-47B0-9CF2-F7C4C8927536
+    - name: mobileNo
+      value: "9113098166"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: Send text with list
+    request:
+      url: https://apiv1.anantya.ai/api/Messages/sendtext
+      method: POST
+      headers:
+        - name: accept
+          value: "*/*"
+        - name: X-Api-Key
+          value: "{{apikey}}"
+        - name: Content-Type
+          value: application/json
+      body:
+        type: json
+        data: |-
+          {
+            "msgText": "list button test",
+            "contactNo": "•••••••",
+
+            "list": {
+              "listTitle": "Menu",
+              "sections": [
+                {
+                  "sectionTitle": "movie show",
+                  "options": [
+                    {
+                      "optionsTitle": "morning"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: Transfer-Encoding
+          value: chunked
+        - name: Content-Type
+          value: application/json; charset=utf-8
+        - name: Server
+          value: Microsoft-IIS/10.0
+        - name: X-Rate-Limit-Limit
+          value: 10s
+        - name: X-Rate-Limit-Remaining
+          value: "999"
+        - name: X-Rate-Limit-Reset
+          value: 2024-03-12T11:07:34.1571544Z
+        - name: X-Powered-By
+          value: ASP.NET
+        - name: Date
+          value: Tue, 12 Mar 2024 11:07:27 GMT
+      body:
+        type: json
+        data: |-
+          {
+              "dataObj": {
+                  "msgId": 7408,
+                  "keyFromMe": 1,
+                  "mediaType": "LISTBUTTON",
+                  "msgText": "{\"buttons\":null,\"List\":{\"sections\":[{\"title\":\"movie show\",\"rows\":[{\"id\":\"0\",\"title\":\"morning\"}]}],\"buttontext\":\"Menu\"},\"Body\":{\"text\":\"list button test\"},\"header\":null}",
+                  "msgTime": "12/03/2024 16:37:00",
+                  "msgStatus": 0,
+                  "contactNo": "••••••••••••",
+                  "mediaFileName": null,
+                  "fileExt": null,
+                  "channelName": "WHATSAPP"
+              },
+              "isSuccess": true,
+              "message": null
+          }
+
+docs: To send a text message to existing contacts with a list, users can utilize the provided API

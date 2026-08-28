@@ -12,18 +12,15 @@ http:
   body:
     type: multipart-form
     data:
-      - name: organizationId
-        type: text
-        value: "1"
       - name: authUserId
         type: text
-        value: "105"
+        value: "7"
       - name: username
         type: text
-        value: rithip124789
+        value: sinchana1
       - name: firstName
         type: text
-        value: RIthip
+        value: sinchana1
       - name: middleName
         type: text
         value: A
@@ -32,7 +29,10 @@ http:
         value: valt
       - name: fullName
         type: text
-        value: RIthip Valt
+        value: "anushaaa "
+      - name: organizationId
+        type: text
+        value: "1"
       - name: shortName
         type: text
         value: UMA
@@ -92,7 +92,7 @@ http:
         value: "+971987654321"
       - name: currentEmail
         type: text
-        value: rirhip184@gmail.com
+        value: anushakumbar76@gmail.com
       - name: currentAddressLine
         type: text
         value: THIRUPATHUR
@@ -110,7 +110,7 @@ http:
         value: "20"
       - name: slotInterval
         type: text
-        value: "15"
+        value: ""
       - name: licenseNo
         type: text
         value: t576g8tg87
@@ -164,15 +164,17 @@ http:
         value: "0"
       - name: roleId
         type: text
-        value: "1"
+        value: "2"
       - name: profileImgFile
         type: file
         value:
-          - /Users/apple/Downloads/one-piece-character-5120x2880-15328.jpeg
+          - C:\Users\Dell\Pictures\Saved Pictures\images (1).jpg
+        contentType: image/jpeg
       - name: signature1File
         type: file
         value:
-          - /Users/apple/Downloads/usman-yousaf-pTrhfmj2jDA-unsplash.jpg
+          - C:\Users\Dell\Pictures\Saved Pictures\images (1).jpg
+        contentType: image/jpeg
       - name: signature2File
         type: file
         value: []
@@ -207,3 +209,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true
