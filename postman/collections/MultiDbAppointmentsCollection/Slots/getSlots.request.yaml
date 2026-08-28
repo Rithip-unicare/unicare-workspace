@@ -1,10 +1,11 @@
 $kind: http-request
-url: "{{baseUrl}}/doctors/slots/ALB5/1?date=2026-07-16?date=2026-07-16"
+name: getSlots
+url: "{{baseUrl}}/doctors/slots/ALB4/18?date=2026-07-16?date=2026-07-16"
 method: GET
 headers:
   Authorization: Bearer {{accessToken}}
 queryParams:
-  date: 2026-07-16
+  date: 2026-07-16?date=2026-07-16
 auth:
   type: noauth
 order: 1000

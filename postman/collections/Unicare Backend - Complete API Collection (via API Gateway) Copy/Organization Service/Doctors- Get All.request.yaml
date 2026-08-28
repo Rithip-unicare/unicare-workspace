@@ -1,9 +1,13 @@
 $kind: http-request
 name: "Doctors: Get All"
-url: "{{baseUrl}}/api/organization/doctors/3"
+url: "{{baseUrl}}/api/organization/doctors/1"
 method: GET
 headers:
-  Authorization: Bearer {{accessToken}}
+  - key: Authorization
+    value: Bearer {{accessToken}}
+    disabled: true
 auth:
   type: bearer
+  credentials:
+    token: "{{accessToken}}"
 order: 26000

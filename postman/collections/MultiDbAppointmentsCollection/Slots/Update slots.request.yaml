@@ -1,4 +1,5 @@
 $kind: http-request
+name: Update slots
 url: "{{baseUrl}}/doctors/slots/update"
 method: POST
 headers:
@@ -7,14 +8,15 @@ body:
   type: json
   content: |-
     {
-        "fromDate": "2026-07-01",
-        "toDate": "2026-07-13",
-        "doctorId": 1,
-        "location": "ALB5",
-        "fromTime": "08:30:00",
-        "toTime": "13:30:00",
-        "status": "busy",
-        "toLocation": "ALB7"
+        "fromDate": "2026-09-01",
+        "toDate": "2026-09-30",
+        "doctorId": 6,
+        "location": "ALB4",
+        "fromTime": "09:30:00",
+        "toTime": "18:00:00",
+        "status": "free",
+        "toLocation": "ALB4",
+        "enteredBy": 6
     }
 auth:
   type: noauth

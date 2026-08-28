@@ -1,4 +1,5 @@
 $kind: collection
+name: Unicare Backend - Complete API Collection (via API Gateway) Copy
 description: Auto-generated collection including all endpoints with highly accurate payloads mapped directly from Java DTOs.
 variables:
   baseUrl: http://localhost:8080

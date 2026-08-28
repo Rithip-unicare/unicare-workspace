@@ -1,4 +1,5 @@
 $kind: http-request
+name: Update Slots Timing
 url: "{{baseUrl}}/doctors/slots/update-timing"
 method: POST
 headers:
@@ -7,19 +8,33 @@ body:
   type: json
   content: |-
     {
-        "doctorId": 1,
+        "doctorId": 6,
         "centerId": 1,
-        "fromLocation": "ALB1",
-        "fromdate": "2026-07-03",
-        "todate": "2026-07-12",
+        "fromLocation": "ALB4",
+        "fromdate": "2026-09-05",
+        "todate": "2026-09-25",
         "oldFromTime": "09:30:00",
-        "oldToTime": "17:30:00",
-        "newfromTime": "08:30:00",
+        "oldToTime": "18:30:00",
+        "newfromTime": "09:30:00",
         "newtoTime": "18:30:00",
-        "oldFromDate":"2026-07-01",
-        "oldToDate":"2026-07-14",
-        "toLocation": "ALB3"
+        "oldFromDate":"2026-09-01",
+        "oldToDate":"2026-09-30",
+        "toLocation": "ALB4"
     }
+
+    /*
+    {
+        "fromDate": "2026-09-01",
+        "toDate": "2026-09-30",
+        "doctorId": 6,
+        "location": "ALB4",
+        "fromTime": "08:00:00",
+        "toTime": "23:30:00",
+        "status": "busy",
+        "toLocation": "ALB4",
+        "enteredBy": 6
+    }
+     */
 auth:
   type: noauth
 order: 6000

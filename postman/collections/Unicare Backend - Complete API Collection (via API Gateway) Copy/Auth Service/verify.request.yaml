@@ -1,6 +1,6 @@
 $kind: http-request
-name: Login
-url: "{{baseUrl}}/api/auth/login"
+name: verify
+url: "{{baseUrl}}/api/auth/verify-login-otp"
 method: POST
 headers:
   Content-Type: application/json
@@ -15,10 +15,8 @@ body:
     // }
 
     {
-      "username": "partm",
-      "password": "Parthi@1",
-      "hospitalId": 2,
-      "rememberMe": true
+      "userId":3,
+      "otp":"905664"
     }
 auth:
   type: noauth
@@ -33,4 +31,4 @@ scripts:
           pm.collectionVariables.set("sessionId",data.sessionId);
       }
     language: text/javascript
-order: 1000
+order: 1822

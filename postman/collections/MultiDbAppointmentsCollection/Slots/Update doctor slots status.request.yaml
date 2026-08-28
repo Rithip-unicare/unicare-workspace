@@ -1,4 +1,5 @@
 $kind: http-request
+name: Update doctor slots status
 url: "{{baseUrl}}/doctors/availability"
 method: POST
 headers:
@@ -29,25 +30,21 @@ body:
     // }
 
     {
-        "doctorId": 1,
-        "doctorLocation": "ALB3",
-        "fromDate": "2026-07-01",
-        "toDate": "2026-07-24",
+        "doctorId": 6,
+        "doctorLocation": "ALB4",
+        "fromDate": "2026-09-01T00:00:00.000Z",
+        "toDate": "2026-09-30T00:00:00.000Z",
         "timings": [
             {
-                "fromTime": "09:00:00",
-                "toTime": "10:00:00",
-                "toLocation": "ALB5",
-                "comments": "Scheduled slot (2026-07-16 to 2026-07-17)"
-            },
-            {
-                "fromTime": "14:00:00",
-                "toTime": "16:00:00",
-                "toLocation": "ALB7",
-                "comments": "Scheduled slot (2026-07-16 to 2026-07-17)"
+                "fromTime": "08:00:00",
+                "toTime": "20:15:00",
+                "toLocation": "ALB4",
+                "centerId": 1,
+                "comments": "Scheduled slot (2026-09-01 to 2026-09-30)"
             }
         ],
-        "isMultiLocation": true
+        "isMultiLocation": false,
+        "enteredBy": 6
     }
 auth:
   type: noauth

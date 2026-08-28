@@ -1,0 +1,64 @@
+$kind: http-request
+name: convert referral to appointment
+url: "{{baseUrl}}/referrals/ALB4/convert"
+method: POST
+headers:
+  Authorization: Bearer {{accessToken}}
+body:
+  type: json
+  content: |-
+    {
+        "observationId": 503906,
+        "referralId": 16362,
+        "patientId": 41501,
+        "patientLocation": "ALB4",
+        "doctorId": 18,
+        "deptId": 0,
+        "appointmentDate": "2026-08-22",
+        "startTime": "11:00",
+        "toTime": "11:30",
+        "fromTime": "2026-08-22T09:00:00",
+        "duration": 30,
+        "apptReason": "Emergency appointment",
+        "appReasonId": 7,
+        "appReason": 7,
+        "status": "Booked",
+        "patientType": "old",
+        "clinicType": "Clinical",
+        "paymentMode": "Cash",
+        "paymentModel": "Cash",
+        "posident": 0,
+        "patpolid": 0,
+        "patcomid": 0,
+        "centerId": 1,
+        "apptRemainder": "",
+        "noansRemainder": "",
+        "visitType": "Consultation",
+        "appServiceId": 1,
+        "apptTypeId": 1,
+        "appTypeId": 1,
+        "isWalkIn": false,
+        "PHC_status": "",
+        "DidUKnow": "",
+        "notes": "vwfrwfrfref",
+        "isDoubleBooking": false,
+        "appNo": 0,
+        "docId": 0,
+        "roomNo": "",
+        "staffId": 18,
+        "staffName": "DR.OBAIDAH ALRAS",
+        "enterBy": "partm",
+        "enteredBy": "partm",
+        "enteredDate": "2026-08-22",
+        "lastEdited": "2026-08-22",
+        "lastEditedBy": "partm",
+        "resolvedToTime": "09:30",
+        "resolvedEnterBy": "partm",
+        "resolvedAppReasonId": 7,
+        "resolvedAppTypeId": 1,
+        "resolvedStartTime": "09:00",
+        "resolvedAppointmentDate": "2026-08-22",
+        "resolvedPaymentMode": "Cash",
+        "resolvedVisitType": "Consultation"
+    }
+order: 2248365528061316
