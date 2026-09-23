@@ -1,5 +1,4 @@
 $kind: http-request
-name: Login
 url: "{{baseUrl}}/api/auth/login"
 method: POST
 headers:
@@ -15,9 +14,9 @@ body:
     // }
 
     {
-      "username": "partm",
-      "password": "Parthi@1",
-      "hospitalId": 2,
+      "username": "Ageilan",
+      "password": "Unicare@543",
+      "hospitalId": 1,
       "rememberMe": true
     }
 auth:

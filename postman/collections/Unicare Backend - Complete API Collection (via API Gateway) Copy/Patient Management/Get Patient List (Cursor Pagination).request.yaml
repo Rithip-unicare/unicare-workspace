@@ -1,6 +1,8 @@
 $kind: http-request
 url: "{{baseUrl}}/api/core/patients?hospitalId=1&page=0&Size=100?hospitalId=1&page=0&lastId=&Size=100"
 method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
 queryParams:
   hospitalId: "1"
   page: "0"

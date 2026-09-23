@@ -15,8 +15,8 @@ http:
     type: json
     data: |-
       {
-        "newPath": "/Users/apple/Pictures/OrganizationImages"
-        //"newPath": "/home/priority/Pictures/unicare"
+        //"newPath": "/Users/apple/Pictures/OrganizationImages"
+        "newPath": "/home/priority/Pictures/unicare"
       }
   auth: inherit
 

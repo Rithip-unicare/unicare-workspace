@@ -1,6 +1,6 @@
 $kind: http-request
 name: "Files: Get org Images"
-url: "{{baseUrl}}{{imageurl}}/"
+url: "{{baseUrl}}{{imageurl}}"
 method: GET
 headers:
   Authorization: Bearer {{accessToken}}

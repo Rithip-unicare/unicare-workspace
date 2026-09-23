@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{baseUrl}}/api/core/appointments/doctor-daily-appointments/2026-09-21"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+order: 1789969802419

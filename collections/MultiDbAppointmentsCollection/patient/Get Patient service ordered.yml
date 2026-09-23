@@ -1,0 +1,29 @@
+info:
+  name: Get Patient service ordered
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{baseUrl}}/patient/service-ordered"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |-
+      {
+        "patientId": 2014,
+        "location": "ALB4",
+        "fromDate": "2026-02-01",
+        "toDate": "2026-08-31"
+      }
+
+      //5023
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

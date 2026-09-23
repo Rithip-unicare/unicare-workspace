@@ -1,6 +1,8 @@
 $kind: http-request
-url: "{{baseUrl}}/api/organization/doctors/shift-details/50"
+url: "{{baseUrl}}/api/organization/doctors/shift-details/71"
 method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
 auth:
   type: bearer
 order: 54000

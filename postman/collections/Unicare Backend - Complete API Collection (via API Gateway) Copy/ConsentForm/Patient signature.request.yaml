@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{baseUrl}}/api/consentform/submission/patient-signature/OM0663"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+order: 4484142887664762

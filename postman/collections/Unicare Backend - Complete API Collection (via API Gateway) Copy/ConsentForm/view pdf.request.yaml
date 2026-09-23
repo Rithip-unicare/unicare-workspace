@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{baseUrl}}/api/consentform/submission/cda77b87-a4a1-4a1d-9d62-91cdc23470d8/pdf/view"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+order: 4427195874725967

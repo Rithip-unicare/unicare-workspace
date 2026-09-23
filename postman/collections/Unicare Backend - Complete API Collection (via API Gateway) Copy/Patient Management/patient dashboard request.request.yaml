@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{baseUrl}}/api/core/patients/dashboard-detail/7758?hospitalId=1"
+method: GET
+headers:
+  Authorization: Bearer {{accessToken}}
+queryParams:
+  hospitalId: "1"
+order: 2199978647755257

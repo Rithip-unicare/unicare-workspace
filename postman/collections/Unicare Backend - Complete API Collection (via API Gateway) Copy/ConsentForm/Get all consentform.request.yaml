@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{baseUrl}}/api/consentform"
+method: POST
+headers:
+  Authorization: Bearer {{accessToken}}
+body:
+  type: json
+  content: |-
+    [
+      {
+        "formId": "string",
+        "enabled": true,
+        "titleEn": "string",
+        "isDentalIncluded": true,
+        "isMobileEnabled": true,
+        "isDesktopEnabled": true,
+        "isTabletEnabled": true,
+        "previewEmailEnable": true,
+        "department": "string"
+      }
+order: 4471815470469799

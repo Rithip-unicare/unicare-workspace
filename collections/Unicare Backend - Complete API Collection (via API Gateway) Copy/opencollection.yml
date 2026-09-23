@@ -17,13 +17,13 @@ config:
 request:
   variables:
     - name: baseUrl
-      value: http://localhost:8080
+      value: https://apigateway.unicaredev.online
     - name: accessToken
       value: eyJhbGciOiJSUzI1NiJ9.eyJ1c2VySWQiOjEsInJvbGVJZCI6MSwiaG9zcGl0YWxJZCI6MSwic2Vzc2lvbklkIjoiYjZlYjQ1NWMtYzhkZC00MGVhLTg5OGItZTc5ZGFlZGZjNjVhIiwiYWxsb3dlZEhvc3BpdGFsSWRzIjpbMV0sImlhdCI6MTc4NjE3ODMzMCwiZXhwIjoxNzg2MTg1NTMwfQ.zyQpP3fuqrwlGWzQudSkZHv-C9Xm93loQi1M4W_GuwYcfyQ6xWAujLOK6W8O4oF5k6Avy4l3X1E-w5sNl08Z4AJYQTMwMlZWEciGB5XVdmV8x5qDfUVfgCqMeCRKLry0sT_B7jkAEeEe8L1K_CTWNcZ96us-tnixwLytHBU2XAhG07Je533-Vrp1guyjEh2Vlf8CY36KD2XUYDAXmD6zFh84iV5sIbt37559rtZmMfZI5D_RzSRYnY4MEnigoH2cT_hgA1A_tfGhQUdgA-AHkZ7vXc87eBkZhbjusPI0-hrAt-VrBryHOuIMNXk1ekfWzF1FpHU9A_uUxOc0rnlapQ
     - name: sessionId
       value: ""
     - name: imageurl
-      value: ""
+      value: /api/organization/files/organizations/1/small-logo
 
 docs:
   content: Auto-generated collection including all endpoints with highly accurate payloads mapped directly from Java DTOs.

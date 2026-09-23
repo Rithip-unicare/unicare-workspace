@@ -1,0 +1,18 @@
+info:
+  name: Patient advance payment
+  type: http
+  seq: 6
+
+http:
+  method: GET
+  url: "{{baseUrl}}/patient/advance-payment/5008/ALB4"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

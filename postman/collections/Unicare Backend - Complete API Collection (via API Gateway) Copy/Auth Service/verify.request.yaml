@@ -1,5 +1,4 @@
 $kind: http-request
-name: verify
 url: "{{baseUrl}}/api/auth/verify-login-otp"
 method: POST
 headers:
@@ -15,8 +14,9 @@ body:
     // }
 
     {
-      "userId":3,
-      "otp":"905664"
+      "userId":71,
+      "otp":"732573",
+      "rememberMe":true
     }
 auth:
   type: noauth
