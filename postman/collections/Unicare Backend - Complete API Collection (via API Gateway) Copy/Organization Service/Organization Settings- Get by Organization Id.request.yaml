@@ -1,6 +1,6 @@
 $kind: http-request
 name: "Organization Settings: Get by Organization Id"
-url: "{{baseUrl}}/api/organization/organization-settings/organization/3"
+url: "{{baseUrl}}/api/organization/organization-settings/organization/1"
 method: GET
 headers:
   Authorization: Bearer {{accessToken}}

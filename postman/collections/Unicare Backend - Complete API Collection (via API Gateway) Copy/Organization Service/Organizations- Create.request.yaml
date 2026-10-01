@@ -9,88 +9,116 @@ body:
   content:
     - type: text
       key: englishName
-      value: ROYAL Hospital
+      value: OXYGEN MEDICAL CENTER
+      description: ""
+      disabled: false
     - type: text
       key: arabicName
-      value: مستشفى يونيكير العام
+      value: ""
+      description: ""
+      disabled: false
     - type: text
-      key: shortName
-      value: CGH
+      key: centerName
+      value: OXYGEN MEDICAL CENTER
+      description: ""
+      disabled: false
     - type: text
       key: addressLine1
-      value: 123 Health Ave
+      value: Al Mubazzarah - Mbazzarah Al Khadra
+      description: ""
+      disabled: false
     - type: text
       key: addressLine2
-      value: Downtown
+      value: Al Ain
+      description: ""
+      disabled: false
+    - type: text
+      key: addressLine1Arabic
+      value: ""
+      description: ""
+      disabled: false
+    - type: text
+      key: addressLine2Arabic
+      value: ""
+      description: ""
+      disabled: false
     - type: text
       key: cityId
       value: d3458712-fcf1-4e3e-9953-017fe3a11dc2
+      description: ""
+      disabled: false
     - type: text
       key: regionId
       value: d3458712-fcf1-4e3e-9953-017fe3a11dc2
+      description: ""
+      disabled: false
     - type: text
       key: countryId
       value: 6a20ee12-bb25-476a-9285-0064615b5c6e
+      description: ""
+      disabled: false
     - type: text
       key: email
-      value: contact@citygeneral.com
+      value: oxygenmc.mc1@gmail.com
+      description: ""
+      disabled: false
     - type: text
       key: phoneNumber
-      value: "+1234567890"
+      value: 037616885, 0542375066
+      description: ""
+      disabled: false
     - type: text
       key: faxNumber
-      value: "+1234567891"
+      value: 03 7616885
+      description: ""
+      disabled: false
     - type: text
       key: websiteUrl
       value: www.citygeneral.com
+      description: ""
+      disabled: false
     - type: text
       key: locationUrl
       value: maps.google.com/xyz
+      description: ""
+      disabled: false
     - type: text
       key: facilityLicenseNo
-      value: LIC-12345
+      value: "90"
+      description: ""
+      disabled: false
     - type: text
       key: authorityRegionId
       value: d3458712-fcf1-4e3e-9953-017fe3a11dc2
+      description: ""
+      disabled: false
     - type: text
       key: username
       value: unicareAdmin
+      description: ""
+      disabled: false
     - type: text
       key: password
       value: Password@123
+      description: ""
+      disabled: false
     - type: text
       key: webServiceUrl
       value: api.citygeneral.com
+      description: ""
+      disabled: false
     - type: file
       key: headerLogoFile
       src:
-        - C:\Users\PS07\Downloads\images (1).jpg
+        - /Users/apple/Music/bone_marrow_biopsy_drawing.png
       contentType: image/jpeg
+      disabled: false
     - type: file
       key: smallLogoFile
       src:
-        - C:\Users\PS07\Downloads\images.jpg
+        - /Users/apple/Music/brave_screenshot_unicaredev.online.png
       contentType: image/jpeg
-    - type: text
-      key: permAddressLine
-      value: 123 Health Ave
-      disabled: true
-    - type: text
-      key: permAddressPostbox
-      value: "635653"
-      disabled: true
-    - type: text
-      key: permCountryId
-      value: 6a20ee12-bb25-476a-9285-0064615b5c6e
-      disabled: true
-    - type: text
-      key: permCityId
-      value: d3458712-fcf1-4e3e-9953-017fe3a11dc2
-      disabled: true
-    - type: text
-      key: permRegionId
-      value: d3458712-fcf1-4e3e-9953-017fe3a11dc2
-      disabled: true
+      disabled: false
 auth:
   type: noauth
 order: 5000

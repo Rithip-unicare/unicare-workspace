@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{baseUrl}}/api/consentform/submission/check-existence"
+method: POST
+headers:
+  Authorization: Bearer {{accessToken}}
+body:
+  type: json
+  content: |-
+    {
+      "patientId": "OM7749",
+      "formId": "blood-collection-consent",
+      "doctorId": 71,
+      "date": "2026-09-22"
+    }
+order: 4503262559692343

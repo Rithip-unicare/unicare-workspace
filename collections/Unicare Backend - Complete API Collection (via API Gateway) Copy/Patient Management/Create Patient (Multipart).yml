@@ -148,20 +148,21 @@ http:
               ]
             }
           }
+        contentType: application/json
       - name: profileImage
         type: file
         value:
-          - C:\Users\PS07\Downloads\images (1).jpg
-        contentType: image/jpeg
+          - /Users/apple/Downloads/RIthip.png
+        contentType: image/png
       - name: emirateFront
         type: file
         value:
-          - C:\Users\PS07\Downloads\images.jpg
-        contentType: image/jpeg
+          - /Users/apple/Downloads/RIthip.png
+        contentType: image/png
       - name: emirateBack
         type: file
         value:
-          - C:\Users\PS07\Downloads\images (1).jpg
+          - /Users/apple/Downloads/usman-yousaf-pTrhfmj2jDA-unsplash.jpg
         contentType: image/jpeg
   auth: inherit
 

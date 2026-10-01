@@ -11,12 +11,12 @@ body:
       value: |-
         {
           "userId": 1,
-          "hospitalId": 3,
+          "hospitalId": 1,
           "isMigration": false,
           "mrNumber": "MR-001002004",
           "patientPaymentMode":"1",
           "registerDetails": {
-            "registerNo": "REG-12345",
+            "registerNo": "RID0001",
             "registerDate": "2024-03-27",
             "registerTime": "10:30:00",
             "userCreated": "admin"
@@ -142,21 +142,26 @@ body:
             ]
           }
         }
+      contentType: application/json
+      disabled: false
     - type: file
       key: profileImage
       src:
-        - C:\Users\PS07\Downloads\images (1).jpg
+        - /Users/apple/Downloads/professional_photo_enhanced.png
       contentType: image/jpeg
+      disabled: false
     - type: file
       key: emirateFront
       src:
-        - C:\Users\PS07\Downloads\images.jpg
+        - /Users/apple/Downloads/professional_photo_enhanced.png
       contentType: image/jpeg
+      disabled: false
     - type: file
       key: emirateBack
       src:
-        - C:\Users\PS07\Downloads\images (1).jpg
+        - /Users/apple/Downloads/professional_photo_enhanced.png
       contentType: image/jpeg
+      disabled: false
 auth:
   type: noauth
 order: 1000

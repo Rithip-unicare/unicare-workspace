@@ -14,8 +14,8 @@ body:
     // }
 
     {
-      "username": "Ageilan",
-      "password": "Unicare@543",
+      "username": "superadmin@unicare.com",
+      "password": "Password@123",
       "hospitalId": 1,
       "rememberMe": true
     }
