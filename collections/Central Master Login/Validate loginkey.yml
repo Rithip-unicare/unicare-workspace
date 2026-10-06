@@ -1,0 +1,19 @@
+info:
+  name: Validate loginkey
+  type: http
+  seq: 8
+
+http:
+  method: GET
+  url: "{{baseurl}}/api/v2/central-master/tenant-admin/validate-key?key=oEWY4C/T8OvpzN10gYP15OgxsUs16WhbBuENP8WxP6MFFE+mGjdF/eQjPo/zsQi+LAAzGTcuK0hUvD1yM6S3sQ=="
+  params:
+    - name: key
+      value: oEWY4C/T8OvpzN10gYP15OgxsUs16WhbBuENP8WxP6MFFE+mGjdF/eQjPo/zsQi+LAAzGTcuK0hUvD1yM6S3sQ==
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

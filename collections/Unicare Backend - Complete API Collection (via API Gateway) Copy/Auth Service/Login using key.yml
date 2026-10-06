@@ -1,0 +1,19 @@
+info:
+  name: Login using key
+  type: http
+  seq: 19
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/auth/login-with-key?key=4cKn0d15jzBNcVVTOCbkFH21pkj8+xpmCn+ycDK4h+iGamSJg9e0CX5/KzQ/MdUZgbstxnHtgeNwi+mCpT3GiQ=="
+  params:
+    - name: key
+      value: 4cKn0d15jzBNcVVTOCbkFH21pkj8+xpmCn+ycDK4h+iGamSJg9e0CX5/KzQ/MdUZgbstxnHtgeNwi+mCpT3GiQ==
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

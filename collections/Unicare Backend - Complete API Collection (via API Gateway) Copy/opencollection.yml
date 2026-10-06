@@ -17,11 +17,11 @@ config:
 request:
   variables:
     - name: baseUrl
-      value: https://apigateway.unicaredev.online
+      value: http://localhost:8080
     - name: accessToken
-      value: eyJhbGciOiJSUzI1NiJ9.eyJ1c2VySWQiOjEsInJvbGVJZCI6MSwiaG9zcGl0YWxJZCI6MSwic2Vzc2lvbklkIjoiYjZlYjQ1NWMtYzhkZC00MGVhLTg5OGItZTc5ZGFlZGZjNjVhIiwiYWxsb3dlZEhvc3BpdGFsSWRzIjpbMV0sImlhdCI6MTc4NjE3ODMzMCwiZXhwIjoxNzg2MTg1NTMwfQ.zyQpP3fuqrwlGWzQudSkZHv-C9Xm93loQi1M4W_GuwYcfyQ6xWAujLOK6W8O4oF5k6Avy4l3X1E-w5sNl08Z4AJYQTMwMlZWEciGB5XVdmV8x5qDfUVfgCqMeCRKLry0sT_B7jkAEeEe8L1K_CTWNcZ96us-tnixwLytHBU2XAhG07Je533-Vrp1guyjEh2Vlf8CY36KD2XUYDAXmD6zFh84iV5sIbt37559rtZmMfZI5D_RzSRYnY4MEnigoH2cT_hgA1A_tfGhQUdgA-AHkZ7vXc87eBkZhbjusPI0-hrAt-VrBryHOuIMNXk1ekfWzF1FpHU9A_uUxOc0rnlapQ
+      value: eyJhbGciOiJSUzI1NiJ9.eyJ1c2VySWQiOjEsInJvbGVJZCI6MSwiaG9zcGl0YWxJZCI6MCwic2Vzc2lvbklkIjoiMDcyZTA4MjMtOThmOS00NTNmLTlkOGUtYmM4YzMwNjM2OGZhIiwiYWxsb3dlZEhvc3BpdGFsSWRzIjpbMF0sImlhdCI6MTc5MTI2OTIwMCwiZXhwIjoxNzkxMjc2NDAwfQ.gbVAcETQyBh9eyUQ68ZPRyzqrNE1nPUlMM0TpKyhH0DWeOauRBrWgumraDV778vIH-aqieG10XO3vYFmQwm4L-X7pIoo_yafWw0D16VSBHWyqpUGG_y5ks0XvAGWK7X7LqVctRkHs-HToga7IjVLhi5AJViEC8aF8mEhSY_idlf6_I6JS-G81J19fIEa5TU4eRCYnSsf0YeMOvJvxahHfY-i2RF3B1ww4_0AVWTLmHQQjlGQ11pPzrkbMgzezRfOLa9wMW8ZyTuOQquwo0-Qkyp3ujWp8lFstn_Ki1iuVlDJUPpf6wzBkor6wgRYtrcFytl6HscThlnKiVwVPm0fvQ
     - name: sessionId
-      value: ""
+      value: 072e0823-98f9-453f-9d8e-bc8c306368fa
     - name: imageurl
       value: /api/organization/files/organizations/1/small-logo
 
