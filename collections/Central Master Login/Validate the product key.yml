@@ -1,0 +1,22 @@
+info:
+  name: Validate the product key
+  type: http
+  seq: 7
+
+http:
+  method: GET
+  url: "{{baseurl}}/api/v2/central-master/tenants/validate?facilityId=MF7505&productKey=CVHUhQXOSg4wd68wjMiqsnojOhCRNJguHyuN7nEp6YbZIMDAl25zii0QrW37uO+z8KgrCn6nH0NmSb+SALZdmA=="
+  params:
+    - name: facilityId
+      value: MF7505
+      type: query
+    - name: productKey
+      value: CVHUhQXOSg4wd68wjMiqsnojOhCRNJguHyuN7nEp6YbZIMDAl25zii0QrW37uO+z8KgrCn6nH0NmSb+SALZdmA==
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

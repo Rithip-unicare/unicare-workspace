@@ -14,8 +14,8 @@ body:
     // }
 
     {
-      "username": "superadmin@unicare.com",
-      "password": "Password@123",
+      "username": "rithip",
+      "password": "Rithip@2004",
       "hospitalId": 1,
       "rememberMe": true
     }

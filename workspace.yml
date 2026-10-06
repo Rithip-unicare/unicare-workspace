@@ -14,6 +14,8 @@ collections:
     path: "collections/Anantya API Doc"
   - name: "Untitled Collection - 1"
     path: "collections/Untitled Collection - 1"
+  - name: "Central Master Login"
+    path: "collections/Central Master Login"
 
 specs:
 

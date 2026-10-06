@@ -1,0 +1,19 @@
+info:
+  name: Logout data
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{baseurl}}/api/v2/central-master/tenant-admin/logout?key=bmSOJFvnI0I3olQXu5n4atYpXbuFMh9HtqogfwcU0RCz953JtvZ2BT7mM37HZDj48Y4zq85LQdWA01i1IN4EOQ=="
+  params:
+    - name: key
+      value: bmSOJFvnI0I3olQXu5n4atYpXbuFMh9HtqogfwcU0RCz953JtvZ2BT7mM37HZDj48Y4zq85LQdWA01i1IN4EOQ==
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

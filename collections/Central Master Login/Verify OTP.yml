@@ -1,0 +1,25 @@
+info:
+  name: Verify OTP
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{baseurl}}/api/v2/central-master/tenant-admin/verify-otp?otp=895860&facilityId=MF7505"
+  params:
+    - name: otp
+      value: "895860"
+      type: query
+    - name: facilityId
+      value: MF7505
+      type: query
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,28 @@
+info:
+  name: Login central admin
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseurl}}/api/v2/central-master/tenant-admin/login"
+  body:
+    type: json
+    data: |-
+      {
+        "username": "rithip",
+        "password": "Vanmathi@2005",
+        "facilityId":"MF7505"
+      }
+  auth: inherit
+
+runtime:
+  variables:
+    - name: baseurl
+      value: http://localhost:9001
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
