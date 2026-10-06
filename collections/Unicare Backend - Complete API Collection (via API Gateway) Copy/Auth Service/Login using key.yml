@@ -5,11 +5,19 @@ info:
 
 http:
   method: POST
-  url: "{{baseUrl}}/api/auth/login-with-key?key=4cKn0d15jzBNcVVTOCbkFH21pkj8+xpmCn+ycDK4h+iGamSJg9e0CX5/KzQ/MdUZgbstxnHtgeNwi+mCpT3GiQ=="
+  url: "{{baseUrl}}/api/auth/login-with-key"
   params:
     - name: key
       value: 4cKn0d15jzBNcVVTOCbkFH21pkj8+xpmCn+ycDK4h+iGamSJg9e0CX5/KzQ/MdUZgbstxnHtgeNwi+mCpT3GiQ==
       type: query
+      disabled: true
+  body:
+    type: json
+    data: |-
+      {
+        "key":"oPNEz4QD4CKTahZl5uCBU1Av4LAJSjt9K2w9K8GLH3Jihro0Q9PiwwvqfF4lZpVrwNMKnpjtP7afKv3gO/9cYw==",
+        "hospitalId": 1
+      }
   auth: inherit
 
 settings:

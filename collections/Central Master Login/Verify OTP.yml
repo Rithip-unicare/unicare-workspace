@@ -5,10 +5,10 @@ info:
 
 http:
   method: PUT
-  url: "{{baseurl}}/api/v2/central-master/tenant-admin/verify-otp?otp=895860&facilityId=MF7505"
+  url: "{{baseurl}}/api/v2/central-master/tenant-admin/verify-otp?otp=248151&facilityId=MF7505"
   params:
     - name: otp
-      value: "895860"
+      value: "248151"
       type: query
     - name: facilityId
       value: MF7505

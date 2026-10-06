@@ -5,10 +5,10 @@ info:
 
 http:
   method: PUT
-  url: "{{baseurl}}/api/v2/central-master/tenant-admin/logout?key=bmSOJFvnI0I3olQXu5n4atYpXbuFMh9HtqogfwcU0RCz953JtvZ2BT7mM37HZDj48Y4zq85LQdWA01i1IN4EOQ=="
+  url: "{{baseurl}}/api/v2/central-master/tenant-admin/logout?key=oPNEz4QD4CKTahZl5uCBU1Av4LAJSjt9K2w9K8GLH3Jihro0Q9PiwwvqfF4lZpVrwNMKnpjtP7afKv3gO/9cYw=="
   params:
     - name: key
-      value: bmSOJFvnI0I3olQXu5n4atYpXbuFMh9HtqogfwcU0RCz953JtvZ2BT7mM37HZDj48Y4zq85LQdWA01i1IN4EOQ==
+      value: oPNEz4QD4CKTahZl5uCBU1Av4LAJSjt9K2w9K8GLH3Jihro0Q9PiwwvqfF4lZpVrwNMKnpjtP7afKv3gO/9cYw==
       type: query
   auth: inherit
 
