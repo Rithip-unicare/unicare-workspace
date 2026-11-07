@@ -1,0 +1,18 @@
+info:
+  name: Get Departments by location
+  type: http
+  seq: 14
+
+http:
+  method: GET
+  url: "{{baseUrl}}/masters/departments/ALB3"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

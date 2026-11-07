@@ -1,0 +1,19 @@
+info:
+  name: See attachemnts
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{baseurl}}/api/v1/attachments/download?key=chat/conversations/DIRECT:115:161/messages/166/attachments/Ageilan offer letter.pdf"
+  params:
+    - name: key
+      value: chat/conversations/DIRECT:115:161/messages/166/attachments/Ageilan offer letter.pdf
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

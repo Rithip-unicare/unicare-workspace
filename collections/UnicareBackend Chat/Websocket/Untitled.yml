@@ -1,0 +1,23 @@
+info:
+  name: Untitled
+  type: websocket
+  seq: 1
+
+websocket:
+  url: ws://localhost:8080/api/chat/ws
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  message:
+    type: json
+    data: "{}"
+  auth: inherit
+
+runtime:
+  variables:
+    - name: accessToken
+      value: eyJhbGciOiJSUzI1NiJ9.eyJ1c2VySWQiOjEsInJvbGVJZCI6MSwiaG9zcGl0YWxJZCI6MCwic2Vzc2lvbklkIjoiZGRhNjkwNmUtMjlkMy00ODU0LThhZjgtNDQzY2M5MmEwMTdlIiwiYWxsb3dlZEhvc3BpdGFsSWRzIjpbMF0sIm9yZ0lkIjowLCJpYXQiOjE3OTE1MzE1NzEsImV4cCI6MTc5MTUzODc3MX0.PRGw13CFkkVNN6YaJtY50GVkSvrKGy9rqGk9XRn2P3bA-fjuXAypSHP7vXH3uJBXx_OCL6UREeRKJW48OlA9T3j6SpB6SGJfyobXDe6AEAiS7koY6Mi0TIqB5D8voc83iCqzROCsYCTkN8asLkvw7wcFdzYb8q1fWvEO9CAC_x8NYPaNCePG8WYTo-NbcV7uTHXhZCasTkg8K57l9GlOruq0oJklx5Aa0MuQfuqQgT69exGIATgdgnyoy79BhuEMmUl0EOkoL3qm9CYB-fKouZh1Ban8XLvetb_Dukq2iaUBHKfcyZT_FSAWAvnux0_TAyLagNsoYVYtXkbE3gklRw
+
+settings:
+  timeout: 0
+  keepAliveInterval: 0

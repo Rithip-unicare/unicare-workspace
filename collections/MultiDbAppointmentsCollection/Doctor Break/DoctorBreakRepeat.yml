@@ -1,0 +1,46 @@
+info:
+  name: DoctorBreakRepeat
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/doctors/doctor-break"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |-
+      // {
+      //   "doctorId": 31,
+      //   "startDate": "2026-11-01",
+      //   "endDate": "2026-11-30",
+      //   "fromTime": "00:00:00",
+      //   "toTime": "23:00:00",
+      //   "location": "ALB1",
+      //   "centerId": 1,
+      //   "isRepeat": true,
+      //   "day":"TUESDAY",
+      //   "remarks": "hello"
+      // }
+
+      {
+          "doctorId": 31,
+          "startDate": "2026-11-01",
+          "endDate": "2026-11-30",
+          "fromTime": "00:00:00",
+          "toTime": "23:59:00",
+          "location": "ALB1",
+          "centerId": 1,
+          "isRepeat": true,
+          "day": "TUESDAY",
+          "remarks": "tuesday"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

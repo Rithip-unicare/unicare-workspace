@@ -1,0 +1,23 @@
+info:
+  name: Central Master Login
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: "{{baseurl}}/auth/login"
+  body:
+    type: json
+    data: |-
+      {
+        "username": "rithip",
+        "password": "Vanmathi@2005",
+        "rememberMe": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

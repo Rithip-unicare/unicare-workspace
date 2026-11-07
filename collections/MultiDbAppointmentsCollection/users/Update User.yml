@@ -1,0 +1,32 @@
+info:
+  name: Update User
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/users"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |-
+      {
+        "userId": 6,
+
+        "hospitals": [
+          "AF7846",
+          "AF3695",
+          "AF7505",
+          "MF36912"
+        ],
+        "updatedBy": "VariantComputers"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

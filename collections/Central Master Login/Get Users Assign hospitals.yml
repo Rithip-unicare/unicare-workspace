@@ -1,0 +1,22 @@
+info:
+  name: Get Users Assign hospitals
+  type: http
+  seq: 11
+
+http:
+  method: GET
+  url: "{{baseurl}}/api/v2/central-master/tenant-admin/getAdminsFacilty/5f0cbad2-0fe3-4cdf-9aa5-5d231c652607"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  params:
+    - name: ""
+      value: ""
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

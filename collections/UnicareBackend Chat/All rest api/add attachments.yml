@@ -1,0 +1,32 @@
+info:
+  name: add attachments
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseurl}}/api/chat/attachments/upload"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: multipart-form
+    data:
+      - name: file
+        type: file
+        value:
+          - /Users/apple/Downloads/Ageilan offer letter.pdf
+        contentType: application/pdf
+      - name: directKey
+        type: text
+        value: DIRECT:115:161
+      - name: messageId
+        type: text
+        value: "166"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

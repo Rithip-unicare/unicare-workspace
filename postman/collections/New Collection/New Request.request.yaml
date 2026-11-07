@@ -1,0 +1,8 @@
+$kind: websocket-request
+description: ""
+url: ws://localhost:8080/api/chat/ws
+headers:
+  Authorization: Bearer {{accessToken}}
+settings: {}
+messages: .resources/New Request.resources/messages
+order: 1791353867999

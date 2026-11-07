@@ -13,8 +13,12 @@ http:
     type: json
     data: |-
       {
-        "username": "superadmin@unicare.com",
-        "password": "Password@123",
+      //   "username": "Ageilan",
+      //   "password": "Unicare@543",
+      //   "hospitalId": 1,
+      //   "rememberMe": true
+        "username": "rithip",
+        "password": "Rithip@2004",
         "hospitalId": 1,
         "rememberMe": true
       }

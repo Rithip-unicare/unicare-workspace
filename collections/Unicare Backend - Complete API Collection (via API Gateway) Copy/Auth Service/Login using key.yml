@@ -15,8 +15,8 @@ http:
     type: json
     data: |-
       {
-        "key":"oPNEz4QD4CKTahZl5uCBU1Av4LAJSjt9K2w9K8GLH3Jihro0Q9PiwwvqfF4lZpVrwNMKnpjtP7afKv3gO/9cYw==",
-        "hospitalId": 1
+        "key":"/K827ciyptwTRen8GYqfwEuWyTiXoDmq1s7KBoCbL1Xv6DvtWasVFjoqiipVyiZsqYBqH/TWf51y+C7L69F77w==",
+        "hospitalId": null
       }
   auth: inherit
 

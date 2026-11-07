@@ -1,0 +1,31 @@
+info:
+  name: Reuse Slots and Schedule
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{baseUrl}}/doctors/copy-slots-and-schedule"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |-
+      {
+        "doctorId": 35,
+        "refmonth": "NOVEMBER",
+        "centerId": 90,
+        "slotMonth": "DECEMBER",
+        "location": "ALB2",
+        "enterBy": 0,
+        "remarks": "Testing",
+        "username": "VariantComputer"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

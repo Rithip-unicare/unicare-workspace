@@ -16,6 +16,10 @@ collections:
     path: "collections/Untitled Collection - 1"
   - name: "Central Master Login"
     path: "collections/Central Master Login"
+  - name: "UnicareBackend Chat"
+    path: "collections/UnicareBackend Chat"
+  - name: "UnicareWhatsappApis"
+    path: "collections/UnicareWhatsappApis"
 
 specs:
 

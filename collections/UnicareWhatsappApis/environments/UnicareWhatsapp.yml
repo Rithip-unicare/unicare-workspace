@@ -1,0 +1,6 @@
+name: UnicareWhatsapp
+variables:
+  - name: baseUrl
+    value: http://localhost:9018/api
+  - secret: true
+    name: api_key

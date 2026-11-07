@@ -17,10 +17,10 @@ http:
         value: "7"
       - name: username
         type: text
-        value: sinchana1
+        value: rithip
       - name: firstName
         type: text
-        value: sinchana1
+        value: Rithip@2004
       - name: middleName
         type: text
         value: A
@@ -168,12 +168,12 @@ http:
       - name: profileImgFile
         type: file
         value:
-          - C:\Users\Dell\Pictures\Saved Pictures\images (1).jpg
-        contentType: image/jpeg
+          - /Users/apple/Downloads/professional_photo_enhanced.png
+        contentType: image/png
       - name: signature1File
         type: file
         value:
-          - C:\Users\Dell\Pictures\Saved Pictures\images (1).jpg
+          - /Users/apple/Downloads/satoru-gojo-jujutsu-3840x2160-9295.jpg
         contentType: image/jpeg
       - name: signature2File
         type: file
@@ -204,13 +204,15 @@ http:
         value: fgirwwfgkrferfser
       - name: multiLocation
         type: text
-        value: "true"
+        value: "false"
       - name: organizationIds
         type: text
         value: 1,2,3
+        disabled: true
       - name: isActive
         type: text
         value: "true"
+        disabled: true
   auth: inherit
 
 settings:
@@ -218,4 +220,3 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
-  forwardAuthorizationHeader: true

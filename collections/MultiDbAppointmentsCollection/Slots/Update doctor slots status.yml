@@ -34,26 +34,84 @@ http:
       //   "isMultiLocation": true
       // }
 
+      // {
+      //     "doctorId": 8,
+      //     "doctorLocation": "ALB3",
+      //     "fromDate": "2026-11-01T00:00:00.000Z",
+      //     "toDate": "2026-11-30T00:00:00.000Z",
+      //     "timings": [
+      //         {
+      //             "fromTime": "08:00:00",
+      //             "toTime": "20:15:00",
+      //             "toLocation": "ALB3",
+      //             "centerId": 11,
+      //             "comments": "Scheduled slot (2026-11-01 to 2026-11-30)"
+      //         }
+      //     ],
+      //     "isMultiLocation": false,
+      //   "slotType":"SCHEDULE",
+      //   "remarks":"tesringrgbjnk",
+      //     "enteredBy": -1
+      // }
+
+      // {
+      //     "doctorId": 7,
+      //     "doctorLocation": "ALB3",
+      //     "fromDate": "2026-11-01T00:00:00.000Z",
+      //     "toDate": "2026-11-13T00:00:00.000Z",
+      //     "timings": [
+      //         {
+      //             "fromTime": "08:00:00",
+      //             "toTime": "20:15:00",
+      //             "toLocation": "ALB3",
+      //             "centerId": 11,
+      //             "comments": "Scheduled slot (2026-11-01 to 2026-11-13)"
+      //         }
+      //     ],
+      //   "slotType":"SCHEDULE",
+      //   "remarks":"tesringrgbjnk",
+      //     "isMultiLocation": false,
+      //     "enteredBy": -1
+      // }
+
+      // {
+      //     "doctorId": 7,
+      //     "doctorLocation": "ALB3",
+      //     "fromDate": "2026-11-16T00:00:00.000Z",
+      //     "toDate": "2026-11-30T00:00:00.000Z",
+      //     "timings": [
+      //         {
+      //             "fromTime": "13:15:00",
+      //             "toTime": "18:15:00",
+      //             "toLocation": "ALB3",
+      //             "centerId": 11,
+      //             "comments": "Scheduled slot (2026-11-16 to 2026-11-30)"
+      //         }
+      //     ],
+      //    "slotType":"SCHEDULE",
+      //   "remarks":"tesringrgbjnk",
+      //     "isMultiLocation": false,
+      //     "enteredBy": -1
+      // }
+
       {
-          "doctorId": 1,
-          "doctorLocation": "ALB3",
-          "fromDate": "2026-07-01",
-          "toDate": "2026-07-24",
+          "doctorId": 10,
+          "doctorLocation": "ALB2",
+          "fromDate": "2026-11-16T00:00:00.000Z",
+          "toDate": "2026-11-30T00:00:00.000Z",
           "timings": [
               {
-                  "fromTime": "09:00:00",
-                  "toTime": "10:00:00",
-                  "toLocation": "ALB5",
-                  "comments": "Scheduled slot (2026-07-16 to 2026-07-17)"
-              },
-              {
-                  "fromTime": "14:00:00",
-                  "toTime": "16:00:00",
-                  "toLocation": "ALB7",
-                  "comments": "Scheduled slot (2026-07-16 to 2026-07-17)"
+                  "fromTime": "09:30:00",
+                  "toTime": "12:00:00",
+                  "toLocation": "ALB2",
+                  "centerId": 90,
+                  "comments": "Scheduled slot (2026-11-09 to 2026-11-13)"
               }
           ],
-          "isMultiLocation": true
+        "slotType":"BLOCK",
+        "remarks":"tesringrgbjnk",
+          "isMultiLocation": false,
+          "enteredBy": -1
       }
   auth: inherit
 
