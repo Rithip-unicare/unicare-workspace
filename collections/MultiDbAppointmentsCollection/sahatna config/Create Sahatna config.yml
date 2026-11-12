@@ -1,0 +1,26 @@
+info:
+  name: Create Sahatna config
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseUrl}}/sahatna-config"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |-
+      {
+        "baseurl": "https://ietest.doh.gov.ae/DOHInt/SAHATNA/integration/api",
+        "faciltyId": "MF36912",
+        "apiKey": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJERkQtU1VQRVItQVBQIiwic3ViIjoiTUYyMTMyIiwiYXVkIjoiLTAuMDg4NzUxMTk3MDg3ODk4NjEiLCJpYXQiOjE3MzM3Mjk3NjUsImV4cCI6MTc5Njc3NDQwMH0.CiYFdwE2KyR593UNv-p3kxi2jSRWaoGypifevL9TfgF18ZX7RXVBk1jhl5mccePSC4iqK_kto97L-5-VZZjk5V2El_gudtlY_pMW8kHTNtZSvKim0pgqrRFgzswDN0S7gCKYNdC5mMkJvgW8ttEEdnwMVTKTlQZFMe7UV7JaMVZ53tuW_mRG3zAh5ahZRJs6u1DKM_S7DtWC93NXlf4hp-HSly3fnrsmgh4rt3SArMtp7GuxJpA8oXYt76sMdQQ5L5KXyoX49Zlxyj-eCyb0WpGAY-0TSrXyI-JkDptEet_ERf0lzUOofTBkWKS5_DO4P1eXLzwG-zCtxDOJAxMsVA"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

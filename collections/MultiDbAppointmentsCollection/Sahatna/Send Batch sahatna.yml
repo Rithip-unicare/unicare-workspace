@@ -1,0 +1,30 @@
+info:
+  name: Send Batch sahatna
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/sahatna/batch"
+  headers:
+    - name: Authorization
+      value: Bearer {{accessToken}}
+  body:
+    type: json
+    data: |-
+      {
+        "doctorId": 1,
+        "startDate": "2026-12-01",
+        "endDate": "2026-12-30",
+        "operation": "CREATE",
+        "Created_by": "Variant",
+        "facilityId": "MF36912",
+        "location": "ALB1"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -21,7 +21,7 @@ request:
     - name: token
       value: ""
     - name: accessToken
-      value: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJWYXJpYW50Q29tcHV0ZXIiLCJ1c2VySWQiOjAsIm5hbWUiOiJWYXJpYW50Q29tcHV0ZXIiLCJpYXQiOjE3OTM3NzQ0MDksImV4cCI6MTc5Mzc3ODAwOX0.RwsQ_23b7WtBmd9oALfyPcx4ESUyzhYrdcSXLIoULdZwEHJe6e-aie5Gw_iGwu4JO3oEGu88WnRNGqu0hbA5TA
+      value: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwYXJ0bSIsInVzZXJJZCI6NiwibmFtZSI6IlBhcnRoaWJhbiIsImlhdCI6MTc5NDI5MzQ5MywiZXhwIjoxNzk0MzA1NDkzfQ.aRsilUepwHNiwBOYflZ8HmMLy8PIs0fxNjnn6HqVAyYhv4Q88J00YZJH5X4QaQ4rSFYdWbkUSLw399H1gTVwQw
 bundled: false
 extensions:
   bruno:
